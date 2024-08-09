@@ -19,9 +19,11 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="px-4 flex justify-between items-center bg-gray-100 h-14 shadow">
+      <nav
+        className="fixed top-0 left-0 w-full px-4 flex justify-between items-center bg-gray-100 h-14 shadow z-10"
+      >
         <div className="flex items-center">
-          <h2 className="text-xl">Mobix Mobila</h2>
+          <Link className="text-xl" href="/">Mobix Mobila</Link>
         </div>
         <div className="cursor-pointer md:hidden">
           <FontAwesomeIcon icon={faGripLines} onClick={toggleMenu} />

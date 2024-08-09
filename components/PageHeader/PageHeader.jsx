@@ -8,8 +8,7 @@ import Image from "next/image";
 
 const PageHeader = () => {
 
-    const handleScroll = (e) => {
-        e.preventDefault();
+    const handleScroll = () => {
         window.scrollTo({
           top: window.scrollY + window.innerHeight,
           behavior: "smooth",

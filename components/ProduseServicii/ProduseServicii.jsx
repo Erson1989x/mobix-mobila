@@ -25,7 +25,7 @@ const ProduseServicii = () => {
       <div className="card">
         <img src="https://via.placeholder.com/300x200" alt="produs" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/canapele">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/canapele-coltare">
             Canapele/Coltare
           </Link>
         </div>
@@ -33,7 +33,7 @@ const ProduseServicii = () => {
       <div className="card">
         <img src="https://via.placeholder.com/300x200" alt="produs" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/living">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/living-sufragerie">
             Living/Sufragerie
           </Link>
         </div>
@@ -41,7 +41,7 @@ const ProduseServicii = () => {
       <div className="card">
         <img src="https://via.placeholder.com/300x200" alt="produs" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune">
             Mese/Scaune
           </Link>
         </div>

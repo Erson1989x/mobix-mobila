@@ -16,7 +16,7 @@ const PageHeader = () => {
       };
 
   return (
-    <div className="relative z-3 h-screen overflow-hidden">
+    <div className="relative z-3 h-screen overflow-hidden pt-16 md:pt-20">
     <Image
       src={desktopBg}
       alt="mobile"

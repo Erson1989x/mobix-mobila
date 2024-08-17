@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full p-4 md:p-8 pt-16">
+    <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
       <h1 className="text-3xl font-bold mb-8 text-center">Contact</h1>
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-4">
         <Swiper ref={swiperRef} {...settingsSlider}>

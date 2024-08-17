@@ -78,7 +78,7 @@ const LivingSufragerie = () => {
   ];
 
   return (
-    <div className='h-full p-4 md:p-8'>
+    <div className='h-full p-4 md:p-8 pt-16 md:pt-20'>
     <h1 className="text-3xl font-bold mb-8 text-center">Living & Sufarage</h1>
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
     <div className="card">

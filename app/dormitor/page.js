@@ -79,7 +79,7 @@ const Dormitor = () => {
 
 
   return (
-    <div className='h-full p-4 md:p-8'>
+    <div className='h-full p-4 md:p-8 pt-16 md:pt-20'>
       <h1 className="text-3xl font-bold mb-8 text-center">Dormitor</h1>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-8">
       <div className="card shadow-lg">

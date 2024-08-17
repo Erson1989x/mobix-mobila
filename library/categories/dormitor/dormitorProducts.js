@@ -1,4 +1,4 @@
-export const dormitorProducts = [
+export    const dormitorProducts = [
     {
       id: 1,
       name: "Dormitor Bed",

@@ -81,8 +81,8 @@ const Dormitor = () => {
   return (
     <div className='h-full p-4 md:p-8'>
       <h1 className="text-3xl font-bold mb-8 text-center">Dormitor</h1>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
-      <div className="card">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-8">
+      <div className="card shadow-lg">
         <h2 className='font-bold text-center mb-2'>{dormitorProducts[0].name}</h2>
         <div className='flex justify-center mb-2'>
         <img src={dormitorProducts[0].image} alt="produs" />

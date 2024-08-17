@@ -23,7 +23,7 @@ const PageHeader = () => {
       layout="fill"
       objectFit="cover"
       priority
-      className="relative hidden sm:block"
+      className="relative hidden sm:block opacity-80"
       fill
     />
     <Image
@@ -32,7 +32,7 @@ const PageHeader = () => {
       layout="fill"
       objectFit="cover"
       priority
-      className="relative block sm:hidden"
+      className="relative block sm:hidden opacity-85"
       fill
     />
     <div className="absolute h-64 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-3/4 h-52 bg-slate-200 bg-opacity-30 flex flex-col items-center justify-center">

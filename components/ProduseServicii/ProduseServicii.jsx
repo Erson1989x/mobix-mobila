@@ -1,5 +1,13 @@
 import React from 'react'
 import Link from "next/link";
+import Image from "next/image";
+import dormitor from "../../app/assets/dormitor/DORMITOR.webp";
+import mobilierhol from "../../app/assets/mobilierhol/MOBILIERHOL.jpg";
+import mobilierTapitat from "../../app/assets/mobiliertapitat/mobiliertapitat.jpg";
+import living from "../../app/assets/living/living.jpg";
+import bucatarie from "../../app/assets/bucatarie/bucatarie.webp";
+import mobilierOffice from "../../app/assets/mobilieroffice/mobilieroffice.jpg";
+import meseSiScaune from "../../app/assets/mesesiscaune/mesesiscaune.jpg";
 
 const ProduseServicii = () => {
   return (
@@ -13,9 +21,9 @@ const ProduseServicii = () => {
       materiale naturale sau sintetice, culori deschise sau întunecate, noi
       avem ceea ce căutați.
     </p>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 justify-items-center">
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={dormitor} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
           <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor">
             Dormitor
@@ -23,31 +31,31 @@ const ProduseServicii = () => {
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={mobilierhol} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/canapele-coltare">
-            Canapele/Coltare
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-hol">
+            Mobilier Hol
           </Link>
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={mobilierTapitat} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/living-sufragerie">
-            Living/Sufragerie
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tapitat">
+            Mobilier Tapitat
           </Link>
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={living} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune">
-            Mese/Scaune
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/living">
+            Living
           </Link>
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={bucatarie} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
           <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/bucatarie">
             Bucatarie
@@ -55,12 +63,22 @@ const ProduseServicii = () => {
         </div>
       </div>
       <div className="card">
-        <img src="https://via.placeholder.com/300x200" alt="produs" />
+        <Image src={mobilierOffice} alt="produs" className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mic-mobilier">
-            Mic mobilier
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office">
+            Mobilier Office
           </Link>
         </div>
+      </div>
+      <div className="col-span-full flex justify-center w-full">
+      <div className="card w-40 h-40 md:w-80 md:h-72">
+        <Image src={meseSiScaune} alt="produs" className="h-full w-full object-cover" />
+        <div className="card-body text-center">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune">
+            Mese si Scaune
+          </Link>
+        </div>
+      </div>
       </div>
     </div>
   </div>

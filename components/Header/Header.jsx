@@ -54,7 +54,7 @@ const Header = () => {
                 <Link className="text-sm px-4 py-2" href="despre-noi">Despre noi</Link>
               </li>
               <li>
-                <Link className="text-sm px-4 py-2" href="contact">Contact: 742 266 779</Link>
+                <Link className="text-sm px-4 py-2" href="contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ const Header = () => {
                 <Link className="cursor-pointer hover:text-gray-400" href="despre-noi">Despre noi</Link>
               </li>
               <li>
-                <Link  className=" border-black text-black px-4 py-2 cursor-pointer hover:text-gray-400" href="contact">Contact: 742 266 779</Link>
+                <Link  className=" border-black text-black px-4 py-2 cursor-pointer hover:text-gray-400" href="contact">Contact</Link>
               </li>
             </ul>
         </div>

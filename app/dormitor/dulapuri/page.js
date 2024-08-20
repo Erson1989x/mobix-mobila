@@ -29,7 +29,7 @@ const Dulapuri = () => {
                 <Image src={product.image} alt="produs" className="w-full" />
               </Link>
             </div>
-            <p className="text-center mb-2">{product.description}</p>
+            <p className="text-center mb-2"></p>
             <p className="text-center text-red-600">{product.price} - RON</p>
           </div>
         ))}

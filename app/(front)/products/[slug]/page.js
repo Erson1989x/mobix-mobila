@@ -1,14 +1,14 @@
-'use client';
-import React, { useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { dulapuriProducts } from '../../../../library/categories/dormitor/dulapuri/dulapuriProducts';
-import {noptiereProducts} from '../../../../library/categories/dormitor/noptiere/noptiereProducts';
-import ImageGallery from '@/components/ImageGallery/ImageGallery';
+"use client";
+import React, { useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { dulapuriProducts } from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
+import ImageGallery from "@/components/ImageGallery/ImageGallery";
 const ProductPage = () => {
   const pathname = usePathname();
-  const slug = pathname.split('/').pop();
+  const slug = pathname.split("/").pop();
 
   const product = dulapuriProducts.find((product) => product.slug === slug);
 
@@ -17,19 +17,29 @@ const ProductPage = () => {
   }
 
   return (
-    <div className='h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2'>
-      <div>
-        <Link href="/dormitor/dulapuri">Back to Products</Link>
-      </div>
-      <div>
-        <h1>{product.name}</h1>
-        <p>{product.description}</p>
-        <p>{product.price} - RON</p>
-        <p>Dimensiuni: {product.dimensiuni.latime} x {product.dimensiuni.inaltime} x {product.dimensiuni.adacime}</p>
-        <p>Culoare: Corp - {product.corpColor}, Față - {product.faceColor}</p>
-      </div>
-      <div>
+    <div className="min-h-screen p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="card shadow-lg p-2 border border-gray-300 rounded">
         <ImageGallery images={[product.image]} />
+      </div>
+      <div className="card shadow-lg p-2 border border-gray-300 rounded">
+        <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
+        <p className="mb-4">{product.description}</p>
+        <p className="mb-4 text-red-600">{product.price} - RON</p>
+        <p className="mb-4">
+          Dimensiuni: {product.dimensiuni.latime} x{" "}
+          {product.dimensiuni.inaltime} x {product.dimensiuni.adacime}
+        </p>
+        <p className="mb-4">
+          Culoare: Corp - {product.corpColor}, Față - {product.faceColor}
+        </p>
+      </div>
+      <div className="w-36 h-9">
+        <Link
+          className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse"
+          href="/dormitor/dulapuri"
+        >
+          Inapoi la produse
+        </Link>
       </div>
     </div>
   );

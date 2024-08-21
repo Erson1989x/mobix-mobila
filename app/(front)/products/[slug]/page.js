@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { dulapuriProducts } from '../../../../library/categories/dormitor/dulapuri/dulapuriProducts';
+import {noptiereProducts} from '../../../../library/categories/dormitor/noptiere/noptiereProducts';
 import ImageGallery from '@/components/ImageGallery/ImageGallery';
 const ProductPage = () => {
   const pathname = usePathname();

@@ -26,10 +26,10 @@ const Dulapuri = () => {
             <h2 className="font-bold text-center mb-2">{product.name}</h2>
             <div className="flex justify-center mb-2">
               <Link href={`/products/${product.slug}`} key={product.slug}>
-                <Image src={product.image} alt="produs" className="w-full" />
+                <Image src={product.image} alt="produs" className="w-full h-60" />
               </Link>
             </div>
-            <p className="text-center mb-2"></p>
+            <p className="text-center mb-2">Pentru Detalii click pe poza</p>
             <p className="text-center text-red-600">{product.price} - RON</p>
           </div>
         ))}
@@ -40,8 +40,8 @@ const Dulapuri = () => {
             key={i + 1}
             href="#"
             onClick={() => setCurrentPage(i + 1)}
-            className={`px-4 py-2 ${
-              currentPage === i + 1 ? "bg-blue-500 text-white" : "bg-gray-200"
+            className={`px-4 py-2 cursor-pointer border border-0 rounded bg-white text-black shadow-md animate-pulse ${
+              currentPage === i + 1 ? "text-black" : "bg-gray-200"
             }`}
           >
             {i + 1}

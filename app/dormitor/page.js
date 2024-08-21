@@ -14,50 +14,50 @@ const Dormitor = () => {
 
 
   return (
-    <div className='h-full p-4 md:p-8 pt-16 md:pt-20'>
+    <div className='min-h-screen p-4 md:p-8 pt-16 md:pt-20'>
       <h1 className="text-3xl font-bold mb-8 text-center">Dormitor</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
-        <div className='card'>
+      <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Dulapuri</h2>
           <div className='flex justify-center mb-2'>
             <Image src={dulapbg} alt="dulapuri" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/dulapuri">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/dulapuri">Detalii</Link>
         </div>
-        <div className='card'>
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Noptiere</h2>
           <div className='flex justify-center mb-2'>
             <Image src={noptierebg} alt="noptiere" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/noptiere">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/noptiere">Detalii</Link>
         </div>
-        <div className='card'>
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Paturi</h2>
           <div className='flex justify-center mb-2'>
             <Image src={paturibg} alt="paturi" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/paturi">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/paturi">Detalii</Link>
         </div>
-        <div className='card'>
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Comoda</h2>
           <div className='flex justify-center mb-2'>
             <Image src={comodabg} alt="comoda" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/comoda">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/comoda">Detalii</Link>
         </div>
-        <div className='card'>
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Saltele</h2>
           <div className='flex justify-center mb-2'>
             <Image src={saltelebg} alt="saltele" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/saltele">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/saltele">Detalii</Link>
         </div>
-        <div className='card'>
+        <div className='card text-center shadow-lg'>
           <h2 className='font-bold text-center mb-2'>Dormitor Set</h2>
           <div className='flex justify-center mb-2'>
             <Image src={dormitorsetbg} alt="saltele" className='h-56 w-72' />
           </div>
-          <Link href="/dormitor/dormitor-set">Detalii</Link>
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/dormitor-set">Detalii</Link>
         </div>
       </div>
     </div>

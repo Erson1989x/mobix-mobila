@@ -4,7 +4,7 @@ import Image from "next/image";
 import dormitor from "../../app/assets/dormitor/DORMITOR.webp";
 import mobilierhol from "../../app/assets/mobilierhol/MOBILIERHOL.jpg";
 import mobilierTapitat from "../../app/assets/mobiliertapitat/mobiliertapitat.jpg";
-import living from "../../app/assets/living/living.jpg";
+import living from "../../app/assets/living/livingg.jpg";
 import bucatarie from "../../app/assets/bucatarie/bucatarie.webp";
 import mobilierOffice from "../../app/assets/mobilieroffice/mobilieroffice.jpg";
 import meseSiScaune from "../../app/assets/mesesiscaune/mesesiscaune.jpg";
@@ -25,7 +25,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={dormitor} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/dormitor">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/dormitor">
             Dormitor
           </Link>
         </div>
@@ -33,7 +33,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={mobilierhol} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-hol">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/mobilier-hol">
             Mobilier Hol
           </Link>
         </div>
@@ -41,7 +41,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={mobilierTapitat} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-tapitat">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/mobilier-tapitat">
             Mobilier Tapitat
           </Link>
         </div>
@@ -49,7 +49,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={living} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/living">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/living">
             Living
           </Link>
         </div>
@@ -57,7 +57,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={bucatarie} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/bucatarie">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/bucatarie">
             Bucatarie
           </Link>
         </div>
@@ -65,7 +65,7 @@ const ProduseServicii = () => {
       <div className="card relative">
         <Image src={mobilierOffice} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-office">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/mobilier-office">
             Mobilier Office
           </Link>
         </div>
@@ -74,7 +74,7 @@ const ProduseServicii = () => {
       <div className="card w-40 h-40 md:w-80 md:h-72 relative">
         <Image src={meseSiScaune} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mese-scaune">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/mese-scaune">
             Mese si Scaune
           </Link>
         </div>

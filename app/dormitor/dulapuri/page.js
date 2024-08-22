@@ -21,12 +21,32 @@ const Dulapuri = () => {
         {productsToDisplay.map((product) => (
           <div
             key={product.name}
-            className="card shadow-lg p-2 border border-gray-300 rounded"
+            className="card shadow-lg p-2 border border-gray-300 rounded" 
           >
             <h2 className="font-bold text-center mb-2">{product.name}</h2>
             <div className="flex justify-center mb-2">
               <Link href={`/products/${product.slug}`} key={product.slug}>
-                <Image src={product.image} alt="produs" className="w-full h-60" />
+                
+              <Image
+                  src={
+                    Array.isArray(product.images)
+                      ? product.images[0].src
+                      : product.images.src
+                  }
+                  width={
+                    Array.isArray(product.images)
+                      ? product.images[0].width
+                      : product.images.width
+                  }
+                  height={
+                    Array.isArray(product.images)
+                      ? product.images[0].height
+                      : product.images.height
+                  }
+                  priority={true}
+                  alt=""
+                  className="w-full h-60"
+                />
               </Link>
             </div>
             <p className="text-center mb-2">Pentru Detalii click pe poza</p>

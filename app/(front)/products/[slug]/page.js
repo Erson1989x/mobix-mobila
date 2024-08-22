@@ -1,10 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { dulapuriProducts } from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
-import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 const ProductPage = () => {
   const pathname = usePathname();
@@ -19,7 +17,7 @@ const ProductPage = () => {
   return (
     <div className="min-h-screen p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
       <div className="card shadow-lg p-2 border border-gray-300 rounded">
-        <ImageGallery images={[product.image]} />
+        <ImageGallery images={product.images} />
       </div>
       <div className="card shadow-lg p-2 border border-gray-300 rounded">
         <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
@@ -27,7 +25,7 @@ const ProductPage = () => {
         <p className="mb-4 text-red-600">{product.price} - RON</p>
         <p className="mb-4">
           Dimensiuni: {product.dimensiuni.latime} x{" "}
-          {product.dimensiuni.inaltime} x {product.dimensiuni.adacime}
+          {product.dimensiuni.inaltime} x {product.dimensiuni.adancime}
         </p>
         <p className="mb-4">
           Culoare: Corp - {product.corpColor}, Față - {product.faceColor}

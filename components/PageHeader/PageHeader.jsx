@@ -36,7 +36,7 @@ const PageHeader = () => {
       fill
     />
     <div className="absolute h-64 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-3/4 h-52 bg-slate-200 bg-opacity-30 flex flex-col items-center justify-center">
-      <h1 className="text-3xl sm:text-5xl relative text-black text-shadow-md p-5 md:p-10">
+      <h1 className="text-3xl sm:text-5xl relative text-black text-shadow-md p-5 md:p-10 text-center">
         High quality furnitures for your home! For you and your family!
       </h1>
       <br></br>

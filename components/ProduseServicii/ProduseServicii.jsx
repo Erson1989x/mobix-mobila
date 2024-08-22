@@ -21,60 +21,60 @@ const ProduseServicii = () => {
       materiale naturale sau sintetice, culori deschise sau întunecate, noi
       avem ceea ce căutați.
     </p>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 justify-items-center">
-      <div className="card">
-        <Image src={dormitor} alt="produs" className="h-full w-full object-cover" />
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8 justify-items-center">
+      <div className="card relative">
+        <Image src={dormitor} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/dormitor">
             Dormitor
           </Link>
         </div>
       </div>
-      <div className="card">
-        <Image src={mobilierhol} alt="produs" className="h-full w-full object-cover" />
+      <div className="card relative">
+        <Image src={mobilierhol} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-hol">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-hol">
             Mobilier Hol
           </Link>
         </div>
       </div>
-      <div className="card">
-        <Image src={mobilierTapitat} alt="produs" className="h-full w-full object-cover" />
+      <div className="card relative">
+        <Image src={mobilierTapitat} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tapitat">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-tapitat">
             Mobilier Tapitat
           </Link>
         </div>
       </div>
-      <div className="card">
-        <Image src={living} alt="produs" className="h-full w-full object-cover" />
+      <div className="card relative">
+        <Image src={living} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/living">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/living">
             Living
           </Link>
         </div>
       </div>
-      <div className="card">
-        <Image src={bucatarie} alt="produs" className="h-full w-full object-cover" />
+      <div className="card relative">
+        <Image src={bucatarie} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/bucatarie">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/bucatarie">
             Bucatarie
           </Link>
         </div>
       </div>
-      <div className="card">
-        <Image src={mobilierOffice} alt="produs" className="h-full w-full object-cover" />
+      <div className="card relative">
+        <Image src={mobilierOffice} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mobilier-office">
             Mobilier Office
           </Link>
         </div>
       </div>
       <div className="col-span-full flex justify-center w-full">
-      <div className="card w-40 h-40 md:w-80 md:h-72">
-        <Image src={meseSiScaune} alt="produs" className="h-full w-full object-cover" />
+      <div className="card w-40 h-40 md:w-80 md:h-72 relative">
+        <Image src={meseSiScaune} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
-          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 " href="/mese-scaune">
             Mese si Scaune
           </Link>
         </div>

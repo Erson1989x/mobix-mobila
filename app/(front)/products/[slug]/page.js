@@ -2,13 +2,18 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { dulapuriProducts } from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { dulapuriProducts} from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 const ProductPage = () => {
   const pathname = usePathname();
   const slug = pathname.split("/").pop();
 
-  const product = dulapuriProducts.find((product) => product.slug === slug);
+  const dulapuriProduct = dulapuriProducts?.find((product) => product.slug === slug);
+  const noptiereProduct = noptiereProducts?.find((product) => product.slug === slug);
+
+  const product = dulapuriProduct ?? noptiereProduct;
+
 
   if (!product) {
     return <div>Product not found</div>;
@@ -19,7 +24,7 @@ const ProductPage = () => {
       <div className="w-36 h-9">
         <Link
           className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg"
-          href="/dormitor/dulapuri"
+          href={`/dormitor/${product.category}`}
         >
           Inapoi la produse
         </Link>

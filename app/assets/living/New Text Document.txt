@@ -1,0 +1,24 @@
+                <p
+                  className="text-center text-gray-600 cursor-pointer p-2 break-words overflow-wrap"
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/place/Mobix+Mobila+Centru/@46.9234006,25.3523938,20.25z/data=!4m6!3m5!1s0x474a6311217f5d99:0xa467ff2c27738be1!8m2!3d46.9235535!4d25.3521344!16s%2Fg%2F11s361ll8g?entry=ttu",
+                      "_blank"
+                    )
+                  }
+                >
+                  Blvd. Nicolae Balcescu Bl.B, Sc.4. Ap. P1 <br /> Toplita
+                </p>
+
+
+                <p
+                  className="text-center text-gray-600 cursor-pointer p-2 break-words overflow-wrap"
+                  onClick={() =>
+                    window.open(
+                      `https://www.google.com/maps/place/Mobix+Mobila+Vale/@46.9299129,25.3675253,14.79z/data=!4m6!3m5!1s0x474a62f06e6f9b89:0x1a586c9d75cf0411!8m2!3d46.9384561!4d25.3704597!16s%2Fg%2F11ggm9ptr5?entry=ttu`,
+                      "_blank"
+                    )
+                  }
+                >
+                  Str. 1 Decembrie 1918, Nr.F1 <br /> Toplita
+                </p>

@@ -2,23 +2,22 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { noptiereProducts } from '../../../library/categories/dormitor/noptiere/noptiereProducts'
+import { paturiProducts } from '../../../library/categories/dormitor/paturi/paturiProducts'
 import { useState } from 'react'
 
-
-const Noptiere = () => {
+const Paturi = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8;
-    const totalPages = Math.ceil(noptiereProducts.length / itemsPerPage);
+    const totalPages = Math.ceil(paturiProducts.length / itemsPerPage);
 
-    const productsToDisplay = noptiereProducts.slice(
+    const productsToDisplay = paturiProducts.slice(
       (currentPage - 1) * itemsPerPage,
       currentPage * itemsPerPage
     );
 
   return (
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
-    <h1 className="text-3xl font-bold mb-8 text-center">Noptiere</h1>
+    <h1 className="text-3xl font-bold mb-8 text-center">Paturi</h1>
     <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-8">
       {productsToDisplay.map((product) => (
         <div
@@ -74,4 +73,4 @@ const Noptiere = () => {
   )
 }
 
-export default Noptiere
+export default Paturi

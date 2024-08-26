@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { dulapuriProducts} from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
 import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
+import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 const ProductPage = () => {
   const pathname = usePathname();
@@ -11,8 +12,9 @@ const ProductPage = () => {
 
   const dulapuriProduct = dulapuriProducts?.find((product) => product.slug === slug);
   const noptiereProduct = noptiereProducts?.find((product) => product.slug === slug);
+  const paturiProduct = paturiProducts?.find((product) => product.slug === slug);
 
-  const product = dulapuriProduct ?? noptiereProduct;
+  const product = dulapuriProduct ?? noptiereProduct ?? paturiProduct;
 
 
   if (!product) {

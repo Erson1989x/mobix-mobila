@@ -35,7 +35,7 @@ const ProductPage = () => {
     <div className="md:p-8 pt-16 md:pt-20">
       <div className="w-36 h-9">
         <Link
-          className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg"
+          className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
           href={`/dormitor/${product.category}`}
         >
           Inapoi la produse

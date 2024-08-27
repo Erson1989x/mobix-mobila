@@ -17,17 +17,22 @@ const Dulapuri = () => {
   return (
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
       <h1 className="text-3xl font-bold mb-8 text-center">Dulapuri</h1>
+      <Link
+        className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
+        href="/dormitor"
+      >
+        Inapoi la produse
+      </Link>
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-8">
         {productsToDisplay.map((product) => (
           <div
             key={product.name}
-            className="card shadow-lg p-2 border border-gray-300 rounded" 
+            className="card shadow-lg p-2 border border-gray-300 rounded"
           >
             <h2 className="font-bold text-center mb-2">{product.name}</h2>
             <div className="flex justify-center mb-2">
               <Link href={`/products/${product.slug}`} key={product.slug}>
-                
-              <Image
+                <Image
                   src={
                     Array.isArray(product.images)
                       ? product.images[0].src

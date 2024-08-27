@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 const ProductImages = ({ images }) => {
+  console.log('images:', images);
   const [activeImage, setActiveImage] = useState(0);
 
   const handleImageChange = (index) => {

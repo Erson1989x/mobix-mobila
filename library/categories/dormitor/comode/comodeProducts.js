@@ -45,7 +45,7 @@ import comodaKentuki from "../../../../app/assets/dormitor/comode/Kentuki/Comoda
 import comodaKentuki_1 from "../../../../app/assets/dormitor/comode/Kentuki/Comoda Kentuki-2.jpeg"
 
 
-export const comodeProducts = [
+export const comodaProducts = [
     {
       id: 1,
       name: "Comoda Geneva 1S2D",
@@ -59,8 +59,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Trufa+Wenge Magia, Gri Grafit +Stejar Craft Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "geneva".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "geneva".toLowerCase(),
     },
     {
       id: 2,
@@ -75,8 +75,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Trufa+Wenge Magia",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "geneva1s3d".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "geneva1s3d".toLowerCase(),
     },
     {
       id: 3,
@@ -91,8 +91,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Trufa+Wenge Magia, Gri Grafit +Stejar Craft Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "geneva3s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "geneva3s".toLowerCase(),
     },
     {
       id: 4,
@@ -107,8 +107,8 @@ export const comodeProducts = [
       },
       corpColor: "Alb, Sonoma Deschis",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "flora".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "flora".toLowerCase(),
     },
     {
       id: 5,
@@ -123,8 +123,8 @@ export const comodeProducts = [
       },
       corpColor: "-",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "ares".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "ares".toLowerCase(),
     },
     {
       id: 6,
@@ -139,8 +139,8 @@ export const comodeProducts = [
       },
       corpColor: "-",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "aresas6".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "aresas6".toLowerCase(),
     },
     {
       id: 7,
@@ -155,8 +155,8 @@ export const comodeProducts = [
       },
       corpColor: "Grafit Gri + Stejar Craft Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "disney".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "disney".toLowerCase(),
     },
     {
       id: 8,
@@ -171,8 +171,8 @@ export const comodeProducts = [
       },
       corpColor: "Grafit Gri + Stejar Craft Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "disney2d4s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "disney2d4s".toLowerCase(),
 
     },
     {
@@ -188,8 +188,8 @@ export const comodeProducts = [
       },
       corpColor: "-",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "uk80".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "uk80".toLowerCase(),
     },
     {
       id: 10,
@@ -204,8 +204,8 @@ export const comodeProducts = [
       },
       corpColor: "Sonoma, Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "uk120".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "uk120".toLowerCase(),
     },
     {
       id: 11,
@@ -220,8 +220,8 @@ export const comodeProducts = [
       },
       corpColor: "Sonoma",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "nika".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "nika".toLowerCase(),
     },
     {
       id: 12,
@@ -236,8 +236,8 @@ export const comodeProducts = [
       },
       corpColor: "",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "venera3s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "venera3s".toLowerCase(),
       
     },
     {
@@ -253,8 +253,8 @@ export const comodeProducts = [
       },
       corpColor: "",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "venera3s2d".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "venera3s2d".toLowerCase(),
     },
     {
       id: 14,
@@ -269,8 +269,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Artizan + Alb lucios",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "tvbollo".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "tvbollo".toLowerCase(),
     },
     {
       id: 15,
@@ -285,8 +285,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Deschis, Pin Antichizat, Sonoma Inchis + Deschis",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "alma1u3s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "alma1u3s".toLowerCase(),
     },
     {
       id: 16,
@@ -301,8 +301,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Deschis, Pin Antichizat, Sonoma Inchis + Deschis",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "alma2u3s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "alma2u3s".toLowerCase(),
     },
     {
       id: 17,
@@ -317,8 +317,8 @@ export const comodeProducts = [
       },
       corpColor: "Stejar Sonoma Deschis, Pin Antichizat, Sonoma Inchis + Deschis",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "alma4s".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "alma4s".toLowerCase(),
     },
     {
       id: 18,
@@ -333,8 +333,8 @@ export const comodeProducts = [
       },
       corpColor: "Pin Antichizat, Sonoma Inchis + Deschis",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "luxor".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "luxor".toLowerCase(),
     },
     {
       id: 19,
@@ -349,9 +349,8 @@ export const comodeProducts = [
       },
       corpColor: "Alb",
       faceColor: "-",
-      category: "comode",
-      slug: "comode-" + "kentuki".toLowerCase(),
+      category: "comoda",
+      slug: "comoda-" + "kentuki".toLowerCase(),
 
     }
-
   ]

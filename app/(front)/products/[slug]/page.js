@@ -2,20 +2,30 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { dulapuriProducts} from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { dulapuriProducts } from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
 import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
 import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProducts";
+import { comodaProducts } from "@/library/categories/dormitor/comode/comodeProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 const ProductPage = () => {
   const pathname = usePathname();
   const slug = pathname.split("/").pop();
 
-  const dulapuriProduct = dulapuriProducts?.find((product) => product.slug === slug);
-  const noptiereProduct = noptiereProducts?.find((product) => product.slug === slug);
-  const paturiProduct = paturiProducts?.find((product) => product.slug === slug);
+  const dulapuriProduct = dulapuriProducts?.find(
+    (product) => product.slug === slug
+  );
+  const noptiereProduct = noptiereProducts?.find(
+    (product) => product.slug === slug
+  );
+  const paturiProduct = paturiProducts?.find(
+    (product) => product.slug === slug
+  );
+  const comodaProduct = comodaProducts?.find(
+    (product) => product.slug === slug
+  );
 
-  const product = dulapuriProduct ?? noptiereProduct ?? paturiProduct;
-
+  const product =
+    dulapuriProduct ?? noptiereProduct ?? paturiProduct ?? comodaProduct;
 
   if (!product) {
     return <div>Product not found</div>;
@@ -33,15 +43,22 @@ const ProductPage = () => {
       </div>
       <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="card shadow-lg p-2 rounded">
-          <ImageGallery images={product.images}  />
+          <ImageGallery images={product.images} />
         </div>
         <div className="card shadow-lg p-2 rounded">
           <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
           <p className="mb-4">{product.description}</p>
           <p className="mb-4 text-red-600">{product.price} - RON</p>
           <p className="mb-4">
-            Dimensiuni: {product.dimensiuni.latime} x{" "}
-            {product.dimensiuni.inaltime} x {product.dimensiuni.adancime}
+            Dimensiuni:{" "}
+            {[
+              product.dimensiuni?.latime,
+              product.dimensiuni?.lungime,
+              product.dimensiuni?.inaltime,
+              product.dimensiuni?.adancime,
+            ]
+              .filter((dim) => dim)
+              .join(" x ")}
           </p>
           <p className="mb-4">
             Culoare: Corp - {product.corpColor}, Față - {product.faceColor}

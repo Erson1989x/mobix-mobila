@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import ProductCard from "@/components/ProductCard/ProductCard";
 import Link from "next/link";
 import { paturiProducts } from "../../../library/categories/dormitor/paturi/paturiProducts";
 import { useState } from "react";
@@ -24,42 +24,7 @@ const Paturi = () => {
       >
         Inapoi la produse
       </Link>
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 mt-8">
-        {productsToDisplay.map((product) => (
-          <div
-            key={product.name}
-            className="card shadow-lg p-2 border border-gray-300 rounded"
-          >
-            <h2 className="font-bold text-center mb-2">{product.name}</h2>
-            <div className="flex justify-center mb-2">
-              <Link href={`/products/${product.slug}`} key={product.slug}>
-                <Image
-                  src={
-                    Array.isArray(product.images)
-                      ? product.images[0].src
-                      : product.images.src
-                  }
-                  width={
-                    Array.isArray(product.images)
-                      ? product.images[0].width
-                      : product.images.width
-                  }
-                  height={
-                    Array.isArray(product.images)
-                      ? product.images[0].height
-                      : product.images.height
-                  }
-                  priority={true}
-                  alt=""
-                  className="w-full h-60"
-                />
-              </Link>
-            </div>
-            <p className="text-center mb-2">Pentru Detalii click pe poza</p>
-            <p className="text-center text-red-600">{product.price} - RON</p>
-          </div>
-        ))}
-      </div>
+      <ProductCard productsToDisplay={productsToDisplay} />
       <div className="flex justify-center mt-8">
         {Array.from({ length: totalPages }, (_, i) => (
           <Link

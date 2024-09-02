@@ -8,6 +8,9 @@ import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProdu
 import { comodaProducts } from "@/library/categories/dormitor/comode/comodeProducts";
 import { salteleProducts } from "@/library/categories/dormitor/saltele/salteleProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
 const ProductPage = () => {
   const pathname = usePathname();
   const slug = pathname.split("/").pop();
@@ -39,11 +42,11 @@ const ProductPage = () => {
   if (product && product === salteleProduct) {
     return (
       <div className="md:p-8 pt-16 md:pt-20">
-        <div className="w-36 h-9">
+        <div className="w-40 h-9">
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
             href={`/dormitor/${product.category}`}
-          >
+          ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
             Inapoi la produse
           </Link>
         </div>
@@ -103,11 +106,11 @@ const ProductPage = () => {
   } else {
     return (
       <div className="md:p-8 pt-16 md:pt-20">
-        <div className="w-36 h-9">
+        <div className="w-40 h-9">
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
             href={`/dormitor/${product.category}`}
-          >
+          ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
             Inapoi la produse
           </Link>
         </div>

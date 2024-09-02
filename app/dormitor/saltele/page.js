@@ -4,6 +4,8 @@ import ProductCard from '@/components/ProductCard/ProductCard'
 import Link from 'next/link'
 import { salteleProducts } from '../../../library/categories/dormitor/saltele/salteleProducts'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Saltele = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +23,7 @@ const Saltele = () => {
       <Link
         className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
         href="/dormitor"
-      >
+      ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
         Inapoi la produse
       </Link>
       <ProductCard productsToDisplay={productsToDisplay} />

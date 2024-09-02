@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import Link from "next/link";
 import { dulapuriProducts } from "../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 const Dulapuri = () => {
   const productsPerPage = 8;
@@ -20,7 +22,7 @@ const Dulapuri = () => {
       <Link
         className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
         href="/dormitor"
-      >
+      ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
         Inapoi la produse
       </Link>
       <ProductCard productsToDisplay={productsToDisplay} />

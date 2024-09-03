@@ -32,8 +32,8 @@ export const dormitorItems = [
       link: '/dormitor/saltele'
     },
     {
-      title: 'Dormitor Set',
+      title: 'Dormitoare Set',
       imgageSrc: dormitorsetbg,
-      link: '/dormitor/dormitor-set'
+      link: '/dormitor/dormitoare-set'
     }
   ]

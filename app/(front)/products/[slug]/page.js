@@ -7,6 +7,8 @@ import { noptiereProducts } from "../../../../library/categories/dormitor/noptie
 import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProducts";
 import { comodaProducts } from "@/library/categories/dormitor/comode/comodeProducts";
 import { salteleProducts } from "@/library/categories/dormitor/saltele/salteleProducts";
+import { dormitoareProducts } from "@/library/categories/dormitor/dormitoare/dormitoareProducts";
+import { livingProducts } from "@/library/categories/living/livingProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -32,11 +34,21 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
+  const dormitoareProduct = dormitoareProducts?.find(
+    (product) => product.slug === slug
+  );
+
+  const livingProduct = livingProducts?.find(
+    (product) => product.slug === slug
+  );
+
   const product =
     dulapuriProduct ??
     noptiereProduct ??
     paturiProduct ??
     comodaProduct ??
+    dormitoareProduct ??
+    livingProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {
@@ -46,7 +58,8 @@ const ProductPage = () => {
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
             href={`/dormitor/${product.category}`}
-          ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
+          >
+            <FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
             Inapoi la produse
           </Link>
         </div>
@@ -109,8 +122,12 @@ const ProductPage = () => {
         <div className="w-40 h-9">
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
-            href={`/dormitor/${product.category}`}
-          ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
+            href={window.location.href.replace(
+              "/products/living-royal",
+              "/living"
+            )}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
             Inapoi la produse
           </Link>
         </div>

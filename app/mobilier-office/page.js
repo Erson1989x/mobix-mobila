@@ -13,11 +13,11 @@ const MicMobilier = () => {
     <h1 className="text-3xl font-bold mb-8 text-center">Mobilier Office</h1>
     <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
       <div className='card text-center shadow-lg'>
-        <h2 className='font-bold text-center mb-2'>Birouri</h2>
+        <h2 className='font-bold text-center mb-2'>Mese Birou</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={birouriOfficebg} alt="dulapuri" className='h-56 w-72' />
+          <Image src={birouriOfficebg} alt="birou" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office/birouri">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office/mese-birou">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Scaune</h2>

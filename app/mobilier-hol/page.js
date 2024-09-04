@@ -18,16 +18,16 @@ const CanapeleColtare = () => {
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Cuiere</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={cuierebg} alt="dulapuri" className='h-56 w-72' />
+          <Image src={cuierebg} alt="cuiere" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/dulapuri">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-hol/cuiere">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Pantofare</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={pantofarebg} alt="noptiere" className='h-56 w-72' />
+          <Image src={pantofarebg} alt="pantofare" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/noptiere">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-hol/pantofar">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Dulapuri Hol</h2>

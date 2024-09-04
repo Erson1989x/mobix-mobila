@@ -11,6 +11,9 @@ import { dormitoareProducts } from "@/library/categories/dormitor/dormitoare/dor
 import { livingProducts } from "@/library/categories/living/livingProducts";
 import { baieProducts } from "@/library/categories/baie/baieProducts";
 import { scauneProducts } from "@/library/categories/mobilierOffice/scaune/scauneProducts";
+import { birouProducts } from "@/library/categories/mobilierOffice/birou/birouProducts";
+import { cuiereProducts } from "@/library/categories/mobilierHol/cuiere/cuiereProducts";
+import { pantofarProducts } from "@/library/categories/mobilierHol/pantofar/pantofarProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -52,6 +55,18 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
+  const birouProduct = birouProducts?.find(
+    (product) => product.slug === slug
+  );
+
+  const cuiereProduct = cuiereProducts?.find(
+    (product) => product.slug === slug
+  );
+  const pantofarProduct = pantofarProducts?.find(
+    (product) => product.slug === slug
+  );
+
+
   const product =
     dulapuriProduct ??
     noptiereProduct ??
@@ -61,6 +76,9 @@ const ProductPage = () => {
     livingProduct ??
     baieProduct ??
     scauneProduct ??
+    birouProduct ??
+    cuiereProduct ??
+    pantofarProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {

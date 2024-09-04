@@ -8,6 +8,7 @@ import living from "../../app/assets/living/livingg.jpg";
 import bucatarie from "../../app/assets/bucatarie/bucatarie.webp";
 import mobilierOffice from "../../app/assets/mobilieroffice/mobilieroffice.jpg";
 import meseSiScaune from "../../app/assets/mesesiscaune/mesesiscaune.jpg";
+import mobilierBaie from "../../app/assets/baie/mobilierbaie.jpg";
 
 const ProduseServicii = () => {
   return (
@@ -21,7 +22,7 @@ const ProduseServicii = () => {
       materiale naturale sau sintetice, culori deschise sau întunecate, noi
       avem ceea ce căutați.
     </p>
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8 justify-items-center">
+    <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8 justify-center">
       <div className="card relative">
         <Image src={dormitor} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
@@ -70,17 +71,25 @@ const ProduseServicii = () => {
           </Link>
         </div>
       </div>
-      <div className="col-span-full flex justify-center w-full">
-      <div className="card w-40 h-40 md:w-80 md:h-72 relative">
-        <Image src={meseSiScaune} alt="produs" priority={true} className="h-full w-full object-cover" />
+    </div>
+    <div className='grid grid-cols-2 justify-items-center mt-8 gap-8'>
+      <div className="card relative md:w-80 md:h-64">
+      <Image src={meseSiScaune} alt="produs" priority={true} className="h-full w-full object-cover" />
         <div className="card-body text-center">
           <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/mese-scaune">
             Mese si Scaune
           </Link>
         </div>
       </div>
+      <div className="card relative md:w-80 md:h-64">
+      <Image src={mobilierBaie} alt="produs" priority={true} className="h-full w-full object-cover" />
+        <div className="card-body text-center">
+          <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-10 truncate" href="/baie">
+            Mobilier Baie
+          </Link>
+        </div>
       </div>
-    </div>
+      </div>
   </div>
   )
 }

@@ -9,6 +9,7 @@ import { comodaProducts } from "@/library/categories/dormitor/comode/comodeProdu
 import { salteleProducts } from "@/library/categories/dormitor/saltele/salteleProducts";
 import { dormitoareProducts } from "@/library/categories/dormitor/dormitoare/dormitoareProducts";
 import { livingProducts } from "@/library/categories/living/livingProducts";
+import { baieProducts } from "@/library/categories/baie/baieProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -42,6 +43,10 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
+  const baieProduct = baieProducts?.find(
+    (product) => product.slug === slug
+  );
+
   const product =
     dulapuriProduct ??
     noptiereProduct ??
@@ -49,6 +54,7 @@ const ProductPage = () => {
     comodaProduct ??
     dormitoareProduct ??
     livingProduct ??
+    baieProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {

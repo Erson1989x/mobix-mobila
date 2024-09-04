@@ -10,6 +10,7 @@ import { salteleProducts } from "@/library/categories/dormitor/saltele/saltelePr
 import { dormitoareProducts } from "@/library/categories/dormitor/dormitoare/dormitoareProducts";
 import { livingProducts } from "@/library/categories/living/livingProducts";
 import { baieProducts } from "@/library/categories/baie/baieProducts";
+import { scauneProducts } from "@/library/categories/mobilierOffice/scaune/scauneProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -47,6 +48,10 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
+  const scauneProduct = scauneProducts?.find(
+    (product) => product.slug === slug
+  );
+
   const product =
     dulapuriProduct ??
     noptiereProduct ??
@@ -55,6 +60,7 @@ const ProductPage = () => {
     dormitoareProduct ??
     livingProduct ??
     baieProduct ??
+    scauneProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {

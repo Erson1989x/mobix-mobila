@@ -14,6 +14,7 @@ import { scauneProducts } from "@/library/categories/mobilierOffice/scaune/scaun
 import { birouProducts } from "@/library/categories/mobilierOffice/birou/birouProducts";
 import { cuiereProducts } from "@/library/categories/mobilierHol/cuiere/cuiereProducts";
 import { pantofarProducts } from "@/library/categories/mobilierHol/pantofar/pantofarProducts";
+import { masuteProducts } from "@/library/categories/meseScaune/masute/masuteProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -66,6 +67,10 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
+  const masuteProduct = masuteProducts?.find(
+    (product) => product.slug === slug
+  );
+
 
   const product =
     dulapuriProduct ??
@@ -79,6 +84,7 @@ const ProductPage = () => {
     birouProduct ??
     cuiereProduct ??
     pantofarProduct ??
+    masuteProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {

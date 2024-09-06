@@ -12,7 +12,7 @@ import mobilierBaie from "../../app/assets/baie/mobilierbaie.jpg";
 
 const ProduseServicii = () => {
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center">
+    <section id='products' className="w-full h-auto flex flex-col items-center justify-center">
     <h2 className="mt-8 text-3xl"> Produse & Servicii </h2>
     <p className="mt-4 text-lg text-center">
       {" "}
@@ -90,7 +90,7 @@ const ProduseServicii = () => {
         </div>
       </div>
       </div>
-  </div>
+  </section>
   )
 }
 

@@ -22,7 +22,7 @@ const AboutUs = () => {
       ];
 
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center">
+    <section id="about-us" className="w-full h-auto flex flex-col items-center justify-center">
     <h2 className="mt-8 text-3xl"> Despre noi </h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 md:gap-12">
     {aboutUsDataSections.map(({ title, description, content }, index) => (
@@ -36,7 +36,7 @@ const AboutUs = () => {
           </div>
         ))}
     </div>
-  </div>
+  </section>
   )
 }
 

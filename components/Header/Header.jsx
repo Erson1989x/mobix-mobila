@@ -6,8 +6,22 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const aboutUsRef = useRef(null);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    smoothScrolling();
+  };
+  
+
+  const smoothScrolling = () => {
+      if (aboutUsRef.current) {
+          aboutUsRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -48,10 +62,10 @@ const Header = () => {
           >
             <ul className="flex flex-col items-center justify-center w-auto gap-4 bg-gray-200 border-0 w-full py-6">
               <li>
-                <Link className="text-sm px-4 py-2" href="produse">Produse & Servicii</Link>
+                <Link onClick={() => handleLinkClick("products")} className="text-sm px-4 py-2" href="#products">Produse & Servicii</Link>
               </li>
               <li>
-                <Link className="text-sm px-4 py-2" href="despre-noi">Despre noi</Link>
+                <Link onClick={smoothScrolling} className="text-sm px-4 py-2" href="#about-us">Despre noi</Link>
               </li>
               <li>
                 <Link className="text-sm px-4 py-2" href="contact">Contact</Link>
@@ -62,13 +76,13 @@ const Header = () => {
         <div className="hidden md:flex md:items-center md:w-auto">
         <ul className="hidden md:flex md:items-center md:w-auto gap-4">
               <li>
-                <Link className="cursor-pointer hover:text-gray-400" href="produse">Produse & Servicii</Link>
+                <Link onClick={() => handleLinkClick("products")} className={`cursor-pointer ${activeLink === "products" ? "text-gray-400" : "text-black"}`} href="#products">Produse & Servicii</Link>
               </li>
               <li>
-                <Link className="cursor-pointer hover:text-gray-400" href="despre-noi">Despre noi</Link>
+                <Link onClick={() => handleLinkClick("about-us")} className={`cursor-pointer ${activeLink === "about-us" ? "text-gray-400" : "text-black"}`} href="#about-us">Despre noi</Link>
               </li>
               <li>
-                <Link  className=" border-black text-black px-4 py-2 cursor-pointer hover:text-gray-400" href="contact">Contact</Link>
+                <Link  className={`cursor-pointer ${activeLink === "contact" ? "text-gray-400" : "text-black"}`} href="contact">Contact</Link>
               </li>
             </ul>
         </div>

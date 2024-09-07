@@ -100,12 +100,12 @@ const ProductPage = () => {
           </Link>
         </div>
         <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="card shadow-lg p-2 rounded">
+          <div className="h-full card shadow-lg p-2 rounded">
             <ImageGallery images={product.images} />
           </div>
           <div className="card shadow-lg p-2 rounded">
             <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
-            <div className="mb-4">
+            <div className="mb-4 overflow-y-auto border rounded shadow p-2 border-gray-300 bg-white h-52">
               {product.description.split(/[;.]/).map((line, index) => (
                 <p className="mb-2" key={index}>
                   {line.trim()}
@@ -113,36 +113,36 @@ const ProductPage = () => {
               ))}
             </div>
             {product.prices.variantaOne && (
-              <p className="mb-4">
+              <p className="mb-4 shadow p-2">
                 Varianta 90 x 200:{" "}
-                <span className="text-red-600 font-bold">
+                <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
                   {product.prices.variantaOne}
                 </span>{" "}
                 - RON
               </p>
             )}
             {product.prices.variantaOneTwo && (
-              <p className="mb-4">
+              <p className="mb-4 shadow p-2">
                 Varianta 120 x 200:{" "}
-                <span className="text-red-600 font-bold">
+                <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
                   {product.prices.variantaOneTwo}
                 </span>{" "}
                 - RON
               </p>
             )}
             {product.prices.variantaTwo && (
-              <p className="mb-4">
+              <p className="mb-4 shadow p-2">
                 Varianta 140 x 200:{" "}
-                <span className="text-red-600 font-bold">
+                <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
                   {product.prices.variantaTwo}
                 </span>{" "}
                 - RON
               </p>
             )}
             {product.prices.variantaThree && (
-              <p className="mb-4">
+              <p className="mb-4 shadow p-2">
                 Varianta 160 x 200:{" "}
-                <span className="text-red-600 font-bold">
+                <span className="text-red-600 font-bold animate-pulse text-xl">
                   {product.prices.variantaThree}
                 </span>{" "}
                 - RON
@@ -173,7 +173,7 @@ const ProductPage = () => {
           </div>
           <div className="card shadow-lg p-2 rounded">
             <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
-            <p className="mb-4">{product.description}</p>
+            <p className="mb-4 border rounded shadow p-2 border-gray-300 bg-white">{product.description}</p>
             {product.prices &&
             product.prices.cuSomiera &&
             product.prices.somieraRabatabila ? (
@@ -189,8 +189,8 @@ const ProductPage = () => {
                 - RON
               </p>
             ) : null}
-            <p className="mb-4 text-red-600 font-bold">{product.price} - RON</p>
-            <p className="mb-4">
+            <p className="mb-4 text-2xl  text-red-600 font-bold text-center p-2 shadow-md animate-pulse">{product.price} - RON</p>
+            <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
               Dimensiuni:{" "}
               {[
                 product.dimensiuni?.latime &&
@@ -205,7 +205,7 @@ const ProductPage = () => {
                 .filter((dim) => dim)
                 .join(" x ")}
             </p>
-            <p className="mb-4">
+            <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
               Culoare: Corp - {product.corpColor}, Față - {product.faceColor}
             </p>
           </div>

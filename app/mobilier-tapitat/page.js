@@ -1,5 +1,4 @@
 import React from 'react'
-import { livingSufarageProducts } from '../../library/categories/livingSufragerie/livingSufrageProducts'
 import Link from 'next/link'
 import Image from 'next/image'
 import canapelebg from '../../app/assets/mobiliertapitat/canapelebg.jpg'

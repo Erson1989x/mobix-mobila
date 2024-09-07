@@ -11,13 +11,15 @@ const ProductImages = ({ images }) => {
   };
 
   return (
-    <div className=' w-full rounded shadow'>
-      <Image src={images[activeImage].src} width={400} height={300} alt="" priority={true} className="w-full h-full object-cover object-fit" style={{ objectFit: 'contain' }} />
+    <div className='flex flex-col justify-center items-center h-full w-full rounded shadow bg-white p-2'>
+      <div className='h-96 w-96'>
+      <Image src={images[activeImage].src} width={400} height={300} alt="" priority={true} className="w-full h-full  object-fit" />
+      </div>
       {images.length > 1 ? (
-        <div>
+        <div className='flex-1 h-16'>
           {images.map((image, index) => (
-            <button className='border border-2 p-1 shadow-md w-14 h-24' key={index} onClick={() => handleImageChange(index)}>
-              <Image src={image.src} width={56} height={96} alt="" priority={true} className="w-full h-full object-cover" />
+            <button className='border border-2 p-1 shadow-md w-14 h-full' key={index} onClick={() => handleImageChange(index)}>
+              <Image src={image.src} width={56} height={96} alt="" priority={true} className="w-full h-full object-cover object-fit" />
             </button>
           ))}
         </div>

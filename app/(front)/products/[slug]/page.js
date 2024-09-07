@@ -99,8 +99,8 @@ const ProductPage = () => {
             Inapoi la produse
           </Link>
         </div>
-        <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="h-full card shadow-lg p-2 rounded">
+        <div className="p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="h-auto card shadow-lg p-2 rounded">
             <ImageGallery images={product.images} />
           </div>
           <div className="card shadow-lg p-2 rounded">
@@ -168,7 +168,7 @@ const ProductPage = () => {
           </Link>
         </div>
         <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="card shadow-lg p-2 rounded">
+          <div className="h-full card shadow-lg p-2 rounded">
             <ImageGallery images={product.images} />
           </div>
           <div className="card shadow-lg p-2 rounded">

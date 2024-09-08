@@ -12,7 +12,7 @@ const ProductImages = ({ images }) => {
 
   return (
     <div className='flex flex-col justify-center items-center h-full w-full rounded shadow bg-white p-2'>
-      <div className='h-96 w-96'>
+      <div className='h-96 md:w-96'>
       <Image src={images[activeImage].src} width={400} height={300} alt="" priority={true} className="w-full h-full  object-fit" />
       </div>
       {images.length > 1 ? (

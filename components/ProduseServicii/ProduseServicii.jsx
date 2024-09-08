@@ -20,7 +20,7 @@ const ProduseServicii = () => {
       </p>
       <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8 justify-center">
         {produseItems.map(({ title, image, url }, index) => (
-          <div key={index} className="card relative">
+          <div key={index} className="card relative border border-2 border-black shadow-md overflow-hidden">
             <Image
               src={image}
               alt="produs"

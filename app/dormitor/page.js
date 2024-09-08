@@ -12,7 +12,7 @@ const Dormitor = () => {
     <div className='min-h-screen p-4 md:p-8 pt-16 md:pt-20'>
       <h1 className="text-3xl font-bold mb-8 text-center">Dormitor</h1>
       <Link
-        className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
+        className="cursor-pointer border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
         href="/"
       ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
         Inapoi la produse

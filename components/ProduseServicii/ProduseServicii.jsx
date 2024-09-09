@@ -7,7 +7,7 @@ const ProduseServicii = () => {
   return (
     <section
       id="products"
-      className="w-full h-auto flex flex-col items-center justify-center"
+      className="w-full h-auto flex flex-col items-center justify-center mt-4"
     >
       <h2 className="mt-8 text-3xl"> Produse & Servicii </h2>
       <p className="mt-4 text-lg text-center">
@@ -20,7 +20,7 @@ const ProduseServicii = () => {
       </p>
       <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 mt-8 justify-center">
         {produseItems.map(({ title, image, url }, index) => (
-          <div key={index} className="card relative border border-2 border-black shadow-md overflow-hidden">
+          <div key={index} className="card relative border border-1 border-black shadow-md overflow-hidden">
             <Image
               src={image}
               alt="produs"

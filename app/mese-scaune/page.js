@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import masuteBG from '../assets/mesesiscaune/masuta.webp'
 import scauneBG from '../assets/mesesiscaune/scaune.webp'
+import meseBG from '../assets/mesesiscaune/masa.webp'
 
 
 const MeseSiScaune = () => {
@@ -23,6 +24,13 @@ const MeseSiScaune = () => {
           <Image src={scauneBG} alt="scaune" className='h-56 w-72' />
         </div>
         <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune/scaune">Detalii</Link>
+      </div>
+      <div className='card text-center shadow-lg'>
+        <h2 className='font-bold text-center mb-2'>Mese</h2>
+        <div className='flex justify-center mb-2'>
+          <Image src={meseBG} alt="mese" className='h-56 w-72' />
+        </div>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mese-scaune/mese">Detalii</Link>
       </div>
     </div>
   </div>

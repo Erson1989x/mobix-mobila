@@ -17,30 +17,30 @@ const LivingSufragerie = () => {
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Canapele</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={canapelebg} alt="dulapuri" className='h-56 w-72' />
+          <Image src={canapelebg} alt="canapele" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/dulapuri">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tabitat/canapele">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Coltare</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={coltarebg} alt="noptiere" className='h-56 w-72' />
+          <Image src={coltarebg} alt="coltare" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/noptiere">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tabitat/coltare">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Fotolii</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={fotoliibg} alt="paturi" className='h-56 w-72' />
+          <Image src={fotoliibg} alt="fotolii" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/paturi">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tabitat/fotolii">Detalii</Link>
       </div>
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Tabureti</h2>
         <div className='flex justify-center mb-2'>
-          <Image src={taburetibg} alt="comoda" className='h-56 w-72' />
+          <Image src={taburetibg} alt="tabureti" className='h-56 w-72' />
         </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/dormitor/comoda">Detalii</Link>
+        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-tapitat/tabureti">Detalii</Link>
       </div>
     </div>
   </div>

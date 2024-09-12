@@ -15,6 +15,8 @@ import { birouProducts } from "@/library/categories/mobilierOffice/birou/birouPr
 import { cuiereProducts } from "@/library/categories/mobilierHol/cuiere/cuiereProducts";
 import { pantofarProducts } from "@/library/categories/mobilierHol/pantofar/pantofarProducts";
 import { masuteProducts } from "@/library/categories/meseScaune/masute/masuteProducts";
+import { taburetiProducts } from "@/library/categories/mobilierTabitat/tabureti/taburetiProducts";
+import { scauneProductsMS } from "@/library/categories/meseScaune/scaune/scauneProductsMS";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -70,6 +72,13 @@ const ProductPage = () => {
   const masuteProduct = masuteProducts?.find(
     (product) => product.slug === slug
   );
+  const taburetProduct = taburetiProducts?.find(
+    (product) => product.slug === slug
+  );
+  const scauneProductMS = scauneProductsMS?.find(
+    (product) => product.slug === slug
+  );
+
 
 
   const product =
@@ -85,6 +94,8 @@ const ProductPage = () => {
     cuiereProduct ??
     pantofarProduct ??
     masuteProduct ??
+    taburetProduct ??
+    scauneProductMS ??
     salteleProduct;
 
   if (product && product === salteleProduct) {

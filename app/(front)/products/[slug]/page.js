@@ -19,9 +19,17 @@ import { taburetiProducts } from "@/library/categories/mobilierTabitat/tabureti/
 import { scauneProductsMS } from "@/library/categories/meseScaune/scaune/scauneProductsMS";
 import { meseProducts } from "@/library/categories/meseScaune/mese/meseProducts";
 import { coltareProducts } from "@/library/categories/mobilierTabitat/coltare/coltareProducts";
+import { bucatarieProducts } from "@/library/categories/bucatarie/bucatarieProducts";
 import ImageGallery from "@/components/ImageGallery/ImageGallery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import BackButton from "@/components/backButton/BackButton";
+import ProductImageGallery from "@/components/ProductImageGallery/ProductImageGallery";
+import ProductDetails from "@/components/ProductDetails/ProductDetails";
+import ProductVariants from "@/components/ProductVariants/ProductVariants";
+import ProductDimensions from "@/components/ProductDimensions/ProductDimensions";
+import ProductPrice from "@/components/ProductPrice/ProductPrice";
+import ProductColor from "@/components/ProductColor/ProductColor";
 
 const ProductPage = () => {
   const pathname = usePathname();
@@ -52,17 +60,13 @@ const ProductPage = () => {
     (product) => product.slug === slug
   );
 
-  const baieProduct = baieProducts?.find(
-    (product) => product.slug === slug
-  );
+  const baieProduct = baieProducts?.find((product) => product.slug === slug);
 
   const scauneProduct = scauneProducts?.find(
     (product) => product.slug === slug
   );
 
-  const birouProduct = birouProducts?.find(
-    (product) => product.slug === slug
-  );
+  const birouProduct = birouProducts?.find((product) => product.slug === slug);
 
   const cuiereProduct = cuiereProducts?.find(
     (product) => product.slug === slug
@@ -80,14 +84,41 @@ const ProductPage = () => {
   const scauneProductMS = scauneProductsMS?.find(
     (product) => product.slug === slug
   );
-  const meseProduct = meseProducts?.find(
-    (product) => product.slug === slug
-  );
+  const meseProduct = meseProducts?.find((product) => product.slug === slug);
   const coltareProduct = coltareProducts?.find(
     (product) => product.slug === slug
   );
 
+  const bucatarieProduct = bucatarieProducts?.find(
+    (product) => product.slug === slug
+  );
 
+  const allProducts = [
+    dulapuriProduct,
+    noptiereProduct,
+    paturiProduct,
+    comodaProduct,
+    salteleProduct,
+    dormitoareProduct,
+    livingProduct,
+    baieProduct,
+    scauneProduct,
+    birouProduct,
+    cuiereProduct,
+    pantofarProduct,
+    masuteProduct,
+    taburetProduct,
+    scauneProductMS,
+    meseProduct,
+    coltareProduct,
+    bucatarieProduct,
+  ];
+
+  const productsToDisplay = allProducts.filter((product) => product);
+
+  const productToDisplay = productsToDisplay[0];
+
+  const productToDisplayIndex = productsToDisplay.indexOf(productToDisplay);
 
   const product =
     dulapuriProduct ??
@@ -106,6 +137,7 @@ const ProductPage = () => {
     scauneProductMS ??
     meseProduct ??
     coltareProduct ??
+    bucatarieProduct ??
     salteleProduct;
 
   if (product && product === salteleProduct) {
@@ -177,59 +209,11 @@ const ProductPage = () => {
     return (
       <div className="md:p-8 pt-16 md:pt-20">
         <div className="w-40 h-9">
-          <Link
-            className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
-            href={window.location.href.replace(
-              "/products/living-royal",
-              "/living"
-            )}
-          >
-            <FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
-            Inapoi la produse
-          </Link>
+          <BackButton href={`/dormitor/${product.category}`} />
         </div>
         <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20 grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="h-full card shadow-lg p-2 rounded">
-            <ImageGallery images={product.images} />
-          </div>
-          <div className="card shadow-lg p-2 rounded">
-            <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
-            <p className="mb-4 border rounded shadow p-2 border-gray-300 bg-white">{product.description}</p>
-            {product.prices &&
-            product.prices.cuSomiera &&
-            product.prices.somieraRabatabila ? (
-              <p className="mb-4">
-                Varianta cu somiera:{" "}
-                <span className="text-red-600 font-bold">
-                  {product.prices.cuSomiera}
-                </span>{" "}
-                - RON Somiera rabatabila:{" "}
-                <span className="text-red-600 font-bold">
-                  {product.prices.somieraRabatabila}
-                </span>{" "}
-                - RON
-              </p>
-            ) : null}
-            <p className="mb-4 text-2xl  text-red-600 font-bold text-center p-2 shadow-md animate-pulse">{product.price} - RON</p>
-            <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
-              Dimensiuni:{" "}
-              {[
-                product.dimensiuni?.latime &&
-                  `Lățime: ${product.dimensiuni.latime} cm`,
-                product.dimensiuni?.lungime &&
-                  `Lungime: ${product.dimensiuni.lungime} cm`,
-                product.dimensiuni?.inaltime &&
-                  `Înălțime: ${product.dimensiuni.inaltime} cm`,
-                product.dimensiuni?.adancime &&
-                  `Adâncime: ${product.dimensiuni.adancime} cm`,
-              ]
-                .filter((dim) => dim)
-                .join(" x ")}
-            </p>
-            <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
-              Culoare: Corp - {product.corpColor}, Față - {product.faceColor}
-            </p>
-          </div>
+          <ProductImageGallery images={product.images} />
+          <ProductDetails product={product} />
         </div>
       </div>
     );

@@ -18,7 +18,7 @@ const MobilierTapitat = () => {
           </div>
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse"
-            href="/mobilier-tabitat/canapele"
+            href="/mobilier-tapitat/canapele"
           >
             Detalii
           </Link>

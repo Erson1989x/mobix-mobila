@@ -6,14 +6,15 @@ export const canapeleProducts = [
         name: 'CANAPEA CLAUDIA MARE ',
         images: [canapeaClaudiaMare],
         description: 'Canapea Claudia Mare NU se produce cu sistem lift.',
-        price: {
-            bonel: 2050.00,
-            memory: 2230.00,
+        price: 1020.0,
+        prices: {
+            bonel: 1260.0,
+            memory: 1810.0,
         },
         dimensiuni: {
             lungime: 190-230,
             adancime: 110-165,
-            ianltime: 81,
+            inaltime: 81,
         },
         category: 'canapele',
         slug: 'canapele-' + 'claudia-mare'.toLowerCase(),

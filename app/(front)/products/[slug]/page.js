@@ -24,44 +24,42 @@ import ProductDetails from "@/components/ProductDetails/ProductDetails";
 import ProductDetailsSaltele from "@/components/ProductDetails/ProductDetailsSaltele";
 import ProductDetailsCanapele from "@/components/ProductDetails/ProductDetailsCanapele";
 import ProductLayout from "@/components/ProductLayout/ProductLayout";
+import { fotoliiProducts } from "@/library/categories/mobilierTabitat/fotolii/fotoliiProducts";
 
 const ProductPage = () => {
   const pathname = usePathname();
   const slug = pathname.split("/").pop();
 
   const productTypes = [
-    { name: "dulapuri", products: dulapuriProducts },
-    { name: "noptiere", products: noptiereProducts },
-    { name: "paturi", products: paturiProducts },
-    { name: "comoda", products: comodaProducts },
-    { name: "dormitoare", products: dormitoareProducts },
-    { name: "living", products: livingProducts },
-    { name: "baie", products: baieProducts },
-    { name: "scaune", products: scauneProducts },
-    { name: "birou", products: birouProducts },
-    { name: "cuiere", products: cuiereProducts },
-    { name: "pantofar", products: pantofarProducts },
-    { name: "masute", products: masuteProducts },
-    { name: "taburet", products: taburetiProducts },
-    { name: "scauneMS", products: scauneProductsMS },
-    { name: "mese", products: meseProducts },
-    { name: "coltare", products: coltareProducts },
-    { name: "bucatarie", products: bucatarieProducts },
-    { name: "saltele", products: salteleProducts },
-    { name: "canapele", products: canapeleProducts },
+    { category: "dulapuri", products: dulapuriProducts },
+    { category: "noptiere", products: noptiereProducts },
+    { category: "paturi", products: paturiProducts },
+    { category: "comoda", products: comodaProducts },
+    { category: "dormitoare", products: dormitoareProducts },
+    { category: "living", products: livingProducts },
+    { category: "baie", products: baieProducts },
+    { category: "scaune", products: scauneProducts },
+    { category: "birou", products: birouProducts },
+    { category: "cuiere", products: cuiereProducts },
+    { category: "pantofar", products: pantofarProducts },
+    { category: "masute", products: masuteProducts },
+    { category: "taburet", products: taburetiProducts },
+    { category: "scauneMS", products: scauneProductsMS },
+    { category: "mese", products: meseProducts },
+    { category: "coltare", products: coltareProducts },
+    { category: "bucatarie", products: bucatarieProducts },
+    { category: "saltele", products: salteleProducts },
+    { category: "canapele", products: canapeleProducts },
+    { category: "fotolii", products: fotoliiProducts },
   ];
 
   const product = productTypes
-    .find(({ name }) => {
-      const { products } = productTypes.find(
-        ({ name: typeName }) => typeName === name
-      );
-      return products?.find((product) => product.slug === slug);
-    })
-    ?.products?.find((product) => product.slug === slug);
-
-  if (product && product.name === "canapele") {
-    console.log(product);
+  .flatMap((type) => type.products)
+  .find((product) => product.slug === slug);
+  console.log('product.name',product.name);
+  if (product && product.category === "canapele" && product.category === 'coltare') {
+    console.log('Canapele product found!');
+    console.log('product',product);
     return (
       <ProductLayout product={product}>
         <ProductDetailsCanapele product={product} />

@@ -42,7 +42,7 @@ const MobilierTapitat = () => {
           </div>
           <Link
             className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse"
-            href="/mobilier-tabitat/fotolii"
+            href="/mobilier-tapitat/fotolii"
           >
             Detalii
           </Link>

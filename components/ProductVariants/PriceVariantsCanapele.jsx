@@ -4,18 +4,18 @@ const PriceVariantsCanapele = ({ product }) => {
     console.log(product);
     return (
       <>
-        {product.prices.bonel && (
+        {product.prices && product.prices.bonel && (
           <p className="mb-4 shadow p-2">
-            Varianta 90 x 200:{" "}
+            Bonel:{" "}
             <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
               {product.prices.bonel}
             </span>{" "}
             - RON
           </p>
         )}
-        {product.prices.memory && (
+        {product.prices && product.prices.memory && (
           <p className="mb-4 shadow p-2">
-            Varianta 120 x 200:{" "}
+            Memory:{" "}
             <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
               {product.prices.memory}
             </span>{" "}

@@ -30,7 +30,7 @@ export const coltareProducts = [
          id: 1,
          name: "Coltar Bucatarie Domino",
          images: [coltareBucatarieDomino, coltareBucatarieDomino_1, coltareBucatarieDomino_2, coltareBucatarieDomino_3],
-         description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet",
+         description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet. Carcasa: Nuc negru; Tapiterie: Nuc bej",
          price: 960.00,
          dimensiuni: {
              adancime: 0,

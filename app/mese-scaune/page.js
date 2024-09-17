@@ -4,12 +4,20 @@ import Link from 'next/link'
 import masuteBG from '../assets/mesesiscaune/masuta.webp'
 import scauneBG from '../assets/mesesiscaune/scaune.webp'
 import meseBG from '../assets/mesesiscaune/masa.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const MeseSiScaune = () => {
   return (
     <div className='min-h-full p-4 md:p-8 pt-16 md:pt-20'>
     <h1 className="text-3xl font-bold mb-8 text-center">Mese si scaune</h1>
+    <Link
+        className="cursor-pointer border-0 p-2 rounded bg-white text-black shadow-lg mt-4"
+        href="/"
+      ><FontAwesomeIcon icon={faChevronLeft} size="lg" className="mr-2" />
+        Inapoi la produse
+      </Link>
     <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
       <div className='card text-center shadow-lg'>
         <h2 className='font-bold text-center mb-2'>Masute</h2>

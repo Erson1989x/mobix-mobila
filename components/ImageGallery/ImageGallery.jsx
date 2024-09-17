@@ -23,23 +23,27 @@ const ProductImages = ({ images }) => {
         />
       </div>
       {images.length > 1 ? (
-        <div className="flex-1 flex items-center justify-center">
-          {images.map((image, index) => (
-            <button
-              className="border border-2 p-1 shadow-md w-14 h-24"
-              key={index}
-              onClick={() => handleImageChange(index)}
-            >
-              <Image
-                src={image.src}
-                width={56}
-                height={96}
-                alt=""
-                priority={true}
-                className="w-full h-full object-cover object-fit"
-              />
-            </button>
-          ))}
+        <div className="flex-1 flex items-center justify-center overflow-x-auto">
+          <div className="flex flex-nowrap">
+            {images.map((image, index) => (
+              <button
+                className={`border border-2 p-1 shadow-md w-12 h-24 ${
+                  index > 0 ? "mr-1" : "ml-0"
+                }`}
+                key={index}
+                onClick={() => handleImageChange(index)}
+              >
+                <Image
+                  src={image.src}
+                  width={56}
+                  height={96}
+                  alt=""
+                  priority={true}
+                  className="w-full h-full object-cover object-fit"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       ) : null}
     </div>

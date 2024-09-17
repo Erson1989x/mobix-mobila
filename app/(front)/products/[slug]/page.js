@@ -57,7 +57,7 @@ const ProductPage = () => {
   .flatMap((type) => type.products)
   .find((product) => product.slug === slug);
   console.log('product.name',product.name);
-  if (product && product.category === "canapele" && product.category === 'coltare') {
+  if (product && product.category === "canapele" || product.category === 'coltare') {
     console.log('Canapele product found!');
     console.log('product',product);
     return (
@@ -65,7 +65,7 @@ const ProductPage = () => {
         <ProductDetailsCanapele product={product} />
       </ProductLayout>
     );
-  } else if (product && product.name === "saltele") {
+  } else if (product && product.category === "saltele") {
     return (
       <ProductLayout product={product}>
         <div className="card shadow-lg p-2 rounded">

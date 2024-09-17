@@ -10,7 +10,7 @@ const Contact = () => {
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20 bg-gray-100">
       <h1 className="text-3xl font-bold mb-8 text-center">Contact</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:flex md:justify-between md:items-center">
-        <div className="card text-center shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out">
+        <div className="card text-center shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out order-1 md:order-none">
           <h2 className="font-bold text-center mb-2">Magazin Centru</h2>
           <div className="flex justify-center items-center mb-2">
             <Image
@@ -31,7 +31,7 @@ const Contact = () => {
             Blvd. Nicolae Balcescu Bl.B, Sc.4. Ap. P1 <br /> Toplita
           </p>
         </div>
-        <div className="card shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out">
+        <div className="card shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out order-3 md:order-none">
           <form className=" p-4 shadow-lg rounded w-full">
             <h2 className="text-md text-center font-bold mb-4">Contact</h2>
             <div className="flex flex-col justify-center gap-2">
@@ -54,7 +54,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="card text-center shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out">
+        <div className="card text-center shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out order-2 md:order-none">
           <h2 className="font-bold text-center mb-2">Magazin Valea</h2>
           <div className="flex justify-center mb-2">
             <Image src={magazinVale} alt="magazin vale" className="h-56 w-72 shadow-lg hover:shadow-2xl hover:scale-110 transition duration-500 ease-in-out" />

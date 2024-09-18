@@ -1,14 +1,28 @@
 "use client";
 import React, { useState, useCallback } from "react";
 import Image from "next/image";
+import Modal from "../ImageGalleryModal/Modal";
 
 const ProductImages = ({ images }) => {
   console.log("images:", images);
   const [activeImage, setActiveImage] = useState(0);
+  const [zoomLevel, setZoomLevel] = useState(1);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleImageChange = useCallback((index) => {
     setActiveImage(index);
   }, []);
+
+
+  const handleImageClick = () => {
+    if (isModalOpen) {
+      setIsModalOpen(false);
+    } else {
+      setIsModalOpen(true);
+      const isMobile = window.innerWidth <= 640;
+      setZoomLevel(isMobile ? 1.2 : 1.7);
+    }
+  };
 
   return (
     <div className="flex flex-col w-full h-full rounded shadow bg-white p-2">
@@ -20,6 +34,7 @@ const ProductImages = ({ images }) => {
           alt=""
           priority={true}
           className="w-full h-72 md:h-full object-contain"
+          onClick={handleImageClick}
         />
       </div>
       {images.length > 1 ? (
@@ -46,6 +61,21 @@ const ProductImages = ({ images }) => {
           </div>
         </div>
       ) : null}
+      {isModalOpen && (
+        <Modal onClose={() => setIsModalOpen(false)}>
+          <div className="flex flex-col items-center justify-center h-full">
+            <Image
+              src={images[activeImage].src}
+              width={800}
+              height={600}
+              alt=""
+              priority={true}
+              className="w-96 h-96 object-contain md:w-96 md:h-96"
+              style={{ transform: `scale(${zoomLevel})` }}
+            />
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };

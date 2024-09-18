@@ -56,7 +56,7 @@ const ProductPage = () => {
   const product = productTypes
   .flatMap((type) => type.products)
   .find((product) => product.slug === slug);
-  console.log('product.name',product.name);
+
   if (product && product.category === "canapele" || product.category === 'coltare') {
     console.log('Canapele product found!');
     console.log('product',product);

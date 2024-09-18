@@ -38,15 +38,14 @@ export const bucatarieProducts = [
       id: 1,
       name: "Bucataria Olimpia 2.0 M",
       images: [bucatariaOlimpia, bucatariaOlimpia_1, bucatariaOlimpia_2],
-      description: "Lungime: 200cm; Inaltime superior: 77cm; Inaltime inferior: 82cm; Pretul afisat este fara blat. Bucătăria este din PAL de 16 mm, având  înălţimea corpurilor inferioare de 82 cm, iar cele superioare de 77 cm. Elementele incluse pentru dimensiunea de 2.00m: Corp Inferior 40 1S1D, Corp Inferior 80, Corp inferior 80 M.Chiuveta, Corp Superior 40, Corp Superior 80 - 2buc; Tabliera, electrocasnicile, chiuveta, bateria şi celelalte obiecte de decor NU sunt incluse în preţ. Imaginea este doar exemplu şi poate să nu coincidă cu realitate, concretizaţi detaliile cu operatori! Bucataria se poate vinde cu blat sau fără blat, după caz!",
+      description: " - Lungime: 200cm. - Inaltime superior: 77cm. - Inaltime inferior: 82cm. - Pretul afisat este fara blat. - Bucătăria este din PAL de 16 mm, având  înălţimea corpurilor inferioare de 82 cm, iar cele superioare de 77 cm. - Elementele incluse pentru dimensiunea de 2.00m: - Corp Inferior 40 1S1D. - Corp Inferior 80. - Corp inferior 80 M.Chiuveta. - Corp Superior 40. - Corp Superior 80: 2buc. - Tabliera, electrocasnicile, chiuveta, bateria şi celelalte obiecte de decor NU sunt incluse în preţ. - Imaginea este doar exemplu şi poate să nu coincidă cu realitate, concretizaţi detaliile cu operatori! - Bucataria se poate vinde cu blat sau fără blat, după caz!",
       price: 1670.00,
       dimensiuni: {
         lungime: 0,
         inaltime: 0,
         latime: 0,
       },
-      corpColor: "Gri Grafit, Lemn Alb Scandinav",
-      faceColor: "-", 
+      corpColor: "Gri Grafit, Lemn Alb Scandinav", 
       category: "bucatarie",
       slug: "bucataria-" + "olimpia-2.0-m".toLowerCase(),
     },
@@ -54,7 +53,7 @@ export const bucatarieProducts = [
       id: 2,
       name: "Bucataria Samanta 2.0 M",
       images: [bucatariaSamanta, bucatariaSamanta_1, bucatariaSamanta_2, bucatariaSamanta_3, bucatariaSamanta_4],
-      description: "Preţul afişat este fără blat. O bucătarie simplă, stilată şi economică pentru casa ta! Acest model de bucătarie are un număr mic de elemente şi este ideal pentru încăperile mici. Fabricat din PAL de înaltă calitate, va rezista mulți ani și va aduce confort casei tale. Se poate vinde la dimensiunea de 2.00m sau 2.60m. Elementele incluse pentru dimensiunea de 2.00m (LxA): Dulap superior: В№ (800-715) 80x71.5 cm, Dulap superior: В№ (800-715) vitrina 80x71.5 cm, Dulap superior: В№ (400-715) 40x71.5 cm, Dulap inferior (sub lavoar): Н№ (800-715) lavoar 80x71.5 cm, Dulap inferior: Н№ (800-715) 80x71.5 cm, Dulap inferior: Н№ (400-715) 40x71.5 cm",
+      description: " - Preţul afişat este fără blat. - O bucătarie simplă, stilată şi economică pentru casa ta! - Acest model de bucătarie are un număr mic de elemente şi este ideal pentru încăperile mici. - Fabricat din PAL de înaltă calitate, va rezista mulți ani și va aduce confort casei tale. - Se poate vinde la dimensiunea de 2.00m sau 2.60m. - Elementele incluse pentru dimensiunea de 2.00m (LxA): - Dulap superior: В№ (800x715) 80x71.5 cm. - Dulap superior: В№ (800x715). -  Vitrina 80x71.5 cm. - Dulap superior: В№ (400x715) 40x71.5 cm. - Dulap inferior (sub lavoar): Н№ (800x715). - Lavoar 80x71.5 cm. - Dulap inferior: Н№ (800x715) 80x71.5 cm. - Dulap inferior: Н№ (400x715) 40x71.5 cm",
       price: 1300.00,
       dimensiuni: {
         lungime: 0,
@@ -62,7 +61,6 @@ export const bucatarieProducts = [
         latime: 0,
       },
       corpColor: "Alb - Stejar Artizan, Alb - Stejar Craft Alb",
-      faceColor: "-",
       category: "bucatarie",
       slug: "bucataria-" + "samanta-2.0-m".toLowerCase(),
     },
@@ -70,7 +68,7 @@ export const bucatarieProducts = [
       id: 3,
       name: "Bucataria Skandi 2.0 M",
       images: [bucatariaSkandi_1, bucatariaSkandi_2, bucatariaSkandi_3, bucatariaSkandi_8, bucatariaSkandi_10, bucatariaSkandi_11, bucatariaSkandi_13],
-      description: "Preţul afişat este fără blat. Fronturile bucătăriei Skandi sunt realizate din MDF. Caracteristicile bucătăriei modulare „Skandi”: Materialul carcasei : PAL aglomerat cu acoperire laminată; Material fronturi: MDF infoliat cu frezare; Accesorii: ghidaje în sertare - telescopice, extensie completă; Manerele: metalice. Sistem modular! Elementele incluse pentru dimensiunea de 2.00m (LxA): Corp Inferior 40 3S (400x715mm), Corp Inferior 80 (800x715 mm), Corp Inferior 80 M.Chiuvetă (800x715 mm), Corp Superior 40 (400x715 mm), Corp Superior 80 (800x715 mm), Corp Superior 80 Vitrină (800x715 mm)",
+      description: "- Preţul afişat este fără blat. - Fronturile bucătăriei Skandi sunt realizate din MDF. - Caracteristicile bucătăriei modulare „Skandi”: - Materialul carcasei : PAL aglomerat cu acoperire laminată. - Material fronturi: MDF infoliat cu frezare. - Accesorii: ghidaje în sertare , telescopice, extensie completă. - Manerele: metalice. - Sistem modular! - Elementele incluse pentru dimensiunea de 2.00m (LxA): - Corp Inferior 40 3S (400x715mm). - Corp Inferior 80 (800x715 mm). - Corp Inferior 80 M.Chiuvetă (800x715 mm). - Corp Superior 40 (400x715 mm). - Corp Superior 80 (800x715 mm). - Corp Superior 80 Vitrină (800x715 mm)",
       price: 2370.00,
       dimensiuni: {
         lungime: 0,
@@ -78,7 +76,6 @@ export const bucatarieProducts = [
         latime: 0,
       },
       corpColor: "Alb, Gri Deschis, Gri Inchis, Stejar Florenca, Concordia Deschis",
-      faceColor: "-",
       category: "bucatarie",
       slug: "bucataria-" + "skandi-2.0-m".toLowerCase(),
 
@@ -87,7 +84,7 @@ export const bucatarieProducts = [
       id: 4,
       name: "Bucataria Marta 2.0 M",
       images: [bucatariaMarta_3, bucatariaMarta_2, bucatariaMarta_1, bucatariaMarta_4, bucatariaMarta_5, bucatariaMarta_7, bucatariaMarta_9],
-      description: "Bucătarie cu uşi din MDF lucios. Set de 2.00m sau 2.60m sau la comandă pe altă dimensiuni. Culori (integral sau combinat). Elementele incluse pentru dimensiunea de 2.00m (LxA): Corp Inferior 40 3S (400x715mm), Corp Inferior 80 (800x715 mm), Corp Inferior 80 M.Chiuvetă (800x715 mm), Corp Superior 40 (400x715 mm), Corp Superior 80 (800x715 mm), Corp Superior 80 Vitrină (800x715 mm)",
+      description:" - Bucătarie cu uşi din MDF lucios. - Set de 2.00m sau 2.60m sau la comandă pe altă dimensiuni. - Culori (integral sau combinat). - Elementele incluse pentru dimensiunea de 2.00m (LxA): - Corp Inferior 40 3S (400x715mm). - Corp Inferior 80 (800x715 mm). - Corp Inferior 80 M.Chiuvetă (800x715 mm). - Corp Superior 40 (400x715 mm). - Corp Superior 80 (800x715 mm). - Corp Superior 80 Vitrină (800x715 mm)",
       price: 2300.00,
       dimensiuni: {
         lungime: 0,
@@ -95,7 +92,6 @@ export const bucatarieProducts = [
         latime: 0,
       },
       corpColor: "Alb, Gri, Vanilie, Ciocolata, Verde Fistic, Rosu, Negru, Mov Liliac, Mov Vanata.",
-      faceColor: "-",
       category: "bucatarie",
       slug: "bucataria-" + "marta-2.0-m".toLowerCase(),
       }

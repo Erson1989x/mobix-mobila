@@ -6,7 +6,7 @@ const PriceVariantsSaltele = ({ product }) => {
       {product.prices.variantaOne && (
         <p className="mb-4 shadow p-2">
           Varianta 90 x 200:{" "}
-          <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
+          <span className="text-red-600 font-bold shadow p-2 text-xl">
             {product.prices.variantaOne}
           </span>{" "}
           - RON
@@ -15,7 +15,7 @@ const PriceVariantsSaltele = ({ product }) => {
       {product.prices.variantaOneTwo && (
         <p className="mb-4 shadow p-2">
           Varianta 120 x 200:{" "}
-          <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
+          <span className="text-red-600 font-bold shadow p-2 text-xl">
             {product.prices.variantaOneTwo}
           </span>{" "}
           - RON
@@ -24,7 +24,7 @@ const PriceVariantsSaltele = ({ product }) => {
       {product.prices.variantaTwo && (
         <p className="mb-4 shadow p-2">
           Varianta 140 x 200:{" "}
-          <span className="text-red-600 font-bold shadow p-2 animate-pulse text-xl">
+          <span className="text-red-600 font-bold shadow p-2 text-xl">
             {product.prices.variantaTwo}
           </span>{" "}
           - RON

@@ -1,8 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import mobileBg from "../../app/assets/background/mobileBg.jpg";
-import desktopBg from "../../app/assets/background/desktopBg.jpg";
+import mobixBg from "../../app/assets/background/mobix.jpeg"
 import Image from "next/image";
 
 
@@ -18,22 +17,21 @@ const PageHeader = () => {
   return (
     <div className="relative z-3 h-screen overflow-hidden pt-16 md:pt-20">
     <Image
-      src={desktopBg}
-      alt="mobile"
+      src={mobixBg}
+      alt="desktop"
       layout="fill"
-      objectFit="cover"
+      objectFit="fill"
       priority
       className="relative hidden sm:block opacity-80"
       fill
     />
     <Image
-      src={mobileBg}
-      alt="desktop"
+      src={mobixBg}
+      alt="mobile"
       layout="fill"
-      objectFit="cover"
+      objectFit="fill"
       priority
-      className="relative block sm:hidden opacity-85"
-      fill
+      className="relative block sm:hidden opacity-85 h-96 object-cover w-96"
     />
     <div className="absolute h-64 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 sm:w-3/4 h-52 bg-slate-200 bg-opacity-30 flex flex-col items-center justify-center">
       <h1 className="text-3xl sm:text-5xl relative text-black text-shadow-md p-5 md:p-10 text-center">

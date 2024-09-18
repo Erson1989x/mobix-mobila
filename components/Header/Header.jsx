@@ -41,7 +41,6 @@ const Header = () => {
             }`}
             href="/"
           >
-            Mobix Mobila
           </Link>
         </div>
         <div className="cursor-pointer md:hidden">

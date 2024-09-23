@@ -60,6 +60,8 @@ const Dulapuri = () => {
           count={totalPages}
           page={currentPage || 1}
           onChange={handlePaginationChange}
+          color="primary"
+          size="large"
           variant="outlined"
           shape="rounded"
         />

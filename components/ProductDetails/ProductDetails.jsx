@@ -9,12 +9,14 @@ const ProductDetails = ({ product }) => {
     <div className="card shadow-lg p-2 rounded">
       <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
       <div className="mb-4 border rounded shadow p-2 border-gray-300 bg-white overflow-y-auto max-h-52">
-        <span className="text-indigo-900 text-xl font-bold underline">Descriere:</span>
-      {product.description.split(/[-;]/).map((line, index) => (
-        <p className="mb-2 font-semibold" key={index}>
-          {line.trim()}
-        </p>
-      ))}
+        <span className="text-indigo-900 text-xl font-bold underline">
+          Descriere:
+        </span>
+        <ul>
+          {product.description.split("\n").map((line, index) => (
+            <li className="mb-2" key={index}>{line.trim()}</li>
+          ))}
+        </ul>
       </div>
       <ProductVariants product={product} />
       <ProductPrice product={product} />

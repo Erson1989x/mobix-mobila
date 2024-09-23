@@ -40,7 +40,7 @@ const Header = () => {
               activeLink === "" ? "text-black" : "text-black"
             }`}
             href="/"
-          >
+          >Mobix
           </Link>
         </div>
         <div className="cursor-pointer md:hidden">
@@ -71,7 +71,7 @@ const Header = () => {
                 <Link
                   onClick={() => handleLinkClick("products")}
                   className="text-sm px-4 py-2"
-                  href="#products"
+                  href="/#products"
                 >
                   Produse & Servicii
                 </Link>
@@ -80,7 +80,7 @@ const Header = () => {
                 <Link
                   onClick={() => handleLinkClick("about-us")}
                   className="text-sm px-4 py-2"
-                  href="#about-us"
+                  href="/#about-us"
                 >
                   Despre noi
                 </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                 className={`cursor-pointer ${
                   activeLink === "products" ? "text-gray-400" : "text-black"
                 }`}
-                href="#products"
+                href="/#products"
               >
                 Produse & Servicii
               </Link>
@@ -112,7 +112,7 @@ const Header = () => {
                 className={`cursor-pointer ${
                   activeLink === "about-us" ? "text-gray-400" : "text-black"
                 }`}
-                href="#about-us"
+                href="/#about-us"
               >
                 Despre noi
               </Link>

@@ -10,7 +10,7 @@ export const noptiereProducts = [
     id: 1,
     name: "Noptiera Venera",
     images:[venera01, noptierVenera],
-    description: "Noptiera Venera din material MDF. Tip de deschidere: cu balamale",
+    description: "Noptiera Venera din material MDF. \n Tip de deschidere: cu balamale",
     price: 170.00,
     dimensiuni: {
       lungime: 46,
@@ -18,7 +18,6 @@ export const noptiereProducts = [
       adancime: 38,
     },
     corpColor: "Stejar kraft gri, alb",
-    faceColor: "-",
     category: "noptiere",
     slug: "noptier-" + "venera".toLowerCase(),
   },
@@ -26,7 +25,7 @@ export const noptiereProducts = [
     id: 2,
     name: "Noptiera Geneva",
     images:[noptierGeneva, noptierGeneva1],
-    description: "Noptiera Geneva din material MDF. Tip de deschidere: cu balamale",
+    description: "Noptiera Geneva din material MDF. \n Tip de deschidere: cu balamale",
     price: 160.00,
     dimensiuni: {
       lungime: 52,
@@ -34,7 +33,6 @@ export const noptiereProducts = [
       adancime: 45,
     },
     corpColor: "Gri Grafit, stejar kraft alb, Stejar Sonoma Trufa si Wenge Magia",
-    faceColor: "-",
     category: "noptiere",
     slug: "noptier-" + "geneva".toLowerCase(),
   },
@@ -42,7 +40,7 @@ export const noptiereProducts = [
     id: 3,
     name: "Noptiera Denver",
     images:[noptierDenver],
-    description: "Noptiera Denver din material MDF. Tip de deschidere: cu balamale",
+    description: "Noptiera Denver din material MDF. \n Tip de deschidere: cu balamale",
     price: 290.00,
     dimensiuni: {
       lungime: 44,
@@ -50,7 +48,6 @@ export const noptiereProducts = [
       adancime: 59,
     },
     corpColor: "Stejar kraft aur, alb",
-    faceColor: "-",
     category: "noptiere",
     slug: "noptier-" + "denver".toLowerCase(),
   },
@@ -58,7 +55,7 @@ export const noptiereProducts = [
     id: 4,
     name: "Noptiera Kentuki",
     images:[noptierKentuki],
-    description: "Noptiera Kentuki din material MDF. Tip de deschidere: cu balamale",
+    description: "Noptiera Kentuki din material MDF. \n Tip de deschidere: cu balamale",
     price: 540.00,
     dimensiuni: {
       lungime: 55,
@@ -66,7 +63,6 @@ export const noptiereProducts = [
       adancime: 41,
     },
     corpColor: "Alb",
-    faceColor: "-",
     category: "noptiere",
     slug: "noptier-" + "kentuki".toLowerCase(),
   }

@@ -41,10 +41,10 @@ import patKlausL from "../../../../app/assets/dormitor/paturi/Klaus3/Pat Klaus 1
 export const paturiProducts = [
   {
     id: 1,
-    name: "Pat Geneva 1",
+    name: "Pat Geneva 140x200",
     images: [patGeneva, patGeneva1],
     description:
-      "Patul Geneva creează o atmosferă de ergonomie și confort în dormitor. Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
+      "Patul Geneva creează o atmosferă de ergonomie și confort în dormitor. \n Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
     price: 760.0,
     dimensiuni: {
       lungime: 206,
@@ -53,16 +53,15 @@ export const paturiProducts = [
     },
     corpColor:
       "Stejar Sonoma Trufa + Wenge Magia, Gri Grafit + Stejar kraft alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "geneva1".toLowerCase(),
   },
   {
     id: 2,
-    name: "Pat Geneva 2",
+    name: "Pat Geneva 160x200",
     images: [patGeneva2, patGeneva3],
     description:
-      "Patul Geneva cree o atmosferă de ergonomie și confort în dormitor. Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
+      "Patul Geneva cree o atmosferă de ergonomie și confort în dormitor. \n Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
     price: 820.0,
     dimensiuni: {
       lungime: 206,
@@ -71,16 +70,15 @@ export const paturiProducts = [
     },
     corpColor:
       "Stejar Sonoma Trufa + Wenge Magia, Gri Grafit + Stejar kraft alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "geneva2".toLowerCase(),
   },
   {
     id: 3,
-    name: "Pat Denver 1",
+    name: "Pat Denver 90x200",
     images: [patDenver],
     description:
-      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
+      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. \n Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
     price: 590.0,
     dimensiuni: {
       lungime: 207,
@@ -88,16 +86,15 @@ export const paturiProducts = [
       latime: 98,
     },
     corpColor: "Craft Stejar auriu + Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "denver1".toLowerCase(),
   },
   {
     id: 4,
-    name: "Pat Denver 2",
+    name: "Pat Denver 140x200",
     images: [patDenver1],
     description:
-      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
+      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. \n Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
     price: 770.0,
     dimensiuni: {
       lungime: 207,
@@ -105,16 +102,15 @@ export const paturiProducts = [
       latime: 148,
     },
     corpColor: "Craft Stejar auriu + Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "denver2".toLowerCase(),
   },
   {
     id: 5,
-    name: "Pat Denver 3",
+    name: "Pat Denver 160x200",
     images: [patDenver2, patDenver3],
     description:
-      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
+      "Patul Denver cree o atmosferă de ergonomie și confort în dormitor. \n Carcasa solidă, spătarul comod și formele fine fac din acest pat o achiziție convenabilă și cu stil.",
     price: 830.0,
     dimensiuni: {
       lungime: 207,
@@ -122,16 +118,15 @@ export const paturiProducts = [
       latime: 168,
     },
     corpColor: "Craft Stejar auriu + Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "denver3".toLowerCase(),
   },
   {
     id: 6,
-    name: "Pat pliant",
+    name: "Pat pliant 80x190",
     images: [patPliant, patPliant1, patPliant2],
     description:
-      "Saltea inclusă, cu densitate de 16 kg/m3 şi înălţime de 7 cm. Greutate de susţinere 80 kg. Ambalaj termoretractabil. lamele din lemn de mesteacăn, picioare pliabile manual, roti din plastic",
+      "Saltea inclusă, cu densitate de 16 kg/m3 şi înălţime de 7 cm. \n Greutate de susţinere 80 kg. \n Ambalaj termoretractabil. \n Material: \n Lamele din lemn de mesteacăn \n Picioare pliabile manual \n Roti din plastic",
     price: 590.0,
     dimensiuni: {
       lungime: "",
@@ -139,16 +134,15 @@ export const paturiProducts = [
       latime: "",
     },
     corpColor: "-",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "pliant".toLowerCase(),
   },
   {
     id: 7,
-    name: "Pat Kentuki 1",
+    name: "Pat Kentuki 90x200",
     images: [patKentuki],
     description:
-      "Patul LOZ / 90 (cadru) KENTUKI BRW (VMK) este un pat simplu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitionează separat.",
+      "Patul LOZ / 90 (cadru) KENTUKI BRW (VMK) este un pat simplu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. \n Este completat suplimentar cu o bază (90x200x28 cm). \n Salteaua se achizitionează separat.",
     price: 920.0,
     dimensiuni: {
       lungime: 209,
@@ -156,16 +150,15 @@ export const paturiProducts = [
       latime: 99,
     },
     corpColor: "Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "kentuki1".toLowerCase(),
   },
   {
     id: 8,
-    name: "Pat Kentuki 2",
+    name: "Pat Kentuki 160x200",
     images: [patKentuki1],
     description:
-      "Patul LOZ /160 (cadru) KENTUKI BRW (VMK) este un pat dublu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. Este completat suplimentar cu o bază (160x200x28 cm). Salteaua se achizitionează separat.",
+      "Patul LOZ /160 (cadru) KENTUKI BRW (VMK) este un pat dublu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. \n Este completat suplimentar cu o bază (160x200x28 cm). \n Salteaua se achizitionează separat.",
     price: 1180.0,
     dimensiuni: {
       lungime: 209,
@@ -173,16 +166,15 @@ export const paturiProducts = [
       latime: 169,
     },
     corpColor: "Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "kentuki2".toLowerCase(),
   },
   {
     id: 9,
-    name: "Pat Kentuki 3",
+    name: "Pat Kentuki 180x200",
     images: [patKentuki2],
     description:
-      "Patul LOZ / 180 (cadru) KENTUKI BRW (VMK) este un pat dublu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. Este completat suplimentar cu o bază (180x200x28 cm). Salteaua se achizitionează separat",
+      "Patul LOZ / 180 (cadru) KENTUKI BRW (VMK) este un pat dublu confortabil al sistemului modular clasic Kentuki BRW din fabrica VMK-Ucraina. \n Este completat suplimentar cu o bază (180x200x28 cm). \n Salteaua se achizitionează separat",
     price: 1240.0,
     dimensiuni: {
       lungime: 209,
@@ -190,16 +182,15 @@ export const paturiProducts = [
       latime: 189,
     },
     corpColor: "Alb",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "kentuki3".toLowerCase(),
   },
   {
     id: 10,
-    name: "Pat Alma cu picior",
+    name: "Pat Alma cu picior 90x200",
     images: [patAlma, patAlma1, patAlma1_1, patAlma1_2],
     description:
-      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. \n Este completat suplimentar cu o bază (90x200x28 cm). \n Salteaua se achizitione separat.",
     price: 470.0,
     dimensiuni: {
       lungime: 203,
@@ -207,13 +198,12 @@ export const paturiProducts = [
       latime: 93,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "alma".toLowerCase(),
   },
   {
     id: 11,
-    name: "Pat Alma cu sertar",
+    name: "Pat Alma cu sertar 90x200",
     images: [
       almaCuSertar,
       almaCuSertar1,
@@ -222,7 +212,7 @@ export const paturiProducts = [
       almaCuSertar4,
     ],
     description:
-      "Pat pentru o persoana, sertar lateral, maner satinat, picoare PVC. Certificate: ISO 9001, 14001. Accesorii incluse: feronerie",
+      "Pat pentru o persoana \n Sertar lateral \n Maner satinat \n Picoare PVC. \n Certificate: ISO 9001, 14001. \n Accesorii incluse: \n Feronerie",
     price: 570.0,
     dimensiuni: {
       lungime: 203,
@@ -230,16 +220,15 @@ export const paturiProducts = [
       latime: 93,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "alma1".toLowerCase(),
   },
   {
     id: 12,
-    name: "Pat Alma cu picior 1",
+    name: "Pat Alma cu picior 120x200",
     images: [patAlma2, patAlma2_1, patAlma2_2],
     description:
-      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. \n Este completat suplimentar cu o bază (90x200x28 cm). \n Salteaua se achizitione separat.",
     price: 610.0,
     dimensiuni: {
       lungime: 203,
@@ -247,16 +236,15 @@ export const paturiProducts = [
       latime: 123,
     },
     corpColor: "Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "alma2".toLowerCase(),
   },
   {
     id: 13,
-    name: "Pat Alma cu picior 2",
+    name: "Pat Alma cu picior 140x200",
     images: [patAlma3, patAlma3_1, patAlma3_2],
     description:
-      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. \n Este completat suplimentar cu o bază (90x200x28 cm). \n Salteaua se achizitione separat.",
     price: 670.0,
     dimensiuni: {
       lungime: 203,
@@ -264,16 +252,15 @@ export const paturiProducts = [
       latime: 143,
     },
     corpColor: "Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "alma3".toLowerCase(),
   },
   {
     id: 14,
-    name: "Pat Alma cu picior 3",
+    name: "Pat Alma cu picior 160x200",
     images: [patAlma4, patAlma4_1, patAlma4_2, patAlma4_3],
     description:
-      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "Patul Alma cu picior este un pat simplu confortabil al sistemului modular. \n Este completat suplimentar cu o bază (90x200x28 cm). \n Salteaua se achizitione separat.",
     price: 730.0,
     dimensiuni: {
       lungime: 203,
@@ -281,16 +268,15 @@ export const paturiProducts = [
       latime: 163,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "alma4".toLowerCase(),
   },
   {
     id: 15,
-    name: "Pat Claudia fara somiera",
+    name: "Pat Claudia fara somiera 140x200",
     images: [patClaudiaS],
     description:
-      "Patul Claudia este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1260.0,
       somieraRabatabila: 1810.0,
@@ -302,16 +288,15 @@ export const paturiProducts = [
       latime: 140,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "claudia".toLowerCase(),
   },
   {
     id: 16,
-    name: "Pat Claudia fara somiera M",
+    name: "Pat Claudia fara somiera 160x200",
     images: [patClaudiaM],
     description:
-      "Patul Claudia este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1430.0,
       somieraRabatabila: 1950.0,
@@ -323,16 +308,15 @@ export const paturiProducts = [
       latime: 160,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "claudia3".toLowerCase(),
   },
   {
     id: 17,
-    name: "Pat Claudia fara somiera L",
+    name: "Pat Claudia fara somiera 180x200",
     images: [patClaudiaL],
     description:
-      "Patul Claudia este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1630.0,
       somieraRabatabila: 2200.0,
@@ -344,16 +328,15 @@ export const paturiProducts = [
       latime: 180,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "claudia6".toLowerCase(),
   },
   {
     id: 18,
-    name: "Pat Klaus fara somiera",
+    name: "Pat Klaus fara somiera 140x200",
     images: [patKlausS],
     description:
-      "Patul Klaus este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1610.0,
       somieraRabatabila: 2170.0,
@@ -365,16 +348,15 @@ export const paturiProducts = [
       latime: 153,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "klaus".toLowerCase(),
   },
   {
     id: 19,
-    name: "Pat Klaus fara somiera M",
+    name: "Pat Klaus fara somiera 160x200",
     images: [patKlausM],
     description:
-      "Patul Klaus este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1790.0,
       somieraRabatabila: 2300.0,
@@ -386,16 +368,15 @@ export const paturiProducts = [
       latime: 173,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "klaus3".toLowerCase(),
   },
   {
     id: 20,
-    name: "Pat Klaus fara somiera L",
+    name: "Pat Klaus fara somiera 180x200",
     images: [patKlausL],
     description:
-      "Patul Klaus este un pat simplu confortabil al sistemului modular. Este completat suplimentar cu o bază (90x200x28 cm). Salteaua se achizitione separat.",
+      "",
     prices: {
       cuSomiera: 1990.0,
       somieraRabatabila: 2550.0,
@@ -407,7 +388,6 @@ export const paturiProducts = [
       latime: 193,
     },
     corpColor: "Alb, Pin Antichizat, Sonoma, Sonoma Inchis, Sonoma Deschis",
-    faceColor: "-",
     category: "paturi",
     slug: "paturi-" + "klaus6".toLowerCase(),
   },

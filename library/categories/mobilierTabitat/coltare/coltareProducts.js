@@ -30,7 +30,7 @@ export const coltareProducts = [
          id: 1,
          name: "Coltar Bucatarie Domino",
          images: [coltareBucatarieDomino, coltareBucatarieDomino_1, coltareBucatarieDomino_2, coltareBucatarieDomino_3],
-         description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet. Carcasa: Nuc negru; Tapiterie: Nuc bej",
+         description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet \n Carcasa: \n Nuc negru \n Tapiterie: \n Nuc bej",
          price: 960.00,
          dimensiuni: {
              adancime: 0,
@@ -46,7 +46,7 @@ export const coltareProducts = [
         id: 2,
         name: "Coltar Claudia XXL",
         images: [coltarClaudiaXXL, coltarClaudiaXXL_1, coltarClaudiaXXL_2, coltarClaudiaXXL_3, coltarClaudiaXXL_4, coltarClaudiaXXL_5, coltarClaudiaXXL_6, coltarClaudiaXXL_7, coltarClaudiaXXL_8],
-        description: "Coltar Claudia XXL pentru sistem lift se adauga 50 lei + TVA. Extinsa: Lungime: 270 cm x Adancime: 145 cm; ",
+        description: "Coltar Claudia XXL pentru sistem lift se adauga 50 lei + TVA \n Extinsa: \n Lungime: 270 cm x Adancime: 145 cm ",
         price: 3060.00,
         prices: {
             bonel: 3060.00,
@@ -65,7 +65,7 @@ export const coltareProducts = [
         id: 3,
         name: "Coltar Claudia XXS",
         images: [coltarClaudiaXXS, coltarClaudiaXXS_1, coltarClaudiaXXS_2, coltarClaudiaXXS_3, coltarClaudiaXXS_4, coltarClaudiaXXS_5, coltarClaudiaXXS_6],
-        description: "Coltar Claudia XXS pentru sistem lift se adauga 50 Lei + TVA. Extinsa: Lungime: 197 cm x Adancime: 145 cm; ",
+        description: "Coltar Claudia XXS pentru sistem lift se adauga 50 Lei + TVA \n Extinsa: \n Lungime: 197 cm x Adancime: 145 cm",
         price: 2340.00,
         prices: {
             bonel: 2340.00,
@@ -83,7 +83,7 @@ export const coltareProducts = [
         id: 4,
         name: "Coltar Claudia U",
         images: [coltarClaudiaU, coltarClaudiaU_1],
-        description: "Coltar Claudia U pentru sistem lift se adauga 50 Lei + TVA. Extinsa: Lungime: 352 cm x Adancime: 145 cm; ",
+        description: "Coltar Claudia U pentru sistem lift se adauga 50 Lei + TVA. \n Extinsa: \n Lungime: 352 cm x Adancime: 145 cm",
         price: 3680.00,
         prices: {
             bonel: 3680.00,
@@ -101,7 +101,7 @@ export const coltareProducts = [
         id: 5,
         name: "Coltar Vegas XXL",
         images: [coltarVegasXXL, coltarVegasXXL_1, coltarVegasXXL_2],
-        description: "Coltar Vegas XXL pentru sistem lift se adauga 50 Lei + TVA. Extinsa: Lungime: 270 cm x Adancime: 145 cm; ",
+        description: "Coltar Vegas XXL pentru sistem lift se adauga 50 Lei + TVA. \n Extinsa: \n Lungime: 270 cm x Adancime: 145 cm",
         price: 3060.00,
         prices: {
             bonel: 3060.00,
@@ -119,7 +119,7 @@ export const coltareProducts = [
         id: 6,
         name: "Coltar Vegas XXS",
         images: [coltarVegasXXS],
-        description: "Coltar Vega XXS pentru sistem lift se adauga 50 Lei + TVA. Extinsa: Lungime: 197 cm x Adancime: 145 cm; ",
+        description: "Coltar Vega XXS pentru sistem lift se adauga 50 Lei + TVA \n Extinsa: \n Lungime: 197 cm x Adancime: 145 cm",
         price: 2340.00,
         prices: {
             bonel: 2340.00,

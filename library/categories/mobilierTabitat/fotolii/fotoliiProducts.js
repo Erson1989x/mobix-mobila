@@ -25,7 +25,7 @@ export const fotoliiProducts = [
         id: 1,
         name: "Fotoliu Cafenea stofa",
         images:[fotoliuCafeneaStofa, fotoliuCafeneaStofa_1, fotoliuCafeneaStofa_2, fotoliuCafeneaStofa_3, fotoliuCafeneaStofa_4, fotoliuCafeneaStofa_5],
-        description: "Fotoliu Cafenea stofa are picioare PVC; Cusaturi decorative la spatar; Inaltime sezut: 43 cm;",
+        description: "Fotoliu Cafenea stofa are picioare PVC \n Cusaturi decorative la spatar \n Inaltime sezut: 43 cm ",
         price: 470.00,
         dimensiuni: {
             lungime: 73,
@@ -39,7 +39,7 @@ export const fotoliiProducts = [
         id: 2,
         name: "Fotoliu Cafenea piele",
         images:[fotoliuCafeneaPiele, fotoliuCafeneaPiele_1, fotoliuCafeneaPiele_2],
-        description: "Fotoliu Cafenea piele are picioare PVC; Cusaturi decorative la spatar; Inaltime sezut: 43 cm;",
+        description: "Fotoliu Cafenea piele are picioare PVC \n Cusaturi decorative la spatar \n Inaltime sezut: 43 cm",
         price: 470.00,
         dimensiuni: {
             lungime: 73,
@@ -53,7 +53,7 @@ export const fotoliiProducts = [
         id: 3,
         name: "Recliner push back Milady HQ-8204",
         images:[fotoliuMilady, fotoliuMilady_1, fotoliuMilady_2, fotoliuMilady_3, fotoliuMilady_4, fotoliuMilady_5],
-        description: "Recliner Milady este cu spătar care se înclina spre spate și un suport pentru picioare care se ridică. MAterial: catifea; Extinsa: Lungime: 156.5 cm ; Inaltime: 83 cm;",
+        description: "Recliner Milady este cu spătar care se înclina spre spate și un suport pentru picioare care se ridică \n Material: \n Catifea \n Extinsa: \n Lungime: 156.5 cm \n Inaltime: 83 cm",
         price: 1080.00,
         dimensiuni: {
             lungime: 86,
@@ -69,7 +69,7 @@ export const fotoliiProducts = [
         id: 4,
         name: "Recliner manual Dumas",
         images:[fotoliuDumas, fotoliuDumas_1, fotoliuDumas_2, fotoliuDumas_3, fotoliuDumas_4],
-        description: "Fotoliu Recliner Dumas - este un reclainer manual. Material: material tehnic; Extinsa: Lungime: 98.5 cm ; Inaltime: 79.5 cm;",
+        description: "Fotoliu Recliner Dumas - este un reclainer manual \n Material: \n Material tehnic \n Extinsa: Lungime: 98.5 cm ; Inaltime: 79.5 cm",
         price: 1240.00,
         dimensiuni: {
             lungime: 86,

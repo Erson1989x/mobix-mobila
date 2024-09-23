@@ -70,7 +70,7 @@ export const canapeleProducts = [
         id: 1,
         name: 'Canapea Claudia Mare',
         images: [canapeaClaudiaMare_1, canapeaClaudiaMare_2, canapeaClaudiaMare_3, canapeaClaudiaMare_4, canapeaClaudiaMare_5, canapeaClaudiaMare_6, canapeaClaudiaMare],
-        description: 'Canapea Claudia Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Claudia Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 2050.00,
         prices: {
             bonel: 2050.00,
@@ -89,7 +89,7 @@ export const canapeleProducts = [
         id: 2,
         name: 'Canapea Claudia Mica',
         images: [canapeaClaudiaMica, canapeaClaudiaMica_1, canapeaClaudiaMica_2, canapeaClaudiaMica_3, canapeaClaudiaMica_4, canapeaClaudiaMica_5, canapeaClaudiaMica_6, canapeaClaudiaMica_7, canapeaClaudiaMica_8, canapeaClaudiaMica_9],
-        description: 'Canapea Claudia Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Claudia Mica pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 1950.00,
         prices: {
             bonel: 1950.00,
@@ -107,7 +107,7 @@ export const canapeleProducts = [
         id: 3,
         name: 'Canapea Lacrima Mare',
         images: [canapeaLacrimaMare, canapeaLacrimaMare_1, canapeaLacrimaMare_2, canapeaLacrimaMare_3, canapeaLacrimaMare_4],
-        description: 'Canapea Lacrima Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Lacrima Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 2040.00,
         prices: {
             bonel: 2050.00,
@@ -125,7 +125,7 @@ export const canapeleProducts = [
         id: 4,
         name: 'Canapea Lacrima Mica',
         images: [canapeaLacrimaMica, canapeaLacrimaMica_1],
-        description: 'Canapea Lacrima Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Lacrima Mica pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 1930.00,
         prices: {
             bonel: 1930.00,
@@ -143,7 +143,7 @@ export const canapeleProducts = [
         id: 5,
         name: 'Canapea Elsa Mare',
         images: [canapeaElsaMare],
-        description: 'Canapea Elsa Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Elsa Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 2200.00,
         prices: {
             bonel: 2200.00,
@@ -161,7 +161,7 @@ export const canapeleProducts = [
         id: 6,
         name: 'Canapea Elsa Mica',
         images: [canapeaElsaMica],
-        description: 'Canapea Elsa Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Elsa Mica pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 2070.00,
         prices: {
             bonel: 2070.00,
@@ -180,7 +180,7 @@ export const canapeleProducts = [
         id: 7,
         name: 'Canapea Corina Mare',
         images: [canapeaCorinaMare, canapeaCorinaMare_1],
-        description: 'Canapea Corina Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Corina Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 1980.00,
         prices: {
             bonel: 1980.00,
@@ -198,7 +198,7 @@ export const canapeleProducts = [
         id: 8,
         name: 'Canapea Corina Mica',
         images: [canapeaCorinaMica, canapeaCorinaMica_1, canapeaCorinaMica_2, canapeaCorinaMica_3, canapeaCorinaMica_4],
-        description: 'Canapea Corina Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Corina Mica pentru sistem lift se adauga 50lei + TVA. \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 1840.00,
         prices: {
             bonel: 1840.00,
@@ -217,7 +217,7 @@ export const canapeleProducts = [
         id: 9,
         name: 'Canapea Royal Mare',
         images: [canapeaRoyalMare, canapeaRoyalMare_1],
-        description: 'Canapea Royal Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Royal Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 1700.00,
         prices: {
             bonel: 1700.00,
@@ -235,7 +235,7 @@ export const canapeleProducts = [
         id: 10,
         name: 'Canapea Royal Mica',
         images: [canapeaRoyalMica, canapeaRoyalMica_1],
-        description: 'Canapea Royal Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Royal Mica pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 1280.00,
         prices: {
             bonel: 1280.00,
@@ -254,7 +254,7 @@ export const canapeleProducts = [
         id: 11,
         name: 'Canapea Diana',
         images: [canapeaDiana, canapeaDiana_1],
-        description: 'Canapea Diana pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 190 cm x A 145 cm.',
+        description: 'Canapea Diana pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 190 cm x A 145 cm.',
         price: 2020.00,
         prices: {
             bonel: 2020.00,
@@ -272,7 +272,7 @@ export const canapeleProducts = [
         id: 12,
         name: 'Canapea Vegas Mare',
         images: [canapeaVegasMare],
-        description: 'Canapea extensibila, cu lada pentru dezvoltare. Acest produs este disponibil si pe alte culori. Canapea Vega Mare NU se produce cu sistem lift. Dimensiunea extinsa : L 188 cm x A 165 cm.',
+        description: 'Canapea extensibila, cu lada pentru dezvoltare \n Acest produs este disponibil si pe alte culori \n  Canapea Vega Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 188 cm x A 165 cm.',
         price: 2050.00,
         prices: {
             bonel: 2050.00,
@@ -290,7 +290,7 @@ export const canapeleProducts = [
         id: 13,
         name: 'Canapea Vega Mica',
         images: [canapeaVegasMica, canapeaVegasMica_1, canapeaVegasMica_2],
-        description: 'Canapea extensibila, cu lada pentru depozitare. Acest produs este disponibil si pe alte culori. Canapea Vega Mica pentru sistem lift se adauga 50lei + TVA. Dimensiunea extinsa : L 188 cm x A 145 cm.',
+        description: 'Canapea extensibila, cu lada pentru depozitare \n Acest produs este disponibil si pe alte culori \n Canapea Vega Mica pentru sistem lift se adauga 50lei + TVA \n Dimensiunea extinsa : \n L 188 cm x A 145 cm.',
         price: 1950.00,
         prices: {
             bonel: 1950.00,
@@ -308,7 +308,7 @@ export const canapeleProducts = [
         id: 14,
         name: 'Canapea Venus',
         images: [canapeaVenus],
-        description: 'Canapea Venus NU se produce cu sistem lift. Dimensiunea extinsa : L 190 cm x A 165 cm.',
+        description: 'Canapea Venus NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 1700.00,
         dimensiuni: {
             lungime: 220,
@@ -322,7 +322,7 @@ export const canapeleProducts = [
         id: 15,
         name: 'Canapea Valy',
         images: [canapeaValy, canapeaValy_1, canapeaValy_2, canapeaValy_3],
-        description: 'Canapea extensibila, 3 locuri cu lada pentru depozitare. Suprafata de dormit: Lungime: 185cm; Latime: 115cm; Inaltime de sezut: 43cm; Materiale: Lemn masiv; Elemente PAL si PFL; Doua balamale metalice; Minet 150g/m2; Pasla 1200g/m2; Spuma poliuretanica (burete); Accesorii PVC; Material acoperire: Piele ecologica / Stofa; Avantajele produsului: Sistem de extindere pe role tip "carte" (cu două balamale); Lada depozitare; Nasturi decorativi; Design classic si practic.; Protectie perete (peretar);',
+        description: 'Canapea extensibila, 3 locuri cu lada pentru depozitare \n Suprafata de dormit: \n Lungime: 185cm \n Latime: 115cm \n Inaltime de sezut: 43cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Doua balamale metalice \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Accesorii PVC \n Material acoperire: \n Piele ecologica / Stofa \n Avantajele produsului: \n Sistem de extindere pe role tip "carte" (cu două balamale) \n Lada depozitare \n Nasturi decorativi \n Design classic si practic \n Protectie perete (peretar)',
         price: 1380.00,
         dimensiuni: {
             lungime: 215,
@@ -336,7 +336,7 @@ export const canapeleProducts = [
         id: 16,
         name: 'Canapea Daria',
         images: [canapeaDaria, canapeaDaria_1, canapeaDaria_2, canapeaDaria_3, canapeaDaria_4],
-        description: 'Suprafata de dormit: Lungime: 195cm; Latime: 145cm; Adancime sezut: 57cm; Inaltime sezut: 45cm; Materiale: Lemn masiv; Elemente PAL si PFL; Şezut cu arcuri tip bonnel: grosime sârmă 2.4 mm; Minet 150g/m2; Pasla 1200g/m2; Spuma poliuretanica (burete); Material acoperire: Stofa; Avantajele Produsului: Sistem de extindere tip lift; Lada depozitare din PAL melaminat;',
+        description: 'Suprafata de dormit: \n Lungime: 195cm \n Latime: 145cm \n Adancime sezut: 57cm \n Inaltime sezut: 45cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Şezut cu arcuri tip bonnel: \n Grosime sârmă 2.4 mm \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Material acoperire: Stofa \n Avantajele Produsului: \n Sistem de extindere tip lift \n Lada depozitare din PAL melaminat',
         price: 1850.00,
         dimensiuni: {
             lungime: 190,
@@ -350,7 +350,7 @@ export const canapeleProducts = [
         id: 17,
         name: 'Canapea Gala',
         images: [canapeaGala, canapeaGala_1, canapeaGala_2, canapeaGala_3, canapeaGala_4, canapeaGala_5, canapeaGala_6, canapeaGala_7, canapeaGala_8, canapeaGala_9],
-        description: 'Extensibila, 2 locuri, cu arcuri si lada depozitare; Suprafata de dormit: Lungime: 190 cm; Latime: 126 cm; Inaltime sezut: 46 cm; Adancime sezut: 54 cm; Materiale: Lemn masiv; Elemente PAL si PFL; Sezut cu arcuri tip bonnel: grosime sarma 2.4 mm; Minet 150g/m2; Pasla 1200g/m2; Spuma poliuretanica (burete); Material acoperire: Stofa; Accesorii PVC;',
+        description: 'Extensibila, 2 locuri, cu arcuri si lada depozitare \n Suprafata de dormit: \n Lungime: 190 cm \n Latime: 126 cm \n Inaltime sezut: 46 cm \n Adancime sezut: 54 cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Sezut cu arcuri tip bonnel: \n Grosime sarma 2.4 mm \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Material acoperire: \n Stofa \n Accesorii PVC',
         price: 2160.00,
         dimensiuni: {
             lungime: 143,
@@ -364,7 +364,7 @@ export const canapeleProducts = [
         id: 18,
         name: 'Canapea Yasmin',
         images: [canapeaYasmin],
-        description: 'Extensibila, 3 locuri, cu arcuri si lada depozitare; Suprafata de dormit: Lungime: 190 cm; Latime: 140 cm; Inaltime sezut: 45 cm;Materiale: Lemn masiv; Elemente PAL si PFL; Sezut cu arcuri tip bonnel: pielie 2.4 mm; Minet 150g/m2; Pasla 1200g/m2; Spuma poliuretanica (burete); Material acoperire: Stofa; Accesorii PVC;',
+        description: 'Extensibila, 3 locuri, cu arcuri si lada depozitare \n Suprafata de dormit: \n Lungime: 190 cm \n Latime: 140 cm \n Inaltime sezut: 45 cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Sezut cu arcuri tip bonnel: \n pielie 2.4 mm \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Material acoperire: \n Stofa \n Accesorii PVC',
         price: 1880.00,
         dimensiuni: {
             lungime: 190,
@@ -378,7 +378,7 @@ export const canapeleProducts = [
         id: 19,
         name: 'Canapea Vega',
         images: [canapeaVega],
-        description: 'Extensibila, 3 locuri, cu arcuri si lada depozitare; Suprafata de dormit: Lungime: 190cm; Latime: 155 cm; Inaltime sezut: 44 cm; Materiale: Lemn masiv; Elemente PAL si PFL; Sezut cu arcuri tip bonnel: pielie 2.4 mm; Minet 150g/m2; Pasla 1200g/m2; Spuma poliuretanica (burete); Material acoperire: Stofa; Accesorii PVC;',
+        description: 'Extensibila, 3 locuri, cu arcuri si lada depozitare \n Suprafata de dormit: \n Lungime: 190cm \n Latime: 155 cm \n Inaltime sezut: 44 cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Sezut cu arcuri tip bonnel: \n Pielie 2.4 mm \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Material acoperire:  \n Stofa \n Accesorii PVC',
         price: 2750.00,
         dimensiuni: {
             lungime: 240,

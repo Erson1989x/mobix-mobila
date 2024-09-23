@@ -68,7 +68,7 @@ export const dulapuriProducts = [
     id: 1,
     name: "Dulap Disney 2D",
     images: [dulapDisney2d],
-    description: "- Dulapul Disney cu sertar in jos are depozitare şi este realizat după un design modern. - Nu există manere. - Pentru ușurința deschiderii, în fațade sunt prevăzute adâncituri.",
+    description: "Dulapul Disney cu sertar in jos are depozitare şi este realizat după un design modern. \n Nu există manere. \n Pentru ușurința deschiderii, în fațade sunt prevăzute adâncituri.",
     price: 650.00,
     dimensiuni: {
       latime: 80,
@@ -83,7 +83,7 @@ export const dulapuriProducts = [
     id: 2,
     name: "Penar Geneva",
     images: [penarGeneva, penarGeneva2, penarGeneva3, penarGeneva4],
-    description: "- Materialul caroseriei și al fațadei: PAL ecologic cu un strat laminat. - Feronerie: ghidaje în sertare, rolă mânere , Un sistem de deschidere (fără mânere) - O soluție modernă în loc de mânere, - Adâncituri pe fațadă pentru deschiderea convenabilă a ușii.",
+    description: "Materialul caroseriei și al fațadei: PAL ecologic cu un strat laminat. \n Feronerie: ghidaje în sertare, rolă mânere. \n Un sistem de deschidere (fără mânere) \n O soluție modernă în loc de mânere \n Adâncituri pe fațadă pentru deschiderea convenabilă a ușii.",
     price: 410.00,
     dimensiuni: {
       latime: 45,
@@ -97,8 +97,8 @@ export const dulapuriProducts = [
   {
     id: 3,
     name: "Dulap Geneva 2D",
-    images: [dulapGeneva2D, dulapGeneva2D1, dulapGeneva2D3, dulapGeneva2D2],
-    description: "- Dulapul GENEVA cu 2 uși nu este doar un element de design, ci și o soluție eficientă de depozitare. - Interiorul spațios și compartimentat cu atenție permite organizarea eficientă a hainelor și obiectelor personale.",
+    images: [dulapGeneva2D3, dulapGeneva2D2],
+    description: "Dulapul GENEVA cu 2 uși nu este doar un element de design, ci și o soluție eficientă de depozitare. \n Interiorul spațios și compartimentat cu atenție permite organizarea eficientă a hainelor și obiectelor personale.",
     price: 720.00,
     dimensiuni: {
       latime: 80,
@@ -112,8 +112,8 @@ export const dulapuriProducts = [
   {
     id: 4,
     name: "Penar Geneva 3D",
-    images: [dulapGeneva3D, dulapGeneva3D1, dulapGeneva3D2, dulapGeneva3D3],
-    description: "- Dulapul Geneva cu 3 uşi  este un dulap cu design elegant, iar funcționalitatea și dimensiunile sunt principalele avantaje ale acestui dulap",
+    images: [dulapGeneva3D1, dulapGeneva3D2, dulapGeneva3D3],
+    description: "Dulapul Geneva cu 3 uşi  este un dulap cu design elegant, iar funcționalitatea și dimensiunile sunt principalele avantaje ale acestui dulap",
     price: 1090.00,
     dimensiuni: {
       latime: 200,
@@ -128,7 +128,7 @@ export const dulapuriProducts = [
     id: 5,
     name: "Dulap Geneva 4D",
     images: [dulapGeneva4D, dulapGeneva4D1, dulapGeneva4D2],
-    description: "- Dulapul Geneva cu 4 uși  este un dulap cu design elegant, iar funcționalitatea și dimensiunile sunt principalele avantaje ale acestui dulap",
+    description: "Dulapul Geneva cu 4 uși  este un dulap cu design elegant, iar funcționalitatea și dimensiunile sunt principalele avantaje ale acestui dulap",
     price: 1460.00,
     dimensiuni: {
       latime: 200,
@@ -143,7 +143,7 @@ export const dulapuriProducts = [
     id: 6,
     name: "Dulap Venera 3D",
     images: [dulapVenera3D, dulapVenera3D1, dulapVenera3D2],
-    description: "- Dulap Venera 3 uşi din material MDF. Tip de deschidere: cu balamale",
+    description: "Dulap Venera 3 uşi din material MDF. \n Tip de deschidere: cu balamale",
     price: 1270.00,
     dimensiuni: {
       latime: 140,
@@ -157,8 +157,8 @@ export const dulapuriProducts = [
   {
     id: 7,
     name: "Dulap Denver 2D",
-    images: [dulapDenver2D, dulapDenver2D1, dulapDenver2D2],
-    description: "- Dulapul Denver din material MDF. Tip de deschidere: cu balamale",
+    images: [dulapDenver2D1, dulapDenver2D2],
+    description: "Dulapul Denver din material MDF. \n Tip de deschidere: cu balamale",
     price: 770.00,
     dimensiuni: {
       latime: 100,
@@ -173,7 +173,7 @@ export const dulapuriProducts = [
     id: 8,
     name: "Dulap Denver 3D2S",
     images: [dulapDenver3D2S, dulapDenver3D2S1, dulapDenver3D2S2],
-    description: "- Dulapul Denver din material MDF. Tip de deschidere: cu balamale",
+    description: "Dulapul Denver din material MDF. \n Tip de deschidere: cu balamale",
     price: 1290.00,
     dimensiuni: {
       latime: 200,
@@ -188,7 +188,7 @@ export const dulapuriProducts = [
     id: 9,
     name: "Dulap Bali D3",
     images: [dulapBaliD3, dulapBaliD31, dulapBaliD32, dulapBaliD33],
-    description: "- Dulapul Bali din material MDF. Tip de deschidere: cu balamale",
+    description: "Dulapul Bali din material MDF. \n Tip de deschidere: cu balamale",
     price: 1710.00,
     dimensiuni: {
       latime: 147,
@@ -203,7 +203,7 @@ export const dulapuriProducts = [
     id: 10,
     name: "Dulap Dome 06 1.5M",
     images: [dulapDome061, dulapDome061_1],
-    description: "- Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. - Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor.",
+    description: "Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. \n Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor.",
     price: 2100.00,
     dimensiuni: {
       lungime: 150,
@@ -218,7 +218,7 @@ export const dulapuriProducts = [
     id: 11,
     name: "Dulap Dome 06 2M",
     images: [dulapDome062, dulapDome062_1],
-    description: "- Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. - Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor.",
+    description: "Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. \n Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor.",
     price: 2500.00,
     dimensiuni: {
       lungime: 200,
@@ -233,7 +233,7 @@ export const dulapuriProducts = [
     id: 12,
     name: "Dulap Dome 06 2.4M",
     images: [dulapDome063, dulapDome063_1],
-    description: " - Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. - Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor. ",
+    description: "Dressingul este conceput pentru a se incadra şi a fi util oricărui spaţiu dedicat depozitării hainelor. \n Datorită uşilor glisante utilizează minimul de spaţiu, nefiind necesar un spaţiu suplimentar pentru deschiderea uşilor. ",
     price: 2800.00,
     dimensiuni: {
       lungime: 240,
@@ -248,7 +248,7 @@ export const dulapuriProducts = [
     id: 13,
     name: "Dulap Dome 04 1.5M",
     images: [dulapDome041, dulapDome041_1],
-    description: " - Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi, este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. - Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. - Feronerie de cea mai bună calitate MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
+    description: "Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi. \n Este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. \n Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. \n Feronerie de cea mai bună calitate MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
     price: 2030.00,
     dimensiuni: {
       lungime: 150,
@@ -263,7 +263,7 @@ export const dulapuriProducts = [
     id: 14,
     name: "Dulap Dome 04 2M",
     images: [dulapDome042, dulapDome042_1],
-    description: " - Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi, este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. - Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. - Feronerie de cea mai bună calitate MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
+    description: "Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi. \n Este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. \n Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. \n Feronerie de cea mai bună calitate MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
     price: 2380.00,
     dimensiuni: {
       lungime: 200,
@@ -278,7 +278,7 @@ export const dulapuriProducts = [
     id: 15,
     name: "Dulap Dome 04 2.4M",
     images: [dulapDome043, dulapDome043_1],
-    description:" - Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi, este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. - Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. - Feronerie de cea mai bună calitate. MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
+    description:"Dulapul de haine cu usi glisante DOME DO 04 stejar sonoma/crem cu oglinzi. \n Este construit cu o carcasă din pal de culoarea stejarului, fronturile sunt din pal iar inserţia de la mijloc este din MDF cu model şi este prevăzut cu oglinzi mari pe ambele uşi. \n Deschiderea dulapului se face prin glisare stânga-dreapta, cu ajutorul unui sistem de culisare silenţios. \n Feronerie de cea mai bună calitate. MDF-ul este un material dur şi rezistent la umiditate, perfect pentru produsele de mobilier",
     price: 2800.00,
     dimensiuni: {
       lungime: 240,
@@ -293,7 +293,7 @@ export const dulapuriProducts = [
     id: 16,
     name: "Dulap Vigo 1.5M",
     images: [dulapVigo15, dulapVigo15_1, dulapVigo15_2, dulapVigo15_3],
-    description: " - O piesă de mobilier care va schimba aspectul încăperii dumneavoastră şi a cărei funcţionalitate va transforma depozitarea hainelor într-o activitate bine organizată. - Uşi glisantec, cu oglindă, cu rafturi, soft close",
+    description: "O piesă de mobilier care va schimba aspectul încăperii dumneavoastră şi a cărei funcţionalitate va transforma depozitarea hainelor într-o activitate bine organizată. \n Uşi glisantec, cu oglindă, cu rafturi, soft close",
     price: 1870.00,
     dimensiuni: {
       lungime: 150,
@@ -308,7 +308,7 @@ export const dulapuriProducts = [
     id: 17,
     name: "Dulap Vigo 2M",
     images: [dulapVigo20, dulapVigo20_1, dulapVigo20_2, dulapVigo20_3],
-    description: " - O piesă de mobilier care va schimba aspectul încăperii dumneavoastră şi a cărei funcţionalitate va transforma depozitarea hainelor într-o activitate bine organizată. Uşi glisantec, cu oglindă, cu rafturi, soft close",
+    description: "O piesă de mobilier care va schimba aspectul încăperii dumneavoastră şi a cărei funcţionalitate va transforma depozitarea hainelor într-o activitate bine organizată. \n Uşi glisantec, cu oglindă, cu rafturi, soft close",
     price: 2200.00,
     dimensiuni: {
       lungime: 220,
@@ -323,7 +323,7 @@ export const dulapuriProducts = [
     id: 18,
     name: "Dulap Vigo 2.5M",
     images: [dulapVigo25, dulapVigo25_1, dulapVigo25_2, dulapVigo25_3],
-    description: " - O piesă de mobilier care va schimba aspectul încăperii dumneavoastră și a pielă într-o activitate bine organizată. - Uți glisantec, cu oglindă, cu rafturi, soft close",
+    description: "O piesă de mobilier care va schimba aspectul încăperii dumneavoastră și a pielă într-o activitate bine organizată. \n Usi glisantec, cu oglindă, cu rafturi, soft close",
     price: 2770.00,
     dimensiuni: {
       lungime: 250,
@@ -338,7 +338,7 @@ export const dulapuriProducts = [
     id: 19,
     name: "Dulap Vista 2M",
     images: [dulapVista20, dulapVista20_1, dulapVista20_2],
-    description: " - Dulapul Vista cu uşi culisante este realizat din PAL melaminat, iar uşa din mijloc este prevazută cu oglindă. - Este prevăzut cu feronerie din aluminiu pentru glisarea şi ghidarea uşilor",
+    description: "Dulapul Vista cu uşi culisante este realizat din PAL melaminat, iar uşa din mijloc este prevazută cu oglindă. \n Este prevăzut cu feronerie din aluminiu pentru glisarea şi ghidarea uşilor",
     price: 2200.00,
     dimensiuni: {
       lungime: 200,
@@ -353,7 +353,7 @@ export const dulapuriProducts = [
     id: 20,
     name: "Dulap Vista 2.5M",
     images: [dulapVista25, dulapVista25_1, dulapVista25_2, dulapVista25_3],
-    description: " - Dulapul Vista cu uşi culisante este realizat din PAL melaminat, iar uşa din mijloc este prevazută cu oglindă. - Este prevăzut cu feronerie din aluminiu pentru glisarea şi ghidarea uşilor",
+    description: "Dulapul Vista cu uşi culisante este realizat din PAL melaminat, iar uşa din mijloc este prevazută cu oglindă. \n Este prevăzut cu feronerie din aluminiu pentru glisarea şi ghidarea uşilor",
     price: 2770.00,
     dimensiuni: {
       lungime: 250,
@@ -368,7 +368,7 @@ export const dulapuriProducts = [
     id: 21,
     name: "Dulap Lizbona 2M",
     images: [dulapLizbona20, dulapLizbona20_1],
-    description: " - Dulapul Lizbona II cu uşi culisante este realizat din PAL melaminat. - Feroneria folosită la culisarea uşilor aduce un plus de rezistenţă şi o glisare mai uşoară.",
+    description: "Dulapul Lizbona II cu uşi culisante este realizat din PAL melaminat. \n Feroneria folosită la culisarea uşilor aduce un plus de rezistenţă şi o glisare mai uşoară.",
     price: 2150.00,
     dimensiuni: {
       lungime: 200,
@@ -383,7 +383,7 @@ export const dulapuriProducts = [
     id: 22,
     name: "Dulap Lizbona 2.5M",
     images: [dulapLizbona25, dulapLizbona25_1],
-    description: " - Dulapul Lizbona II cu uși culisante este realizat din PAL melaminat. - Feroneria folosită la culisarea ušilor aduce un plus de rezistență și o glisare mai ušoară.",
+    description: "Dulapul Lizbona II cu uși culisante este realizat din PAL melaminat. \n Feroneria folosită la culisarea ušilor aduce un plus de rezistență și o glisare mai ušoară.",
     price: 2770.00,
     dimensiuni: {
       lungime: 250,

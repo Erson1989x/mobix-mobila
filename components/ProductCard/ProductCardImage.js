@@ -12,7 +12,7 @@ const ProductCardImage = ({product}) => {
     height={image.height}
     priority={true}
     alt=""
-    className="w-full h-60"
+    className="mx-auto w-56 h-56 object-fill"
   />
   )
 }

@@ -50,7 +50,7 @@ export const comodaProducts = [
       id: 1,
       name: "Comoda Geneva 1S2D",
       images: [comodaGeneva1S2D, comodaGeneva1S2D_1, comodaGeneva1S2D_2],
-      description: "- Este o comodă stilată cu un design cu forme ondulate care va decora dormitorul, camera de zi sau holul. - Are un sertar și rafturi cu 2 uși. - În loc de mânere pe uși, comoda are o adâncitură in forma de val pentru deschiderea ușilor. - Aceasta forma de val ce confera eleganta este punctul forte al întregii colectii Geneva.",
+      description: " Este o comodă stilată cu un design cu forme ondulate care va decora dormitorul, camera de zi sau holul. \n Are un sertar și rafturi cu 2 uși. \n În loc de mânere pe uși, comoda are o adâncitură in forma de val pentru deschiderea ușilor. \n Aceasta forma de val ce confera eleganta este punctul forte al întregii colectii Geneva.",
       price: 480.00,
       dimensiuni: {
         lungime: 90,
@@ -80,7 +80,7 @@ export const comodaProducts = [
       id: 3,
       name: "Comoda Geneva 3S",
       images: [comodaGeneva3S, comodaGeneva3S_1, comodaGeneva3S_2],
-      description: " - Comoda elegantă Geneva cu un design ondulat va fi un decor grozav pentru dormitorul, camera de zi sau holul dumneavoastră. - Este destul de încăpător, confortabil și potrivit pentru orice interior, datorită culorii sale calde de trufe. - Are trei sertare spațioase pentru hainele și lucrurile tale. - Comoda poate fi completată cu un pat Geneva, care arată și stilat și are mai multe dimensiuni.",
+      description: " Comoda elegantă Geneva cu un design ondulat va fi un decor grozav pentru dormitorul, camera de zi sau holul dumneavoastră. \n Este destul de încăpător, confortabil și potrivit pentru orice interior, datorită culorii sale calde de trufe. \n Are trei sertare spațioase pentru hainele și lucrurile tale. \n Comoda poate fi completată cu un pat Geneva, care arată și stilat și are mai multe dimensiuni.",
       price: 770.00,
       dimensiuni: {
         lungime: 120,
@@ -95,7 +95,7 @@ export const comodaProducts = [
       id: 4,
       name: "Comoda Flora",
       images: [comodaFlora, comodaFlora_1, comodaFlora_2],
-      description: "Comoda Flora din material MDF. - Tip de deschidere: - Cu balamale",
+      description: "Comoda Flora din material MDF. \n Tip de deschidere: \n Cu balamale",
       price: 620.00,
       dimensiuni: {
         lungime: 120,
@@ -110,7 +110,7 @@ export const comodaProducts = [
       id: 5,
       name: "Comoda Ares AS3",
       images: [comodaAresAS3, comodaAresAS3_1],
-      description: "Comoda Ares din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda Ares din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 730.00,
       dimensiuni: {
         lungime: 104,
@@ -125,7 +125,7 @@ export const comodaProducts = [
       id: 6,
       name: "Comoda Ares AS6",
       images: [comodaAresAS6, comodaAresAS6_1, comodaAresAS6_2],
-      description: "Comoda Ares din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda Ares din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 1030.00,
       dimensiuni: {
         lungime: 150,
@@ -140,7 +140,7 @@ export const comodaProducts = [
       id: 7,
       name: "Comoda Disney 900",
       images: [comodaDisney900],
-      description: "Este un element de mobilier practic, estetic și versatil, adaptându-se nevoilor diverse ale utilizatorilor săi. - Finisajele de calitate oferă un echilibru între utilitate și estetică. - Cu dimensiunile sale bine proporționate, Comoda Disney se integrează perfect în diverse spații, de la dormitoare până la camere de joacă. - Sertarele spațioase asigură suficient loc pentru a organiza și depozita haine, accesorii sau alte obiecte personale. - Fiecare sertar este proiectat cu atenție la detalii pentru a asigura accesibilitate și funcționalitate.",
+      description: "Este un element de mobilier practic, estetic și versatil, adaptându-se nevoilor diverse ale utilizatorilor săi. \n Finisajele de calitate oferă un echilibru între utilitate și estetică. \n Cu dimensiunile sale bine proporționate, Comoda Disney se integrează perfect în diverse spații, de la dormitoare până la camere de joacă. \n Sertarele spațioase asigură suficient loc pentru a organiza și depozita haine, accesorii sau alte obiecte personale. \n Fiecare sertar este proiectat cu atenție la detalii pentru a asigura accesibilitate și funcționalitate.",
       price: 530.00,
       dimensiuni: {
         lungime: 90,
@@ -155,7 +155,7 @@ export const comodaProducts = [
       id: 8,
       name: "Comoda Disney 2D4S",
       images: [comodaDisney2D4S, comodaDisney2D4S_1],
-      description: "Este un element de mobilier practic, estetic și versatil, adaptându-se nevoilor diverse ale utilizatorilor săi. - Finisajele de calitate oferă un echilibru între utilitate și estetică. Cu dimensiunile sale bine proporționate, Comoda Disney se integrează perfect în diverse spații, de la dormitoare până la camere de joacă. - Sertarele spațioase asigură suficient loc pentru a organiza și depozita haine, accesorii sau alte obiecte personale. - Fiecare sertar este proiectat cu atenție la detalii pentru a asigura accesibilitate și funcționalitate.",
+      description: "Este un element de mobilier practic, estetic și versatil, adaptându-se nevoilor diverse ale utilizatorilor săi. \n Finisajele de calitate oferă un echilibru între utilitate și estetică. Cu dimensiunile sale bine proporționate, Comoda Disney se integrează perfect în diverse spații, de la dormitoare până la camere de joacă. \n Sertarele spațioase asigură suficient loc pentru a organiza și depozita haine, accesorii sau alte obiecte personale. \n Fiecare sertar este proiectat cu atenție la detalii pentru a asigura accesibilitate și funcționalitate.",
       price: 710.00,
       dimensiuni: {
         lungime: 120,
@@ -171,7 +171,7 @@ export const comodaProducts = [
       id: 9,
       name: "Comoda UK80",
       images: [comodaUK80],
-      description: "Comoda UK80 din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda UK80 din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 600.00,
       dimensiuni: {
         lungime: 80,
@@ -186,7 +186,7 @@ export const comodaProducts = [
       id: 10,
       name: "Comoda UK120",
       images: [comodaUK120, comodaUK120_1],
-      description: "Comoda UK120 din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda UK120 din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 700.00,
       dimensiuni: {
         lungime: 120,
@@ -201,7 +201,7 @@ export const comodaProducts = [
       id: 11,
       name: "Comoda Nika",
       images: [comodaNika],
-      description: "Comoda Nika din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda Nika din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 610.00,
       dimensiuni: {
         lungime: 70,
@@ -216,7 +216,7 @@ export const comodaProducts = [
       id: 12,
       name: "Comoda Venera 3S",
       images: [comodaVenera3S, comodaVenera3S_1],
-      description: "Comoda elegantă „Venera” vă va decora apartamentul sau casa. - Este suficient de încăpător, confortabil și potrivit pentru orice interior. - Are trei cutii încăpătoare pentru hainele și lucrurile tale.",
+      description: "Comoda elegantă „Venera” vă va decora apartamentul sau casa. \n Este suficient de încăpător, confortabil și potrivit pentru orice interior. \n Are trei cutii încăpătoare pentru hainele și lucrurile tale.",
       price: 630.00,
       dimensiuni: {
         lungime: 100,
@@ -232,7 +232,7 @@ export const comodaProducts = [
       id: 13,
       name: "Comoda Venera 3S2D",
       images: [comodaVenera3S2D, comodaVenera3S2D_1, comodaVenera3S2D_2],
-      description: "Comoda „Venera” va fi un plus excelent pentru camera de zi, dormitor, hol sau creșă. - Are un design elegant care se potrivește aproape oricărui interior. - Spațios și ușor de utilizat. - Acest model va completa casa ta și va deveni un lucru indispensabil. -Material de producție: - PAL. - Ghidaje. - Role.",
+      description: "Comoda „Venera” va fi un plus excelent pentru camera de zi, dormitor, hol sau creșă. \n Are un design elegant care se potrivește aproape oricărui interior. \n Spațios și ușor de utilizat. \n Acest model va completa casa ta și va deveni un lucru indispensabil. \n Material de producție: \n PAL. \n Ghidaje. \n Role.",
       price: 650.00,
       dimensiuni: {
         lungime: 120,
@@ -247,7 +247,7 @@ export const comodaProducts = [
       id: 14,
       name: "Comoda TV Bollo",
       images: [comodaTVBollo],
-      description: "Comoda TV Bollo din material MDF. - Tip de deschidere: - Cu balamale. - Muchii ABS. - Sistem de inchidere lenta",
+      description: "Comoda TV Bollo din material MDF. \n Tip de deschidere: \n Cu balamale. \n Muchii ABS. \n Sistem de inchidere lenta",
       price: 600.00,
       dimensiuni: {
         lungime: 184,
@@ -262,7 +262,7 @@ export const comodaProducts = [
       id: 15,
       name: "Comoda Alma 1U3S",
       images: [comodaAlma1U3S, comodaAlma1U3S_1, comodaAlma1U3S_2],
-      description: "PAL Melaminat. - Cant ABS. - Manere satinate. - Picioare PVC. - Glisiera cu sina",
+      description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
       price: 470.00,
       dimensiuni: {
         lungime: 70,
@@ -277,7 +277,7 @@ export const comodaProducts = [
       id: 16,
       name: "Comoda Alma 2U3S",
       images: [comodaAlma2U3S, comodaAlma2U3S_1, comodaAlma2U3S_2, comodaAlma2U3S_3],
-      description: "PAL Melaminat. - Cant ABS. - Manere satinate. - Picioare PVC. - Glisiera cu sina",
+      description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
       price: 610.00,
       dimensiuni: {
         lungime: 105,
@@ -292,7 +292,7 @@ export const comodaProducts = [
       id: 17,
       name: "Comoda Alma 4S",
       images: [comodaAlma4S, comodaAlma4S_1, comodaAlma4S_2, comodaAlma4S_3],
-      description: "PAL Melaminat. - Cant ABS. - Manere satinate. - Picioare PVC. - Glisiera cu sina",
+      description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
       price: 650.00,
       dimensiuni: {
         lungime: 50,
@@ -307,7 +307,7 @@ export const comodaProducts = [
       id: 18,
       name: "Comoda Luxor",
       images: [comodaLuxor, comodaLuxor_1, comodaLuxor_2],
-      description: "PAL Melaminat. - Cant ABS. - Manere satinate. - Picioare PVC. - Glisiera cu sina",
+      description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
       price: 690.00,
       dimensiuni: {
         lungime: 50,
@@ -322,7 +322,7 @@ export const comodaProducts = [
       id: 19,
       name: "Comoda Kentuki",
       images: [comodaKentuki, comodaKentuki_1],
-      description: "Trăsăturile clasice ale colecţiei sunt scoase în evidenţă de mânerele cu aspect antichizat, picioarele elegante şi elementele decorative care se regăsesc pe fronturi. - Finisajul este alb cu o mică patină, care crează o atmosferă elegantă.",
+      description: "Trăsăturile clasice ale colecţiei sunt scoase în evidenţă de mânerele cu aspect antichizat, picioarele elegante şi elementele decorative care se regăsesc pe fronturi. \n Finisajul este alb cu o mică patină, care crează o atmosferă elegantă.",
       price: 690.00,
       dimensiuni: {
         lungime: 155,

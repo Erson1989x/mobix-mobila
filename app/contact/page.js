@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import magazinCentru from "../../app/assets/contact-img/contact-2.jpg";
 import magazinVale from "../../app/assets/contact-img/contact-1.jpg";
-import "../contact/contact.css";
 
 const Contact = () => {
   return (

@@ -5,13 +5,14 @@ import { useState, useEffect, useMemo } from 'react'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
 
 
 const Dormitoare = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
-  const totalPages = 1;
+  const totalPages = getNumberOfPages(dormitoareProducts, productsPerPage);
 
   const [currentPage, setCurrentPage] = useState(() => {
     const storedPage = localStorage.getItem("currentPage");
@@ -22,37 +23,20 @@ const Dormitoare = () => {
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
 
-  const getNumberOfPages = () => {
-    const numberOfPages = Math.ceil(dormitoareProducts.length / productsPerPage);
-    return numberOfPages;
-  };
-
-  const handlePaginationChange = (event, value) => {
-    setCurrentPage(value);
-    router.push(`/dormitor/dormitoare-set?pagina=${value}`, undefined, {
-      shallow: true,
-    });
-    scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   useEffect(() => {
-    const parsedPage = parseInt(page);
-    if (!isNaN(parsedPage)) {
-      setCurrentPage(parsedPage);
-    }
-  }, [page]);
+    return () => {
+      localStorage.removeItem("currentPage");
+    };
+  }, []);
+
+  const handlePageChange = (event, value) => {
+    handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/dormitoare-set", totalPages);
+  };
 
   const productsToDisplay = useMemo(() => {
-    const start = (currentPage - 1) * productsPerPage;
-    const end = start + productsPerPage;
-    return dormitoareProducts.slice(start, end);
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    return dormitoareProducts.slice(startIndex, endIndex);
   }, [currentPage, productsPerPage]);
 
 
@@ -64,7 +48,7 @@ const Dormitoare = () => {
     <Pagination
           count={totalPages}
           page={currentPage || 1}
-          onChange={handlePaginationChange}
+          onChange={handlePageChange}
           color="primary"
           size="large"
           variant="outlined"

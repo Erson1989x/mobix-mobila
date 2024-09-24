@@ -4,12 +4,13 @@ import { cuiereProducts } from "@/library/categories/mobilierHol/cuiere/cuierePr
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
 
 const Cuiere = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
-  const totalPages = 1;
+  const totalPages = getNumberOfPages(cuiereProducts, productsPerPage);
 
   const [currentPage, setCurrentPage] = useState(() => {
     const storedPage = localStorage.getItem("currentPage");
@@ -20,44 +21,22 @@ const Cuiere = () => {
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
 
-  const getNumberOfPages = () => {
-    const numberOfPages = Math.ceil(cuiereProducts.length / productsPerPage);
-    return numberOfPages;
-  };
-
-  const handlePaginationChange = (event, value) => {
-    setCurrentPage(value);
-    router.push(`/mobilier-hol/cuiere?page=${value}`, undefined, {
-      shallow: true,
-    });
-    scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   useEffect(() => {
-    const parsedPage = parseInt(page);
-    if (!isNaN(parsedPage)) {
-      setCurrentPage(parsedPage);
-    }
-  }, [page]);
+    return () => {
+      localStorage.removeItem("currentPage");
+    };
+  }, []);
+
+  const handlePageChange = (event, value) => {
+    handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/mobilier-hol/cuiere", totalPages);
+  };
 
   const productsToDisplay = useMemo(() => {
-    const start = currentPage === 1 ? 0 : (currentPage - 1) * productsPerPage;
-    const end =
-      currentPage === 1 ? cuiereProducts.length : currentPage * productsPerPage;
-    const productsToDisplay = cuiereProducts.slice(start, end);
-    return productsToDisplay;
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    return cuiereProducts.slice(startIndex, endIndex);
   }, [currentPage, productsPerPage]);
 
-  console.log("cuiereProducts:", cuiereProducts);
-  console.log("currentPage:", currentPage);
-  console.log("productsPerPage:", productsPerPage);
 
   return (
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
@@ -67,7 +46,7 @@ const Cuiere = () => {
         <Pagination
           count={totalPages}
           page={currentPage || 1}
-          onChange={handlePaginationChange}
+          onChange={handlePageChange}
           color="primary"
           size="large"
           variant="outlined"

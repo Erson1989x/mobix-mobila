@@ -1,17 +1,18 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { noptiereProducts } from "../../../library/categories/dormitor/noptiere/noptiereProducts";
 import { useState, useEffect, useMemo } from "react";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
 
 
 const Noptiere = () => {
-const router = useRouter();
+  const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
-  const totalPages = Math.ceil(noptiereProducts.length / productsPerPage);
+  const totalPages = getNumberOfPages(noptiereProducts, productsPerPage);
 
   const [currentPage, setCurrentPage] = useState(() => {
     const storedPage = localStorage.getItem("currentPage");
@@ -22,37 +23,20 @@ const router = useRouter();
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
 
-  const getNumberOfPages = () => {
-    const numberOfPages = Math.ceil(noptiereProducts.length / productsPerPage);
-    return numberOfPages;
-  };
-
-  const handlePaginationChange = (event, value) => {
-    setCurrentPage(value);
-    router.push(`/dormitor/noptiere?page=${value}`, undefined, {
-      shallow: true,
-    });
-    scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   useEffect(() => {
-    const parsedPage = parseInt(page);
-    if(!isNaN(parsedPage)) {
-      setCurrentPage(parsedPage);
-    }
-    }, [page]);
+    return () => {
+      localStorage.removeItem("currentPage");
+    };
+  }, []);
+
+  const handlePageChange = (event, value) => {
+    handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/noptiere", totalPages);
+  };
 
   const productsToDisplay = useMemo(() => {
-    const start = (currentPage - 1) * productsPerPage;
-    const end = start + productsPerPage;
-    return noptiereProducts.slice(start, end);
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    return noptiereProducts.slice(startIndex, endIndex);
   }, [currentPage, productsPerPage]);
 
   return (
@@ -63,9 +47,11 @@ const router = useRouter();
         <Pagination
           count={totalPages}
           page={currentPage || 1}
-          onChange={handlePaginationChange}
+          onChange={handlePageChange}
           variant="outlined"
           shape="rounded"
+          color="primary"
+          size="large"
         />
       </div>
     </div>

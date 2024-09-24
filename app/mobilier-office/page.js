@@ -25,13 +25,6 @@ const MicMobilier = () => {
         </div>
         <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office/scaune">Detalii</Link>
       </div>
-      <div className='card text-center shadow-lg'>
-        <h2 className='font-bold text-center mb-2'>Dulapuri</h2>
-        <div className='flex justify-center mb-2'>
-          <Image src={dulapuriOfficebg} alt="paturi" className='h-56 w-72' />
-        </div>
-        <Link className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse" href="/mobilier-office/dulapuri">Detalii</Link>
-      </div>
     </div>
   </div>
   )

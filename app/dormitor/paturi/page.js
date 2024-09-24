@@ -5,12 +5,13 @@ import { paturiProducts } from "../../../library/categories/dormitor/paturi/patu
 import { useState, useEffect, useMemo } from "react";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
 
 const Paturi = () => {
-const router = useRouter();
+  const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
-  const totalPages = Math.ceil(paturiProducts.length / productsPerPage);
+  const totalPages = getNumberOfPages(paturiProducts, productsPerPage);
 
   const [currentPage, setCurrentPage] = useState(() => {
     const storedPage = localStorage.getItem("currentPage");
@@ -21,39 +22,21 @@ const router = useRouter();
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
 
-  const getNumberOfPages = () => {
-    const numberOfPages = Math.ceil(paturiProducts.length / productsPerPage);
-    return numberOfPages;
-  };
-
-  const handlePaginationChange = (event, value) => {
-    setCurrentPage(value);
-    router.push(`/dormitor/paturi?page=${value}`, undefined, {
-      shallow: true,
-    }),
-      scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   useEffect(() => {
-    const parsedPage = parseInt(page);
-    if(!isNaN(parsedPage)) {
-      setCurrentPage(parsedPage);
-    }
-    }, [page]);
+    return () => {
+      localStorage.removeItem("currentPage");
+    };
+  }, []);
+
+  const handlePageChange = (event, value) => {
+    handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/paturi", totalPages);
+  };
 
   const productsToDisplay = useMemo(() => {
-    const start = (currentPage - 1) * productsPerPage;
-    const end = start + productsPerPage;
-    return paturiProducts.slice(start, end);
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    return paturiProducts.slice(startIndex, endIndex);
   }, [currentPage, productsPerPage]);
-
 
   return (
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
@@ -62,8 +45,8 @@ const router = useRouter();
       <div className="flex justify-center mt-8">
         <Pagination
           count={totalPages}
-          page={currentPage || 1}
-          onChange={handlePaginationChange}
+          page={currentPage}
+          onChange={handlePageChange}
           color="primary"
           size="large"
           variant="outlined"

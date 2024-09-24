@@ -5,13 +5,14 @@ import { salteleProducts } from '../../../library/categories/dormitor/saltele/sa
 import { useState, useEffect, useMemo } from 'react'
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
 
 
 const Saltele = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
-  const totalPages = 1;
+  const totalPages = getNumberOfPages(salteleProducts, productsPerPage);
 
   const [currentPage, setCurrentPage] = useState(() => {
     const storedPage = localStorage.getItem("currentPage");
@@ -22,35 +23,22 @@ const Saltele = () => {
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
 
-  const getNumberOfPages = () => {
-    const numberOfPages = Math.ceil(salteleProducts.length / productsPerPage);
-    return numberOfPages;
-  };
-
-  const handlePaginationChange = (event, value) => {
-    setCurrentPage(value);
-    router.push(`/dormitor/saltele?page=${value}`, undefined, {
-      shallow: true,
-    });
-    scrollToTop();
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   useEffect(() => {
-    const parsedPage = parseInt(page);
-    if(!isNaN(parsedPage)) {
-      setCurrentPage(parsedPage);
-    }
-    }, [page]);
+    return () => {
+      localStorage.removeItem("currentPage");
+    };
+  }, []);
 
-    const productsToDisplay = useMemo(() => {
-      const start = (currentPage - 1) * productsPerPage;
-      const end = start + productsPerPage;
-      return salteleProducts.slice(start, end);
-    }, [currentPage, productsPerPage]);
+  const handlePageChange = (event, value) => {
+    handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/saltele", totalPages);
+  };
+
+
+  const productsToDisplay = useMemo(() => {
+    const startIndex = (currentPage - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+    return salteleProducts.slice(startIndex, endIndex);
+  }, [currentPage, productsPerPage]);
 
 
   return (
@@ -61,7 +49,7 @@ const Saltele = () => {
       <Pagination
           count={totalPages}
           page={currentPage || 1}
-          onChange={handlePaginationChange}
+          onChange={handlePageChange}
           color="primary"
           size="large"
           variant="outlined"

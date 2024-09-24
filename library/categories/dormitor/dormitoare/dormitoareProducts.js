@@ -70,7 +70,7 @@ export const dormitoareProducts = [
        },
        {
          id: 5,
-         name: "Dormitor Kentuki A",
+         name: "Dormitor Kentuki 140x200",
          images: [ dormitorKentuki1, dormitorKentuki],
          description: "Compozitia setului (LxAxA): \n Dulap 3 usi | 160x61x217cm. \n Pat 160 | 169x209x81cm. \n 2 Noptiere | 55x41x47cm. \n Comoda 4S | 94.5x44.5x90cm",
          price: 6230.00,
@@ -85,7 +85,7 @@ export const dormitoareProducts = [
        },
        {
          id: 6,
-         name: "Dormitor Kentuki B",
+         name: "Dormitor Kentuki 160x200",
          images:[dormitorKentuki1, dormitorKentuki, dormitorKentuki2],
          description: "Compozitia setului (LxAxA): \n Dulap 4 usi | 227.5x61x225cm. \n Pat 160 | 169x209x81cm. \n 2 Noptiere | 55x41x47cm. \n Comoda 2D4S | 154.5x44.5x90cm",
          price: 7320.00,

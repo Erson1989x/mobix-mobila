@@ -39,11 +39,11 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <hr className="w-40 h-1 rounded-full md:border-b-0 md:border-l md:border-solid md:transform md:rotate-90 bg-gray-300" />
+        <hr className="w-40 h-1 rounded-full md:border-b-0 md:border-l md:border-solid md:transform md:rotate-90 bg-gray-300 -z-10" />
         <p className="md:w-1/4">
           Copyright &copy; 2024 Mobix Mobila. Toate drepturile rezervate.
         </p>
-        <hr className="w-40 h-1 rounded-full md:border-b-0 md:border-l md:border-solid md:transform md:rotate-90 bg-gray-300" />
+        <hr className="w-40 h-1 rounded-full md:border-b-0 md:border-l md:border-solid md:transform md:rotate-90 bg-gray-300 -z-10" />
         <div className="flex flex-col justify-center items-center text-center">
           <FontAwesomeIcon
             icon={faPhone}

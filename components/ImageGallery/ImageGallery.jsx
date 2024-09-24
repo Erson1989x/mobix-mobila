@@ -8,11 +8,14 @@ const ProductImages = ({ images }) => {
   const [activeImage, setActiveImage] = useState(0);
   const [zoomLevel, setZoomLevel] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
 
-  const handleImageChange = useCallback((index) => {
-    setActiveImage(index);
-  }, []);
+  
 
+
+  const handleImageChange = (newIndex) => {
+    setCurrentImage(newIndex);
+  };
 
   const handleImageClick = () => {
     if (isModalOpen) {
@@ -62,19 +65,24 @@ const ProductImages = ({ images }) => {
         </div>
       ) : null}
       {isModalOpen && (
-        <Modal onClose={() => setIsModalOpen(false)}>
-          <div className="flex flex-col items-center justify-center h-full">
-            <Image
-              src={images[activeImage].src}
-              width={800}
-              height={600}
-              alt=""
-              priority={true}
-              className="w-96 h-96 object-contain md:w-96 md:h-96"
-              style={{ transform: `scale(${zoomLevel})` }}
-            />
-          </div>
-        </Modal>
+       <Modal
+       images={images}
+       currentImage={activeImage}
+       onChangeImage={(newImage) => setActiveImage(newImage)}
+       onClose={() => setIsModalOpen(false)}
+     >
+       <div className="flex flex-col items-center justify-center h-full">
+         <Image
+           src={images[activeImage].src}
+           width={800}
+           height={600}
+           alt=""
+           priority={true}
+           className="object-contain md:w-96 md:h-96"
+           style={{ transform: `scale(${zoomLevel})` }}
+         />
+       </div>
+     </Modal>
       )}
     </div>
   );

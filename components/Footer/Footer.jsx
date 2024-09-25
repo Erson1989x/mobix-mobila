@@ -10,8 +10,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-fill h-fill p-10 shadow-lg border-t">
-      <div className="flex flex-col gap-4 justify-center items-center text-center md:flex-row">
+    <footer className="w-fill h-fill p-10 shadow-lg border-t md:px-20">
+      <div className="flex flex-col gap-4 justify-center items-center text-center md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col justify-center items-center text-center">
           <h3>Conectează-te cu noi</h3>
           <div className="flex flex-row justify-center items-center gap-4 mt-4">

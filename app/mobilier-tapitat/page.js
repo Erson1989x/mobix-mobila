@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import canapelebg from "../../app/assets/mobiliertapitat/canapelebg.jpg";
+import canapelebg from "../../app/assets/mobiliertapitat/canapelebg.png";
 import coltarebg from "../../app/assets/mobiliertapitat/coltarebg.jpg";
-import fotoliibg from "../../app/assets/mobiliertapitat/fotoliibg.jpg";
+import fotoliibg from "../../app/assets/mobiliertapitat/fotoliibg.jpeg";
 import taburetibg from "../../app/assets/mobiliertapitat/taburetibg.jpg";
 
 

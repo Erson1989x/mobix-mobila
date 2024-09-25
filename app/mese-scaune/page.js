@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import masuteBG from '../assets/mesesiscaune/masuta.webp'
-import scauneBG from '../assets/mesesiscaune/scaune.webp'
-import meseBG from '../assets/mesesiscaune/masa.webp'
+import scauneBG from '../assets/mesesiscaune/scaune.jpg'
+import meseBG from '../assets/mesesiscaune/masa.jpg'
 
 
 const MeseSiScaune = () => {

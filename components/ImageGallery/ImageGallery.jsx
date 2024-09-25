@@ -6,7 +6,7 @@ import Modal from "../ImageGalleryModal/Modal";
 const ProductImages = ({ images }) => {
   console.log("images:", images);
   const [activeImage, setActiveImage] = useState(0);
-  const [zoomLevel, setZoomLevel] = useState(1);
+  const [zoomLevel, setZoomLevel] = useState(0.5);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -14,7 +14,7 @@ const ProductImages = ({ images }) => {
 
 
   const handleImageChange = (newIndex) => {
-    setCurrentImage(newIndex);
+    setActiveImage(newIndex);
   };
 
   const handleImageClick = () => {
@@ -36,7 +36,7 @@ const ProductImages = ({ images }) => {
           height={500}
           alt=""
           priority={true}
-          className="w-full h-72 md:h-full object-contain"
+          className="w-full h-72 md:h-full object-contain cursor-pointer"
           onClick={handleImageClick}
         />
       </div>
@@ -71,15 +71,15 @@ const ProductImages = ({ images }) => {
        onChangeImage={(newImage) => setActiveImage(newImage)}
        onClose={() => setIsModalOpen(false)}
      >
-       <div className="flex flex-col items-center justify-center h-full">
-         <Image
+       <div className="flex items-center justify-center overflow-hidden max-h-screen">
+       <Image
            src={images[activeImage].src}
-           width={800}
-           height={600}
+           width={500}
+           height={500}
            alt=""
            priority={true}
-           className="object-contain md:w-96 md:h-96"
-           style={{ transform: `scale(${zoomLevel})` }}
+           className="object-fill h-96 w-62 md:max-h-screen md:w-full" 
+           //style={{ transform: `scale(${zoomLevel})` }}
          />
        </div>
      </Modal>

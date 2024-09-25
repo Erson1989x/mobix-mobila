@@ -86,7 +86,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-sm px-4 py-2" href="contact">
+                <Link className="text-sm px-4 py-2" href="/contact">
                   Contact
                 </Link>
               </li>
@@ -122,7 +122,7 @@ const Header = () => {
                 className={`cursor-pointer ${
                   activeLink === "contact" ? "text-gray-400" : "text-black"
                 }`}
-                href="contact"
+                href="/contact"
               >
                 Contact
               </Link>

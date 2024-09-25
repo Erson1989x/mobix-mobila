@@ -12,12 +12,12 @@ const ProductCard = ({ productsToDisplay }) => {
           <h2 className="text-lg font-bold text-center mb-2">{product.name}</h2>
           <ProductCardImage product={product} />
           <button
-            className="flex justify-center align-center text-center cursor-pointer border border-0 p-2 rounded text-black shadow-md bg-gray-100 hover:bg-gray-200"
+            className="flex justify-center align-center text-center cursor-pointer border border-0 p-2 rounded text-black shadow-md bg-gray-100 hover:bg-gray-200 mt-4"
             onClick={() => (window.location.href = `/products/${product.slug}`)}
           >
             <p className="text-center text-black">Pentru Detalii click AICI</p>
           </button>
-          <p className="text-center font-bold text-red-600 mt-2">
+          <p className="text-center font-bold text-red-600 mt-4">
             {product.price} - RON
           </p>
         </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import birouriOfficebg from '../../app/assets/mobilieroffice/birouriofficebg.jpg'
-import scauneOfficebg from '../../app/assets/mobilieroffice/scauneofficebg.jpg'
-import dulapuriOfficebg from '../../app/assets/mobilieroffice/dulapuriofficebg.jpg'
+import birouriOfficebg from '../../app/assets/mobilieroffice/mobilieroffice.webp'
+import scauneOfficebg from '../../app/assets/mobilieroffice/scauneofficebg.png'
+
 
 const MicMobilier = () => {
 

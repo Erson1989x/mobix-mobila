@@ -6,7 +6,7 @@ import { getNumberOfPages, scrollToTop, handlePaginationChange } from '@/app/uti
 import { useRouter } from "next/navigation";
 import Pagination from '@mui/material/Pagination';
 
-const Pantofar = () => {
+const Pantofare = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
@@ -57,4 +57,4 @@ const Pantofar = () => {
   )
 }
 
-export default Pantofar
+export default Pantofare

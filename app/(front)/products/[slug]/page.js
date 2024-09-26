@@ -53,33 +53,37 @@ const ProductPage = () => {
     { category: "fotolii", products: fotoliiProducts },
   ];
 
-  const product = productTypes
-  .flatMap((type) => type.products)
-  .find((product) => product.slug === slug);
+  const findProduct = (slug) => {
+    return productTypes
+      .flatMap((type) => type.products)
+      .find((product) => product.slug === slug);
+  };
 
-  if (product && product.category === "canapele" || product.category === 'coltare') {
-    console.log('Canapele product found!');
-    console.log('product',product);
-    return (
-      <ProductLayout product={product}>
-        <ProductDetailsCanapele product={product} />
-      </ProductLayout>
-    );
-  } else if (product && product.category === "saltele") {
-    return (
-      <ProductLayout product={product}>
-        <div className="card shadow-lg p-2 rounded">
-          <ProductDetailsSaltele product={product} />
-        </div>
-      </ProductLayout>
-    );
-  } else {
-    return (
-      <ProductLayout product={product}>
-        <ProductDetails product={product} />
-      </ProductLayout>
-    );
-  }
+  const currentProduct = findProduct(slug);
+
+  if (!currentProduct) return null;
+
+  const renderProductDetails = () => {
+    switch (currentProduct.category) {
+      case "canapele":
+      case "coltare":
+        return <ProductDetailsCanapele product={currentProduct} />;
+      case "saltele":
+        return (
+          <div className="card shadow-lg p-2 rounded">
+            <ProductDetailsSaltele product={currentProduct} />
+          </div>
+        );
+      default:
+        return <ProductDetails product={currentProduct} />;
+    }
+  };
+
+  return (
+    <ProductLayout product={currentProduct}>
+      {renderProductDetails()}
+    </ProductLayout>
+  );
 };
 
 export default ProductPage;

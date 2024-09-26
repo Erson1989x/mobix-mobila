@@ -34,7 +34,7 @@ const Contact = () => {
           <form className=" p-4 shadow-lg rounded w-full">
             <h2 className="text-md text-center font-bold mb-4">Contact</h2>
             <div className="flex flex-col justify-center gap-2">
-              <label>Name</label>
+              <label>Nume Prenume</label>
               <input type="text" className="rounded p-2 shadow-md mb-2" />
             </div>
             <div className="mb-2 flex flex-col justify-center gap-2">
@@ -42,14 +42,14 @@ const Contact = () => {
               <input type="email" className="rounded p-2 shadow-md mb-2" />
             </div>
             <div className="mb-2 flex flex-col justify-center gap-2">
-              <label>Message</label>
+              <label>Mesaj</label>
               <textarea className="rounded p-2 shadow-md"></textarea>
             </div>
             <button
               className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse"
               type="submit"
             >
-              Send
+              Trimite
             </button>
           </form>
         </div>

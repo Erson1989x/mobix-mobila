@@ -2,9 +2,12 @@ import React from "react";
 
 const ProductPrice = ({ product }) => {
   return (
-    <p className="mb-4 text-2xl  text-red-600 font-bold text-center p-2 shadow-md">
-      {product.price} - RON
+    <>
+    <p className="mb-4 text-xl text-red-600 font-bold p-2">
+      <span className="text-black">Pret: </span>
+      {product.price} - Lei
     </p>
+    </>
   );
 };
 

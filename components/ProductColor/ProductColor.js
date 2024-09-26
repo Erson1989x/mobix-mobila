@@ -2,8 +2,8 @@ import React from "react";
 
 const ProductColor = ({ product }) => {
   return (
-    <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
-      <span className="text-green-600">Culoare:</span> - {product.corpColor}
+    <p className="mb-4 p-2 font-bold border-b-2 border-gray-200 mt-4">
+      <span className="">Culoare:</span> - {product.corpColor}
     </p>
   );
 };

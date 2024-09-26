@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductDimensions = ({ product }) => {
   return (
-    <p className="mb-4 font-bold border rounded shadow p-2 border-gray-300 bg-white">
+    <p className="mb-4 p-2 font-bold border-b-2 border-gray-200 ">
       Dimensiuni:{" "}
       {[
         product.dimensiuni?.latime && `Lățime: ${product.dimensiuni.latime} cm`,

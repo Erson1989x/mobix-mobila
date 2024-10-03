@@ -2,7 +2,7 @@ import dulapbg from '../../app/assets/dormitor/dulapbg.webp'
 import noptierebg from '../../app/assets/dormitor/noptierebg.jpg'
 import paturibg from '../../app/assets/dormitor/paturibg.jpg'
 import comodabg from '../../app/assets/dormitor/comodabg.jpg'
-import saltelebg from '../../app/assets/dormitor/saltelebg.jpeg'
+import saltelebg from '../../app/assets/dormitor/saltelebg.jpg'
 import dormitorsetbg from '../../app/assets/dormitor/dormitorsetbg.jpg'
 
 export const dormitorItems = [

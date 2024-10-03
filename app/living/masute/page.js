@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useMemo } from "react";
-import { masuteProducts } from "@/library/categories/meseScaune/masute/masuteProducts";
+import { masuteProducts } from "@/library/categories/living/masute/masuteProducts";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
@@ -37,7 +37,7 @@ const Masute = () => {
       router,
       value,
       scrollToTop,
-      "/mese-scaune/masute",
+      "/living/masute",
       totalPages
     );
   };

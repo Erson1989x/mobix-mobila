@@ -7,13 +7,13 @@ import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProdu
 import { comodaProducts } from "@/library/categories/dormitor/comode/comodeProducts";
 import { salteleProducts } from "@/library/categories/dormitor/saltele/salteleProducts";
 import { dormitoareProducts } from "@/library/categories/dormitor/dormitoare/dormitoareProducts";
-import { livingProducts } from "@/library/categories/living/livingProducts";
+import { livingProducts } from "@/library/categories/living/living/livingProducts";
 import { baieProducts } from "@/library/categories/baie/baieProducts";
 import { scauneProducts } from "@/library/categories/mobilierOffice/scaune/scauneProducts";
 import { birouProducts } from "@/library/categories/mobilierOffice/birou/birouProducts";
 import { cuiereProducts } from "@/library/categories/mobilierHol/cuiere/cuiereProducts";
 import { pantofarProducts } from "@/library/categories/mobilierHol/pantofar/pantofarProducts";
-import { masuteProducts } from "@/library/categories/meseScaune/masute/masuteProducts";
+import { masuteProducts } from "@/library/categories/living/masute/masuteProducts";
 import { taburetiProducts } from "@/library/categories/mobilierTabitat/tabureti/taburetiProducts";
 import { scauneProductsMS } from "@/library/categories/meseScaune/scaune/scauneProductsMS";
 import { meseProducts } from "@/library/categories/meseScaune/mese/meseProducts";

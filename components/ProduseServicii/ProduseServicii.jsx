@@ -10,7 +10,7 @@ const ProduseServicii = () => {
       className="w-full h-auto flex flex-col items-center justify-center mt-4"
     >
       <h2 className="mt-8 text-3xl lg:text-4xl"> Produse & Servicii </h2>
-      <p className="mt-4 text-lg text-center lg:text-2xl">
+      <p className="mt-4 text-lg text-center lg:text-xl w-11/12">
         {" "}
         La MobiX, suntem dedicați să oferim mobilier de înaltă calitate, care
         îmbină funcționalitatea cu designul modern și confortul. De-a lungul

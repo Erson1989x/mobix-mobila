@@ -1,10 +1,60 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import magazinCentru from "../../app/assets/contact-img/contact-2.jpg";
 import magazinVale from "../../app/assets/contact-img/contact-1.jpg";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+
+  const [loading, setLoading] = useState(false)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_pognd9n",
+        "template_weyeu9i",
+        {
+          from_name: form.name,
+          to_name: "Deak Zsolti",
+          from_email: form.email,
+          to_email: "erson1989x@gmail.com",
+          message: form.message,
+        },
+        "Pn4zUvR6b1EgRTtWx"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Multumim pentru mesaj! Va vom contacta in cel mai scurt timp.");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Ceva nu a mers bine. Va rugam incercati din nou.");
+        }
+      );
+  };
+
   return (
     <div className="h-full p-4 md:p-8 pt-16 md:pt-20 bg-gray-100">
       <h1 className="text-3xl font-bold mb-8 text-center">Contact</h1>
@@ -31,19 +81,19 @@ const Contact = () => {
           </p>
         </div>
         <div className="card shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out order-3 md:order-none">
-          <form className=" p-4 shadow-lg rounded w-full">
+          <form ref={formRef} onSubmit={handleSubmit} className=" p-4 shadow-lg rounded w-full">
             <h2 className="text-md text-center font-bold mb-4">Contact</h2>
             <div className="flex flex-col justify-center gap-2">
               <label>Nume Prenume</label>
-              <input type="text" className="rounded p-2 shadow-md mb-2" />
+              <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Nume Prenume" className="rounded p-2 shadow-md mb-2" />
             </div>
             <div className="mb-2 flex flex-col justify-center gap-2">
               <label>Email</label>
-              <input type="email" className="rounded p-2 shadow-md mb-2" />
+              <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Email" className="rounded p-2 shadow-md mb-2" />
             </div>
             <div className="mb-2 flex flex-col justify-center gap-2">
               <label>Mesaj</label>
-              <textarea className="rounded p-2 shadow-md"></textarea>
+              <textarea name="message" value={form.message} onChange={handleChange} placeholder="Mesaj" className="rounded p-2 shadow-md"></textarea>
             </div>
             <button
               className="cursor-pointer border border-0 p-2 rounded bg-white text-black shadow-md animate-pulse"

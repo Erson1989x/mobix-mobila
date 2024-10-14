@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGripLines } from "@fortawesome/free-solid-svg-icons";
 import { useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import mobixmob from "../../app/assets/background/mobixmob.jpg";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -32,7 +34,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="fixed top-0 left-0 w-full px-4 flex justify-between items-center bg-gray-100 h-14 shadow z-10">
+      <nav className="fixed top-0 left-0 w-full px-4 flex justify-between items-center bg-gray-100 h-20 shadow z-10">
         <div className="flex items-center">
           <Link
             onClick={() => handleLinkClick("")}
@@ -40,7 +42,7 @@ const Header = () => {
               activeLink === "" ? "text-black" : "text-black"
             }`}
             href="/"
-          >Mobix
+          ><Image src={mobixmob} alt="Logo" width={65} height={65} className="cursor-pointer rounded-full shadow-md"></Image>
           </Link>
         </div>
         <div className="cursor-pointer md:hidden">

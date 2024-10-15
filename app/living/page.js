@@ -5,7 +5,7 @@ import { livingItems } from './livingItems'
 
 const page = () => {
   return (
-    <div className="min-h-full p-4 md:p-8 pt-16 md:pt-20">
+    <div className="min-h-full p-4 md:p-8 pt-24 md:pt-24">
     <h1 className="text-3xl font-bold mb-8 text-center">Living</h1>
     <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
       {livingItems.map(({ title, imageSrc, link }) => (

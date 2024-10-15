@@ -49,7 +49,7 @@ const Living = () => {
   }, [currentPage, productsPerPage]);
 
   return (
-    <div className="h-full p-4 md:p-8 pt-16 md:pt-20">
+    <div className="h-full p-4 md:p-8 pt-24 md:pt-24">
       <h1 className="text-3xl font-bold mb-8 text-center">Living</h1>
       <ProductCard productsToDisplay={productsToDisplay} />
       <div className="flex justify-center mt-8">

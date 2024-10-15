@@ -26,21 +26,21 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_pognd9n",
-        "template_weyeu9i",
+        "service_s0ffl8m",
+        "template_pdg0lds",
         {
           from_name: form.name,
           to_name: "Deak Zsolti",
           from_email: form.email,
-          to_email: "erson1989x@gmail.com",
+          to_email: "mobixsmart@gmail.com",
           message: form.message,
         },
-        "Pn4zUvR6b1EgRTtWx"
+        "GEAqMwjvpK3ZldlYy"
       )
       .then(
         () => {
           setLoading(false);
-          alert("Multumim pentru mesaj! Va vom contacta in cel mai scurt timp.");
+          alert("Multumim pentru mesaj! Va vom contacta in cel mai scurt timp posibil !");
           setForm({
             name: "",
             email: "",
@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-full p-4 md:p-8 pt-16 md:pt-20 bg-gray-100">
+    <div className="h-full p-4 md:p-8 pt-24 md:pt-24 bg-gray-100">
       <h1 className="text-3xl font-bold mb-8 text-center">Contact</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:flex md:justify-between md:items-center">
         <div className="card text-center shadow-lg rounded hover:shadow-2xl md:h-96 md:w-96 transition duration-500 ease-in-out order-1 md:order-none">

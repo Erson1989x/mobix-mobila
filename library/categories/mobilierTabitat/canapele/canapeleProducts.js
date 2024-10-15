@@ -37,11 +37,12 @@ import canapeaRoyalMica from '../../../../app/assets/mobiliertapitat/Canapele/Ro
 import canapeaRoyalMica_1 from '../../../../app/assets/mobiliertapitat/Canapele/RoyalMica/royal mica.png'
 import canapeaDiana from '../../../../app/assets/mobiliertapitat/Canapele/Diana/diana mica (1).png'
 import canapeaDiana_1 from '../../../../app/assets/mobiliertapitat/Canapele/Diana/diana mica (2).png'
-import canapeaVegasMare from '../../../../app/assets/mobiliertapitat/Canapele/VegasMare/OIP.jpeg'
 import canapeaVegasMica from '../../../../app/assets/mobiliertapitat/Canapele/VegasMica/Canapea Vegas Mica-Memory.jpg'
 import canapeaVegasMica_1 from '../../../../app/assets/mobiliertapitat/Canapele/VegasMica/Canapea Vegas Mica-Memory2.jpg'
 import canapeaVegasMica_2 from '../../../../app/assets/mobiliertapitat/Canapele/VegasMica/Canapea Vegas Mica.jpg'
-import canapeaVenus from '../../../../app/assets/mobiliertapitat/Canapele/Venus/canapea-venus_3512_2_1585337483.jpg'
+import canapeaVenus from '../../../../app/assets/mobiliertapitat/Canapele/Venus/Venus1.jpg'
+import canapeaVenus_1 from '../../../../app/assets/mobiliertapitat/Canapele/Venus/Venus2.jpg'
+import canapeaVenus_2 from '../../../../app/assets/mobiliertapitat/Canapele/Venus/Venus3.jpg'
 import canapeaValy from '../../../../app/assets/mobiliertapitat/Canapele/Valy/Canape Valy.jpg'
 import canapeaValy_1 from '../../../../app/assets/mobiliertapitat/Canapele/Valy/Canapea Valy.jpg'
 import canapeaValy_2 from '../../../../app/assets/mobiliertapitat/Canapele/Valy/canapea valy2.jpg'
@@ -271,7 +272,7 @@ export const canapeleProducts = [
     {
         id: 12,
         name: 'Canapea Vegas Mare',
-        images: [canapeaVegasMare],
+        images:  [canapeaVegasMica, canapeaVegasMica_1, canapeaVegasMica_2],
         description: 'Canapea extensibila, cu lada pentru dezvoltare \n Acest produs este disponibil si pe alte culori \n  Canapea Vega Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 188 cm x A 165 cm.',
         price: 2050.00,
         prices: {
@@ -307,12 +308,12 @@ export const canapeleProducts = [
     {
         id: 14,
         name: 'Canapea Venus',
-        images: [canapeaVenus],
-        description: 'Canapea Venus NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
+        images: [canapeaVenus, canapeaVenus_1, canapeaVenus_2],
+        description: 'Canapea Venus NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 145 cm x A 188 cm.',
         price: 1700.00,
         dimensiuni: {
-            lungime: 220,
-            adancime: 110,
+            lungime: 188,
+            adancime: 97,
             inaltime: 75,
         },
         category: 'canapele',

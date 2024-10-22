@@ -20,6 +20,13 @@ const Cuiere = () => {
   useEffect(() => {
     localStorage.setItem("currentPage", currentPage);
   }, [currentPage]);
+  
+  useEffect(() => {
+    const storedPage = localStorage.getItem("currentPage");
+    if (storedPage) {
+      setCurrentPage(parseInt(storedPage));
+    }
+  }, []);
 
   useEffect(() => {
     return () => {

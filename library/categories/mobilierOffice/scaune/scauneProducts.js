@@ -24,7 +24,7 @@ import scaunBlanca_3 from "../../../../app/assets/mobilieroffice/Scaune/ScaunBla
 import scaunBlanca_4 from "../../../../app/assets/mobilieroffice/Scaune/ScaunBlanca/Scaun Blanca5.webp";
 import scaunBlanca_5 from "../../../../app/assets/mobilieroffice/Scaune/ScaunBlanca/Scaun Blanca6.webp";
 import scaunCMX from "../../../../app/assets/mobilieroffice/Scaune/ScaunCMX935/Scaun CMX-935.jpg";
-import scaunCMX_1 from "../../../../app/assets/mobilieroffice/Scaune/ScaunCMX935/Scaun CMX-935.WebP";
+import scaunCMX_1 from "../../../../app/assets/mobilieroffice/Scaune/ScaunCMX935/Scaun CMX-935 (2).jpg";
 import scaunGolf from "../../../../app/assets/mobilieroffice/Scaune/ScaunGolfC11/Scaun_Golf.webp";
 import scaunGolf_1 from "../../../../app/assets/mobilieroffice/Scaune/ScaunGolfC11/Scaun_Golf2.webp";
 import scaunGolf_2 from "../../../../app/assets/mobilieroffice/Scaune/ScaunGolfC11/Scaun_Golf3.webp";

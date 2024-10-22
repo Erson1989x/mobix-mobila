@@ -2,15 +2,11 @@
 import Image from 'next/image'
 import { dormitorItems } from './dormitorItems'
 import Link from 'next/link'
-import { BrowserRouter as Router } from 'react-router-dom';
-
-
 
 
 const Dormitor = () => {
 
   return (
-    <Router>
     <div className='min-h-screen p-4 md:p-8 pt-24 md:pt-24'>
       <h1 className="text-3xl font-bold mb-8 text-center">Dormitor</h1>
       <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 mt-8">
@@ -25,7 +21,6 @@ const Dormitor = () => {
         ))}
       </div>
     </div>
-    </Router>
   )
 }
 

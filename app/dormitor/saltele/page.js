@@ -14,7 +14,7 @@ const Saltele = () => {
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(salteleProducts, productsPerPage);
-  const [currentPage, setCurrentPage] = useCurrentPage
+  const [currentPage, setCurrentPage] = useCurrentPage();
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/saltele", totalPages);

@@ -12,13 +12,13 @@ export const useCurrentPage = () => {
           setCurrentPage(parseInt(storedPage));
         }
       }
-    }, []);
+    }, [isBrowser]);
   
     useEffect(() => {
       if (isBrowser) {
         sessionStorage.setItem("currentPage", currentPage);
       }
-    }, [currentPage]);
+    }, [currentPage, setCurrentPage, isBrowser]);
   
     useEffect(() => {
       return () => {
@@ -28,5 +28,5 @@ export const useCurrentPage = () => {
       };
     }, []);
   
-    return [currentPage, setCurrentPage];
+    return [currentPage, setCurrentPage, isBrowser];
   };

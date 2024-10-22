@@ -16,7 +16,7 @@ const Mese = () => {
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(meseProducts, productsPerPage);
-  const [currentPage, setCurrentPage] = useCurrentPage
+  const [currentPage, setCurrentPage] = useCurrentPage();
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(

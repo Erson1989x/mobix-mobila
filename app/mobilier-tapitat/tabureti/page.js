@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { taburetiProducts } from "../../../library/categories/mobilierTabitat/tabureti/taburetiProducts";
-import { useState, useMemo, useEffect } from "react";
+import { useMemo } from "react";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import {
   getNumberOfPages,
@@ -10,34 +10,15 @@ import {
 } from "@/app/utils/Pagination/Pagination";
 import { useRouter } from "next/navigation";
 import { Pagination } from "@mui/material";
+import { useCurrentPage } from "@/app/utils/Pagination/useCurrentPage";
 
 const Tabureti = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(taburetiProducts, productsPerPage);
+  const [currentPage, setCurrentPage] = useCurrentPage();
 
-  const [currentPage, setCurrentPage] = useState(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    return storedPage ? parseInt(storedPage) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-  
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(parseInt(storedPage));
-    }
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      localStorage.removeItem("currentPage");
-    };
-  }, []);
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(

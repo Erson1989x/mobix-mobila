@@ -1,39 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { dulapuriProducts } from "../../../library/categories/dormitor/dulapuri/dulapuriProducts";
 import { Pagination } from "@mui/material";
 import { useMemo } from "react";
 import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
+import { useCurrentPage } from "@/app/utils/Pagination/useCurrentPage";
 
 const Dulapuri = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(dulapuriProducts, productsPerPage); 
-
-  const [currentPage, setCurrentPage] = useState(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    return storedPage ? parseInt(storedPage) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-  
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(parseInt(storedPage));
-    }
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      localStorage.removeItem("currentPage");
-    };
-  }, []);
+  const [currentPage, setCurrentPage] = useCurrentPage();
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(setCurrentPage, router, value, scrollToTop, '/dormitor/dulapuri', totalPages);

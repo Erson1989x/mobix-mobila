@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import { masuteProducts } from "@/library/categories/living/masute/masuteProducts";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { useCurrentPage } from "@/app/utils/Pagination/useCurrentPage";
 import {
   getNumberOfPages,
   scrollToTop,
@@ -15,28 +16,7 @@ const Masute = () => {
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(masuteProducts, productsPerPage);
-
-  const [currentPage, setCurrentPage] = useState(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    return storedPage ? parseInt(storedPage) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-  
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(parseInt(storedPage));
-    }
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      localStorage.removeItem("currentPage");
-    };
-  }, []);
+  const [currentPage, setCurrentPage] = useCurrentPage();
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(

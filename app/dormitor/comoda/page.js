@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { comodaProducts } from "../../../library/categories/dormitor/comode/comodeProducts";
-import { useState, useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";

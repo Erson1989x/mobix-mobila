@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useMemo, use } from "react";
+import React, {useMemo} from "react";
 import { bucatarieProducts } from "@/library/categories/bucatarie/bucatarieProducts";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import {

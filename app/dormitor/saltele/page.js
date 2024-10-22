@@ -2,10 +2,11 @@
 import React from 'react'
 import ProductCard from '@/components/ProductCard/ProductCard'
 import { salteleProducts } from '../../../library/categories/dormitor/saltele/salteleProducts'
-import { useState, useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import { Pagination } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";
+import { useCurrentPage } from '@/app/utils/Pagination/useCurrentPage'
 
 
 const Saltele = () => {
@@ -13,28 +14,7 @@ const Saltele = () => {
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(salteleProducts, productsPerPage);
-
-  const [currentPage, setCurrentPage] = useState(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    return storedPage ? parseInt(storedPage) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-  
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(parseInt(storedPage));
-    }
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      localStorage.removeItem("currentPage");
-    };
-  }, []);
+  const [currentPage, setCurrentPage] = useCurrentPage
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(setCurrentPage, router, value, scrollToTop, "/dormitor/saltele", totalPages);

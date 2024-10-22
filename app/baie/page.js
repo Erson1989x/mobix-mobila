@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   getNumberOfPages,
   scrollToTop,

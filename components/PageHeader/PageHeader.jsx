@@ -39,7 +39,7 @@ const PageHeader = () => {
     <div className='absolute bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
     <FontAwesomeIcon
         icon={faChevronDown}
-          className="text-black text-shadow-md cursor-pointer animate-bounce hidden sm:block"
+          className="text-black text-shadow-md cursor-pointer animate-bounce hidden md:block"
         style={{ width: "48px", height: "48px" }}
         onClick={handleScroll}
       />

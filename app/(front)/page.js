@@ -2,6 +2,7 @@
 import AboutUs from "@/components/AboutUs/AboutUs";
 import PageHeader from "@/components/PageHeader/PageHeader";
 import ProduseServicii from "@/components/ProduseServicii/ProduseServicii";
+import React from "react";
 
 export default function Home() {
   return (

@@ -9,34 +9,15 @@ import Pagination from "@mui/material/Pagination";
 import { useRouter } from "next/navigation";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { baieProducts } from "@/library/categories/baie/baieProducts";
+import { useCurrentPage } from "../utils/Pagination/useCurrentPage";
 
 const Baie = () => {
   const router = useRouter();
   const { query: { page } = {} } = router || {};
   const productsPerPage = 8;
   const totalPages = getNumberOfPages(baieProducts, productsPerPage);
+  const [currentPage, setCurrentPage] = useCurrentPage()
 
-  const [currentPage, setCurrentPage] = useState(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    return storedPage ? parseInt(storedPage) : 1;
-  });
-
-  useEffect(() => {
-    localStorage.setItem("currentPage", currentPage);
-  }, [currentPage]);
-  
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(parseInt(storedPage));
-    }
-  }, []);
-  
-  useEffect(() => {
-    return () => {
-      localStorage.removeItem("currentPage");
-    };
-  }, []);
 
   const handlePageChange = (event, value) => {
     handlePaginationChange(

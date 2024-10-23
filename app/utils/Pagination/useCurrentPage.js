@@ -26,7 +26,7 @@ export const useCurrentPage = () => {
           sessionStorage.removeItem("currentPage");
         }
       };
-    }, []);
+    }, [isBrowser]);
   
     return [currentPage, setCurrentPage, isBrowser];
   };

@@ -25,7 +25,7 @@ const Dulapuri = () => {
     if (!isNaN(parsedPage)) {
       setCurrentPage(parsedPage);
     }
-  }, [page]);
+  }, [page, setCurrentPage]);
 
   const productsToDisplay = useMemo(() => {
     const start = (currentPage - 1) * productsPerPage;

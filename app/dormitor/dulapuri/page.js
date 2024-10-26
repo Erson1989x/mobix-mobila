@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import ProductCard from "@/components/ProductCard/ProductCard";
-import { dulapuriProducts } from "../../../library/categories/dormitor/dulapuri/dulapuriProducts";
+import { dulapuriProducts } from "@/library/categories/dormitor/dulapuri/dulapuriProducts";
 import { Pagination } from "@mui/material";
 import { useMemo } from "react";
 import { getNumberOfPages, scrollToTop, handlePaginationChange } from "@/app/utils/Pagination/Pagination";

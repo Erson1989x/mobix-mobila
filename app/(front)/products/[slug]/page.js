@@ -1,6 +1,5 @@
-"use client";
+
 import React from "react";
-import { usePathname } from "next/navigation";
 import { dulapuriProducts } from "../../../../library/categories/dormitor/dulapuri/dulapuriProducts";
 import { noptiereProducts } from "../../../../library/categories/dormitor/noptiere/noptiereProducts";
 import { paturiProducts } from "@/library/categories/dormitor/paturi/paturiProducts";
@@ -25,40 +24,47 @@ import ProductDetailsSaltele from "@/components/ProductDetails/ProductDetailsSal
 import ProductDetailsCanapele from "@/components/ProductDetails/ProductDetailsCanapele";
 import ProductLayout from "@/components/ProductLayout/ProductLayout";
 import { fotoliiProducts } from "@/library/categories/mobilierTabitat/fotolii/fotoliiProducts";
+ 
 
-const ProductPage = () => {
-  const pathname = usePathname();
-  const slug = pathname.split("/").pop();
+const productTypes = [
+  { category: "dulapuri", products: dulapuriProducts },
+  { category: "noptiere", products: noptiereProducts },
+  { category: "paturi", products: paturiProducts },
+  { category: "comoda", products: comodaProducts },
+  { category: "dormitoare", products: dormitoareProducts },
+  { category: "living", products: livingProducts },
+  { category: "baie", products: baieProducts },
+  { category: "scaune", products: scauneProducts },
+  { category: "birou", products: birouProducts },
+  { category: "cuiere", products: cuiereProducts },
+  { category: "pantofar", products: pantofarProducts },
+  { category: "masute", products: masuteProducts },
+  { category: "taburet", products: taburetiProducts },
+  { category: "scauneMS", products: scauneProductsMS },
+  { category: "mese", products: meseProducts },
+  { category: "coltare", products: coltareProducts },
+  { category: "bucatarie", products: bucatarieProducts },
+  { category: "saltele", products: salteleProducts },
+  { category: "canapele", products: canapeleProducts },
+  { category: "fotolii", products: fotoliiProducts },
+];
 
-  const productTypes = [
-    { category: "dulapuri", products: dulapuriProducts },
-    { category: "noptiere", products: noptiereProducts },
-    { category: "paturi", products: paturiProducts },
-    { category: "comoda", products: comodaProducts },
-    { category: "dormitoare", products: dormitoareProducts },
-    { category: "living", products: livingProducts },
-    { category: "baie", products: baieProducts },
-    { category: "scaune", products: scauneProducts },
-    { category: "birou", products: birouProducts },
-    { category: "cuiere", products: cuiereProducts },
-    { category: "pantofar", products: pantofarProducts },
-    { category: "masute", products: masuteProducts },
-    { category: "taburet", products: taburetiProducts },
-    { category: "scauneMS", products: scauneProductsMS },
-    { category: "mese", products: meseProducts },
-    { category: "coltare", products: coltareProducts },
-    { category: "bucatarie", products: bucatarieProducts },
-    { category: "saltele", products: salteleProducts },
-    { category: "canapele", products: canapeleProducts },
-    { category: "fotolii", products: fotoliiProducts },
-  ];
+const findProduct = (slug) => {
+  return productTypes
+    .flatMap((type) => type.products)
+    .find((product) => product.slug === slug);
+};
 
-  const findProduct = (slug) => {
-    return productTypes
-      .flatMap((type) => type.products)
-      .find((product) => product.slug === slug);
-  };
+console.log('page is being called');
 
+export const generateStaticParams = async () => {
+  return productTypes.flatMap((type) => type.products.map((product) => ({ slug: product.slug })));
+};
+
+
+
+const ProductPage = ({ params }) => {
+  const { slug } = params;
   const currentProduct = findProduct(slug);
 
   if (!currentProduct) return null;

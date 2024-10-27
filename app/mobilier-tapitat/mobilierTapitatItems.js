@@ -21,8 +21,8 @@ export const mobilierTapitatItems = [
       link: "/mobilier-tapitat/fotolii"
     },
     {
-      title: "Taburetii",
+      title: "Tabureti",
       imageSrc : taburetibg,
-      link: "/mobilier-tapitat/taburetii"
+      link: "/mobilier-tapitat/tabureti"
     }
   ];

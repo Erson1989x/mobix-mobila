@@ -48,7 +48,7 @@ export const taburetiProducts = [
         name: "Taburet Living",
         images: [taburetLiving, taburetLiving_1, taburetLiving_2],
         description: "Taburet Living",
-        price: 150.00,
+        price: 140.00,
         dimensiuni: {
             adancime: 0,
             inaltime: 38,

@@ -6,6 +6,7 @@ import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import mobixmob from "../../app/assets/background/mobixmob.jpg";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -42,11 +43,18 @@ const Header = () => {
               activeLink === "" ? "text-black" : "text-black"
             }`}
             href="/"
-          ><Image src={mobixmob} alt="Logo" width={65} height={65} className="cursor-pointer rounded-full shadow-md"></Image>
+          >
+            <Image
+              src={mobixmob}
+              alt="Logo"
+              width={65}
+              height={65}
+              className="cursor-pointer rounded-full shadow-md"
+            ></Image>
           </Link>
         </div>
         <div className="cursor-pointer md:hidden">
-          <FontAwesomeIcon icon={faGripLines} onClick={toggleMenu} />
+          <FontAwesomeIcon size="xl" icon={faGripLines} onClick={toggleMenu} className="dark:text-black" />
         </div>
         {isOpen ? (
           <div
@@ -57,11 +65,18 @@ const Header = () => {
           />
         ) : null}
         {isOpen && (
-          <div
-            className={`fixed top-0 right-0 h-full bg-gray-100 shadow-lg transition-transform transform z-10 shadow-gray-800 ${
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{
+              opacity: isOpen ? 1 : 0,
+              x: isOpen ? "0%" : "100%",
+              width: isOpen ? "188px" : "0",
+            }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            className={`fixed top-0 right-0 h-full bg-gray-100 shadow-lg ${
               isOpen
-                ? "w-3/5 flex flex-col items-center justify-center gap-4 z-10"
-                : "w-0"
+                ? "flex flex-col items-center justify-center gap-4 z-10"
+                : ""
             } ${isOpen && "md:hidden"}`}
             id="menu"
             ref={menuRef}
@@ -93,7 +108,7 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </motion.div>
         )}
         <div className="hidden md:flex md:items-center md:w-auto">
           <ul className="hidden md:flex md:items-center md:w-auto gap-4">

@@ -81,7 +81,7 @@ export const livingProducts = [
       name: "Living Geneva",
       images: [livingGeneva, livingGeneva2, livingGeneva3, livingGeneva4],
       description: "Design modern al livingului va forma loc suficient pentru depozitarea, economisind spațiul util al camerei dvs \n Inclus: \n Dulap 2D \n Raft cu balamale \n Comoda TV \n Vitrina Penar",
-      price: 2160.00,
+      price: 2170.00,
       dimensiuni: {
         latime: 245,
         inaltime: 207,

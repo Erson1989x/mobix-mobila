@@ -221,7 +221,7 @@ export const comodaProducts = [
       dimensiuni: {
         lungime: 100,
         inaltime: 92,
-        adancime: 35,
+        adancime: 45,
       },
       corpColor: "",
       category: "comoda",
@@ -293,7 +293,7 @@ export const comodaProducts = [
       name: "Comoda Alma 4S",
       images: [comodaAlma4S, comodaAlma4S_1, comodaAlma4S_2, comodaAlma4S_3],
       description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
-      price: 650.00,
+      price: 500.00,
       dimensiuni: {
         lungime: 50,
         inaltime: 100,
@@ -310,8 +310,8 @@ export const comodaProducts = [
       description: "PAL Melaminat. \n Cant ABS. \n Manere satinate. \n Picioare PVC. \n Glisiera cu sina",
       price: 690.00,
       dimensiuni: {
-        lungime: 50,
-        inaltime: 100,
+        lungime: 140,
+        inaltime: 80,
         adancime: 40,
       },
       corpColor: "Pin Antichizat, Sonoma Inchis + Deschis",
@@ -323,7 +323,7 @@ export const comodaProducts = [
       name: "Comoda Kentuki",
       images: [comodaKentuki, comodaKentuki_1],
       description: "Trăsăturile clasice ale colecţiei sunt scoase în evidenţă de mânerele cu aspect antichizat, picioarele elegante şi elementele decorative care se regăsesc pe fronturi. \n Finisajul este alb cu o mică patină, care crează o atmosferă elegantă.",
-      price: 690.00,
+      price: 1610.00,
       dimensiuni: {
         lungime: 155,
         inaltime: 90,

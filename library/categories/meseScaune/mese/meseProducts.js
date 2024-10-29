@@ -29,6 +29,12 @@ import masaKJC546_1 from '../../../../app/assets/mesesiscaune/MeseMari/KJC546/MA
 import masaKJC546_2 from '../../../../app/assets/mesesiscaune/MeseMari/KJC546/MASA KJC546-3.png';
 import masaKJC546_3 from '../../../../app/assets/mesesiscaune/MeseMari/KJC546/MASA KJC546-4.png';
 import masaRossa from '../../../../app/assets/mesesiscaune/MeseMari/Rossa/Masa Rossa.jpg';
+import coltareBucatarieDomino from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Domino.jpg";
+import coltareBucatarieDomino_1 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino.jpg";
+import coltareBucatarieDomino_2 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino.png";
+import coltareBucatarieDomino_3 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino2.png";
+
+
 export const meseProducts = [
     {
         id: 1,
@@ -71,7 +77,7 @@ export const meseProducts = [
             inaltime: 80,
             adancime: 76,
         },
-        corpColor: "-", 
+        corpColor: "Alb, Sampanie", 
         category: "mese-set",
         slug: "set-masa-" + "arandis".toLowerCase(),
     },
@@ -109,12 +115,12 @@ export const meseProducts = [
         id: 6,
         name: "Masa plianta 8 persoane",
         images: [masaPlianta8, masaPlianta8_1, masaPlianta8_2, masaPlianta8_3],
-        description: "Materiale: \n PAL Melaminat \n Cant ABS \n Lemn \n Picioare PVC;",
+        description: "Materiale: \n PAL Melaminat \n Cant ABS \n Lemn \n Picioare PVC \n Dimensiuni de gabarit inchisa: \n Lungime: 29 cm \n Latime: 78 cm \n Inaltime: 80 cm",
         price: 370.00,
         dimensiuni: {
-            lungime: 29-177,
-            latime: 77-78,
-            inaltime: 80,
+            lungime:177,
+            latime: 77,
+            inaltime:80,
         },
         corpColor: "Wenge, Fag", 
         category: "mese-set",
@@ -124,10 +130,10 @@ export const meseProducts = [
         id: 7,
         name: "Masa extensibila WENUS II",
         images: [masaExtensibila, masaExtensibila_1, masaExtensibila_2],
-        description: "Materiale: \n Lemn masiv \n MDF furniruit",
+        description: "Materiale: \n Lemn masiv \n MDF furniruit \n Lungime stransa: 140 cm",
         price: 770.00,
         dimensiuni: {
-            lungime: 140-180,
+            lungime: 180,
             latime: 80,
             inaltime: 76,
         },
@@ -139,10 +145,10 @@ export const meseProducts = [
         id: 8,
         name: "Masa extensibila WENUS V",
         images: [masaExtensibilaV, masaExtensibilaV_1, masaExtensibilaV_2],
-        description: "Materiale: \n Lemn masiv \n MDF furniruit",
+        description: "Materiale: \n Lemn masiv \n MDF furniruit \n Lungime stransa: 160 cm",
         price: 1300.00,
         dimensiuni: {
-            lungime: 160-200,
+            lungime: 200,
             latime: 90,
             inaltime: 76,
         },
@@ -154,10 +160,10 @@ export const meseProducts = [
         id: 9,
         name: "Masa KJC546",
         images: [masaKJC546, masaKJC546_1, masaKJC546_2, masaKJC546_3],
-        description: "",
+        description: "Lungimea mesei stransa este de : 120 cm",
         price: 920.00,
         dimensiuni: {
-            lungime: 120-160,
+            lungime:160,
             inaltime: 76,
             latime: 80,
         },
@@ -179,5 +185,21 @@ export const meseProducts = [
         corpColor: "-", 
         category: "mese-set",
         slug: "set-masa-" + "rossa".toLowerCase(),
-    }
+    },
+    {
+        id: 11,
+        name: "Coltar Bucatarie Domino",
+        images: [coltareBucatarieDomino, coltareBucatarieDomino_1, coltareBucatarieDomino_2, coltareBucatarieDomino_3],
+        description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet \n Carcasa: \n Nuc negru \n Tapiterie: \n Nuc bej",
+        price: 960.00,
+        dimensiuni: {
+            adancime: 0,
+            inaltime: 0,
+            lungime: 0,
+        },
+        corpColor: "Carcasa: Nuc negru; Tapiterie: Nuc bej",
+        faceColor: "-",
+        category: "coltare",
+        slug: "coltar-" + "bucatarie-domino".toLowerCase(),
+    },
 ]

@@ -111,7 +111,7 @@ export const canapeleProducts = [
         description: 'Canapea Lacrima Mare NU se produce cu sistem lift \n Dimensiunea extinsa : \n L 190 cm x A 165 cm.',
         price: 2040.00,
         prices: {
-            bonel: 2050.00,
+            bonel: 2040.00,
             memory: 2220.00,
         },
         dimensiuni: {
@@ -338,7 +338,7 @@ export const canapeleProducts = [
         name: 'Canapea Daria',
         images: [canapeaDaria, canapeaDaria_1, canapeaDaria_2, canapeaDaria_3, canapeaDaria_4],
         description: 'Suprafata de dormit: \n Lungime: 195cm \n Latime: 145cm \n Adancime sezut: 57cm \n Inaltime sezut: 45cm \n Materiale: \n Lemn masiv \n Elemente PAL si PFL \n Şezut cu arcuri tip bonnel: \n Grosime sârmă 2.4 mm \n Minet 150g/m2 \n Pasla 1200g/m2 \n Spuma poliuretanica (burete) \n Material acoperire: Stofa \n Avantajele Produsului: \n Sistem de extindere tip lift \n Lada depozitare din PAL melaminat',
-        price: 1850.00,
+        price: 1880.00,
         dimensiuni: {
             lungime: 190,
             adancime: 98,

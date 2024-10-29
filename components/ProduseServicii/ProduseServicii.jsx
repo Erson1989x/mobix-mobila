@@ -9,7 +9,7 @@ const ProduseServicii = () => {
       id="products"
       className="w-full h-auto flex flex-col items-center justify-center mt-4"
     >
-      <h2 className="mt-8 text-3xl lg:text-4xl"> Produse & Servicii </h2>
+      <h2 className="mt-8 text-3xl lg:text-4xl dark:text-black"> Produse & Servicii </h2>
       <p className="mt-4 text-lg text-center lg:text-xl w-11/12">
         {" "}
 

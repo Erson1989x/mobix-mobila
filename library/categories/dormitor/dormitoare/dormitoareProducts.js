@@ -21,7 +21,7 @@ export const dormitoareProducts = [
          },
          corpColor: "Stejar Sonoma Trufa + Wenge Magia, Gri Grafit + Stejar kraft alb",
          category: "dormitoare-set",
-         slug: "dormitor-" + "geneva".toLowerCase(),
+         slug: "dormitor-" + "geneva" + "140x200".toLowerCase(),
        },
        {
          id: 2,
@@ -36,7 +36,7 @@ export const dormitoareProducts = [
          },
          corpColor: "Stejar Sonoma Trufa + Wenge Magia, Gri Grafit + Stejar kraft alb",
          category: "dormitoare-set",
-         slug: "dormitor-" + "geneva".toLowerCase(),
+         slug: "dormitor-" + "geneva" + "160x200".toLowerCase(),
        },
        {
          id: 3,
@@ -51,7 +51,7 @@ export const dormitoareProducts = [
          },
          corpColor: "Craft Stejar auriu + Alb",
          category: "dormitoare-set",
-         slug: "dormitor-" + "denver".toLowerCase(),
+         slug: "dormitor-" + "denver" + "140x200".toLowerCase(),
        },
        {
          id: 4,
@@ -66,7 +66,7 @@ export const dormitoareProducts = [
          },
          corpColor: "Craft Stejar auriu + Alb",
          category: "dormitoare-set",
-         slug: "dormitor-" + "denver".toLowerCase(),
+         slug: "dormitor-" + "denver" + "160x200".toLowerCase(),
        },
        {
          id: 5,
@@ -81,7 +81,7 @@ export const dormitoareProducts = [
          },
          corpColor: "-",
          category: "dormitoare-set",
-         slug: "dormitor-" + "kentuki".toLowerCase(),
+         slug: "dormitor-" + "kentuki" + "140x200".toLowerCase(),
        },
        {
          id: 6,
@@ -96,7 +96,7 @@ export const dormitoareProducts = [
          },
          corpColor: "-",
          category: "dormitoare-set",
-         slug: "dormitor-" + "kentukiB".toLowerCase(),
+         slug: "dormitor-" + "kentuki" + "160x200".toLowerCase(),
         }
 
 ]

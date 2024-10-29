@@ -9,7 +9,7 @@ const ProductCard = ({ productsToDisplay }) => {
           key={product.name}
           className="bg-white rounded shadow-md p-4 flex flex-col"
         >
-          <h2 className="text-lg font-bold text-center mb-2">{product.name}</h2>
+          <h2 className="text-lg font-bold text-center mb-2 dark:text-black">{product.name}</h2>
           <button
             className="flex justify-center align-center cursor-pointer"
             onClick={() => (window.location.href = `/products/${product.slug}`)}

@@ -53,7 +53,7 @@ export const bucatarieProducts = [
       id: 2,
       name: "Bucataria Samanta 2.0 M",
       images: [bucatariaSamanta, bucatariaSamanta_1, bucatariaSamanta_2, bucatariaSamanta_3, bucatariaSamanta_4],
-      description: " Preţul afişat este fără blat. \n O bucătarie simplă, stilată şi economică pentru casa ta! \n Acest model de bucătarie are un număr mic de elemente şi este ideal pentru încăperile mici. \n Fabricat din PAL de înaltă calitate, va rezista mulți ani și va aduce confort casei tale. \n Se poate vinde la dimensiunea de 2.00m sau 2.60m. \n Elementele incluse pentru dimensiunea de 2.00m (LxA): \n Dulap superior: В№ (800x715) 80x71.5 cm. \n Dulap superior: В№ (800x715). \n  Vitrina 80x71.5 cm. \n Dulap superior: В№ (400x715) 40x71.5 cm. \n Dulap inferior (sub lavoar): Н№ (800x715). \n Lavoar 80x71.5 cm. \n Dulap inferior: Н№ (800x715) 80x71.5 cm. \n Dulap inferior: Н№ (400x715) 40x71.5 cm",
+      description: " Dulap superior: 80x71.5 cm \n Dulap superior cu vitrina:80x71.5 cm \n Dulap superior: 40x71.5 cm \n Dulap inferior mască chiuvetă: 80x71.5 cm \n Dulap inferior: 80x71.5 cm \n Dulap inferior: 40x71.5 cm",
       price: 1300.00,
       dimensiuni: {
         lungime: 0,

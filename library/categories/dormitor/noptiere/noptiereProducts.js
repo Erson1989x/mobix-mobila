@@ -32,7 +32,7 @@ export const noptiereProducts = [
       inaltime: 50,
       adancime: 45,
     },
-    corpColor: "Gri Grafit, stejar kraft alb, Stejar Sonoma Trufa si Wenge Magia",
+    corpColor: "Gri Grafit + stejar craft alb, Stejar Sonoma Trufa + Wenge Magia",
     category: "noptiere",
     slug: "noptier-" + "geneva".toLowerCase(),
   },

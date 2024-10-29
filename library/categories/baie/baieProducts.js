@@ -49,8 +49,8 @@ export const baieProducts = [
     price: 130.0,
     dimensiuni: {
       lungime: 60,
-      inaltime: 14,
-      adancime: 50,
+      inaltime: 50,
+      adancime: 14,
     },
     corpColor: "Alb, Sonoma",
     category: "baie",

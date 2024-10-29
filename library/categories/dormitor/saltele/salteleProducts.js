@@ -27,7 +27,7 @@ export const salteleProducts = [
       prices: {
           variantaOne: 450.00,
           variantaTwo: 550.00,
-          variantaThree: 650.00
+          variantaThree: 630.00
       },
       category: "saltele",
       slug: "saltele-" + "lux".toLowerCase(),

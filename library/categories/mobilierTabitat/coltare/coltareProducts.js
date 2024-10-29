@@ -1,7 +1,4 @@
-import coltareBucatarieDomino from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Domino.jpg";
-import coltareBucatarieDomino_1 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino.jpg";
-import coltareBucatarieDomino_2 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino.png";
-import coltareBucatarieDomino_3 from "../../../../app/assets/mobiliertapitat/Coltare/Coltar Bucatarie Domino2.png";
+
 import coltarClaudiaXXL from "../../../../app/assets/mobiliertapitat/Coltare/ClaudiaXXL/claudia XXL (1).png";
 import coltarClaudiaXXL_1 from "../../../../app/assets/mobiliertapitat/Coltare/ClaudiaXXL/claudia xxl (2).png";
 import coltarClaudiaXXL_2 from "../../../../app/assets/mobiliertapitat/Coltare/ClaudiaXXL/claudia xxl (3).png";
@@ -26,22 +23,6 @@ import coltarVegasXXL_2 from "../../../../app/assets/mobiliertapitat/Coltare/Veg
 import coltarVegasXXS from "../../../../app/assets/mobiliertapitat/Coltare/VegasXXS/Divan_Las_Vegas_Fado_02_Camera_2_1680854980.jpg";
 
 export const coltareProducts = [
-     {
-         id: 1,
-         name: "Coltar Bucatarie Domino",
-         images: [coltareBucatarieDomino, coltareBucatarieDomino_1, coltareBucatarieDomino_2, coltareBucatarieDomino_3],
-         description: "Coltar Bucatarie Domino contine: Coltar, Masa, 2 Taburet \n Carcasa: \n Nuc negru \n Tapiterie: \n Nuc bej",
-         price: 960.00,
-         dimensiuni: {
-             adancime: 0,
-             inaltime: 0,
-             lungime: 0,
-         },
-         corpColor: "Carcasa: Nuc negru; Tapiterie: Nuc bej",
-         faceColor: "-",
-         category: "coltare",
-         slug: "coltar-" + "bucatarie-domino".toLowerCase(),
-     },
      {
         id: 2,
         name: "Coltar Claudia XXL",

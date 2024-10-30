@@ -23,7 +23,12 @@ const Footer = () => {
             >
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </Link>
-            <Link href="www.instagram.com" className="text-lg">
+            <Link
+              href="https://www.instagram.com/mobixmobila"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </Link>
             <Link href="mailto:mobilamobix@gmail.com" className="text-lg">
@@ -52,6 +57,7 @@ const Footer = () => {
           />
           <p>Contact</p>
           <Link href="tel:+40742266779">0742 266 779</Link>
+          <Link href="mailto:mobilamobix@gmail.com">mobilamobix@gmail.com</Link>
         </div>
       </div>
     </footer>
